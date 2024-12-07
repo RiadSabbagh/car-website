@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Car Information</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="car-info">
+    </section>
+    <footer>
+        <p>&copy; 2024 Buy and Sell Cars. All rights reserved.</p>
+    </footer>
+    <script> 
+        const params = new URLSearchParams(window.location.search);
+        const carInfoSection = document.getElementById('car-info');
+
+        const carDetails = `
+            <h2>${params.get('make')} ${params.get('model')} (${params.get('year')})</h2>
+            <img src=${params.get('image')} alt="image of ${params.get('make')} ${params.get('model')} (${params.get('year')})" width="100%" style="border: 10px solid black; border-radius: 60px; margin: 20px 0px 60px 0px;">
+            <p class="classInformationParagraph"><b>Price:</b> $${params.get('price')}</p>
+            <p class="classInformationParagraph"><b>Type:</b> ${params.get('type')}</p>
+            <p class="classInformationParagraph"><b>Color:</b> ${params.get('color')}</p>
+            <p class="classInformationParagraph"><b>Country:</b> ${params.get('country')}</p>
+            <p class="classInformationParagraph"><b>Transmission:</b> ${params.get('transmission')}</p>
+            <p class="classInformationParagraph"><b>Horsepower:</b> ${params.get('horsepower')} hp</p>
+            <p class="classInformationParagraph"><b>Acceleration:</b> ${params.get('acceleration')} seconds (0-60 mph)</p>
+            <p class="classInformationParagraph"><b>Engine Type:</b> ${params.get('engine')}</p>
+            <p class="classInformationParagraph"><b>Description:</b> <br><br> ${params.get('description')}</p>
+        `;
+
+        carInfoSection.innerHTML = carDetails;
+    </script>
+</body>
+</html>
