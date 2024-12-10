@@ -4,6 +4,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const carListings = [
     { make: "Toyota", model: "Camry", year: 2020, price: 20000, type: "Sedan", color: "Grey", country: "Japan", transmission: "Automatic", horsepower: 203, acceleration: 7.8, engineType: "Inline-4", image: "toyotaCamry2020.png", description: "The Toyota Camry 2020 is a reliable and stylish sedan that delivers exceptional comfort for everyday commuting. It comes with a spacious interior and high-quality materials, ensuring a premium feel for all passengers. The vehicle is equipped with advanced safety features like adaptive cruise control and lane departure warning. With a fuel-efficient engine, it offers great mileage, making it an economical choice. Its smooth ride and responsive handling make it perfect for city and highway driving. The infotainment system includes a user-friendly touchscreen with smartphone integration. Known for its durability, the Camry is designed to last for years with minimal maintenance. Its aerodynamic design enhances performance while giving it a modern appearance. The 2020 Camry is a versatile car that caters to families, professionals, and anyone seeking dependable transportation. Overall, it blends practicality with sophistication, making it one of the top choices in its segment." },
     { make: "Ford", model: "Mustang", year: 2021, price: 30000, type: "Convertible", color: "Orange", country: "USA", transmission: "Manual", horsepower: 450, acceleration: 4.3, engineType: "V8", image: "fordMustang2021.png", description: "The 2021 Ford Mustang is a legendary sports car that offers exhilarating performance and iconic design. With its powerful V8 engine, it delivers remarkable acceleration and a thrilling driving experience. The convertible design enhances its appeal, allowing for open-air adventures on the road. The Mustang combines retro styling with modern technology, featuring LED lighting and a customizable digital dashboard. Its precise handling and agile chassis ensure a confident ride, whether on winding roads or highways. The cabin is designed with premium materials, offering comfort and convenience for the driver and passengers. Advanced safety features like pre-collision assist provide added security during drives. Its bold orange color stands out, reflecting its sporty personality. With a rich heritage and a reputation for excellence, the Mustang continues to be a dream car for enthusiasts. It’s a perfect blend of power, style, and innovation that captures the spirit of American muscle cars." },
@@ -26,6 +44,9 @@ const carListings = [
     { make: "Ford", model: "Fusion", year: 2017, price: 18000, type: "Sedan", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 175, acceleration: 8.3, engineType: "Inline-4", image: "fordFusion2017.png", description: "The 2017 Ford Fusion is a midsize sedan that combines style, performance, and technology. Its sleek exterior design features a distinctive grille and sharp headlights, giving it a modern look. The Inline-4 engine provides a balance of power and fuel efficiency, suitable for everyday driving. Inside, the Fusion offers a spacious cabin with comfortable seats and high-quality materials. The infotainment system includes a touchscreen display, smartphone integration, and available navigation. Advanced safety features like blind-spot monitoring and rear cross-traffic alert enhance the driving experience. The Fusion delivers a smooth ride with composed handling, making it enjoyable on highways and city streets. Its trunk space is generous, adding practicality for families and commuters. The sedan is available with optional all-wheel drive for improved traction. The 2017 Ford Fusion remains a well-rounded option for those seeking a reliable and stylish vehicle." },
     { make: "Chevrolet", model: "Malibu", year: 2018, price: 19000, type: "Sedan", color: "Brown", country: "USA", transmission: "Automatic", horsepower: 160, acceleration: 8.5, engineType: "Inline-4", image: "chevroletMalibu2018.png", description: "The 2018 Chevrolet Malibu is a sleek and efficient midsize sedan designed for comfort and convenience. Its aerodynamic profile is complemented by a bold grille and stylish LED headlights. The Inline-4 engine provides excellent fuel economy without compromising on performance. Inside, the Malibu offers a refined cabin with comfortable seating and intuitive controls. The infotainment system includes a touchscreen display, Apple CarPlay, and Android Auto compatibility. Safety features such as forward collision alert and lane departure warning provide peace of mind. The sedan delivers a smooth and quiet ride, making it ideal for daily commutes and long drives. Its trunk space is generous, accommodating luggage and other essentials. The Malibu is also known for its reliability and low maintenance costs. Chevrolet has crafted a sedan that combines practicality with modern features for a satisfying ownership experience." },
     { make: "Honda", model: "Accord", year: 2019, price: 22000, type: "Sedan", color: "Grey", country: "Japan", transmission: "Automatic", horsepower: 192, acceleration: 7.3, engineType: "Inline-4", image: "hondaAccord2019.png", description: "The 2019 Honda Accord is a well-rounded sedan that excels in performance, comfort, and efficiency. Its sleek and sophisticated design stands out with bold lines and LED lighting. The Inline-4 engine offers a perfect balance of power and fuel economy, ideal for daily driving. Inside, the Accord features a spacious and premium cabin with advanced technology. The infotainment system is user-friendly, with a touchscreen display, smartphone integration, and available navigation. Safety is a priority with features like adaptive cruise control and automatic emergency braking. The sedan delivers a smooth and composed ride with precise handling, perfect for both city and highway travel. Its trunk is spacious, making it practical for families and road trips. Honda's reputation for reliability ensures peace of mind for owners. The 2019 Accord continues to set the standard in the midsize sedan segment." },
+
+
+
 
     { make: "Hyundai", model: "Elantra", year: 2020, price: 20000, type: "Sedan", color: "Silver", country: "South Korea", transmission: "Automatic", horsepower: 147, acceleration: 8.6, engineType: "Inline-4", image: "hyundaiElantra2020.png", description: "The 2020 Hyundai Elantra is a stylish and affordable sedan that delivers excellent value. Its aerodynamic design features sharp lines and a bold grille, giving it a modern appearance. Powered by an efficient Inline-4 engine, it offers a smooth driving experience with commendable fuel economy. The interior is comfortable and user-friendly, with well-placed controls and quality materials. The infotainment system includes a touchscreen display, smartphone connectivity, and navigation options. Safety is a strong point, with features like lane-keeping assist, forward collision warning, and automatic emergency braking. The Elantra's ride quality is smooth, and its handling is responsive, making it enjoyable for both city driving and highway cruising. Its spacious trunk and ample legroom ensure practicality for families and daily commuters. Hyundai’s reliability and warranty program make it an even more attractive choice. Overall, the Elantra strikes an excellent balance between price, features, and performance." },
     { make: "Subaru", model: "Impreza", year: 2017, price: 16000, type: "Hatchback", color: "Red", country: "Japan", transmission: "Manual", horsepower: 152, acceleration: 8.9, engineType: "Flat-4", image: "subaruImpreza2017.png", description: "The 2017 Subaru Impreza is a versatile and reliable hatchback that caters to practical needs. Its bold design combines sporty elements with a compact frame, making it perfect for city and suburban driving. The Flat-4 engine delivers adequate power and efficiency, complemented by the precision of its manual transmission. Subaru’s renowned all-wheel-drive system ensures excellent traction and control in various weather conditions. Inside, the Impreza offers a comfortable cabin with supportive seats and an intuitive layout. The infotainment system features a touchscreen display, Bluetooth connectivity, and optional navigation. Safety features include Subaru’s EyeSight suite, which offers adaptive cruise control and pre-collision braking. Its cargo space is flexible, catering to everything from groceries to adventure gear. The Impreza’s agile handling and stable ride make it a joy to drive. Subaru’s reliability and strong resale value solidify its reputation as a smart choice for hatchback enthusiasts." },
@@ -60,6 +81,9 @@ const carListings = [
     { make: "Geely", model: "Geometry A", year: 2022, price: 35000, type: "Sedan", color: "Green", country: "China", transmission: "Automatic", horsepower: 190, acceleration: 8.8, engineType: "Electric", image: "geelyGeometryA.png", description: "The Geely Geometry A is an electric sedan launched in 2022, designed to provide an eco-friendly alternative to traditional gasoline-powered vehicles. The car comes in a distinctive green color, making it stand out on the road while highlighting its commitment to sustainability. With a 190-horsepower electric motor, the Geometry A delivers efficient performance with an acceleration of 8.8 seconds from 0 to 100 km/h. The sedan’s automatic transmission ensures smooth driving, and its quiet electric motor provides a serene driving experience. Inside, the Geometry A features a modern and minimalist cabin with advanced tech features, making it a comfortable and convenient ride. The car is designed for those who want a balance between performance and sustainability, offering a reasonable price for an electric sedan. The Geometry A’s electric range makes it an ideal choice for daily commuting and short to medium-distance drives. Geely has created a vehicle that prioritizes both style and eco-friendliness, making the Geometry A a solid choice for environmentally conscious drivers." },
     { make: "Great Wall Motors", model: "Ora Good Cat", year: 2022, price: 30000, type: "Hatchback", color: "Red", country: "China", transmission: "Automatic", horsepower: 171, acceleration: 7.5, engineType: "Electric", image: "greatWallOraGoodCat.png", description: "The Great Wall Ora Good Cat is a compact and stylish electric hatchback from China, launched in 2022. Its bright red exterior exudes a sense of fun and energy, while its electric powertrain ensures it’s an eco-friendly choice for city dwellers. Powered by a 171-horsepower electric motor, the Ora Good Cat accelerates from 0 to 100 km/h in just 7.5 seconds, offering a balance of performance and efficiency. The car’s automatic transmission makes driving effortless, while its compact size makes it ideal for urban environments. Inside, the Ora Good Cat boasts a spacious and modern cabin, with a range of tech features that enhance comfort and convenience. The car’s quiet operation and zero emissions make it a great option for those seeking to reduce their carbon footprint. Despite its size, the Ora Good Cat offers a surprising amount of space for passengers and cargo, making it a versatile choice for families and individuals alike. This electric hatchback combines style, sustainability, and practicality, making it a standout in the growing electric vehicle market." },
 
+
+
+
     { make: "Honda", model: "Accord", year: 2022, price: 27000, type: "Sedan", color: "Red", country: "Japan", transmission: "CVT", horsepower: 192, acceleration: 7.6, engineType: "Turbocharged Inline-4", image: "hondaAccord2022.png", description: "The 2022 Honda Accord is a sleek and stylish sedan that blends performance, comfort, and technology. With its turbocharged Inline-4 engine, the Accord delivers a smooth and responsive drive, making it an excellent choice for daily commutes and long road trips. The car’s exterior design features clean lines and a bold front grille, giving it a sophisticated yet sporty appearance. Inside, the cabin is spacious and equipped with high-quality materials, ensuring both comfort and luxury. The Accord also boasts a user-friendly infotainment system with a large touchscreen, smartphone integration, and voice controls. For safety, Honda includes advanced driver assistance features like collision mitigation braking, lane-keeping assist, and adaptive cruise control. With a strong reputation for reliability and resale value, the 2022 Accord remains a popular choice for those seeking a dependable sedan. Whether you're looking for an efficient vehicle for your everyday needs or a car with premium features at an affordable price, the Accord offers an excellent balance. The vehicle’s smooth handling and excellent fuel economy make it a practical option for those who value both performance and efficiency. The spacious trunk and rear seats also provide ample space for luggage and passengers, making it an ideal family car. Overall, the 2022 Honda Accord delivers a well-rounded package that meets the needs of modern drivers." },
     { make: "Subaru", model: "Outback", year: 2023, price: 32000, type: "Wagon", color: "White", country: "Japan", transmission: "CVT", horsepower: 182, acceleration: 8.7, engineType: "Flat-4", image: "subaruOutback2023.png", description: "The 2023 Subaru Outback is an all-terrain wagon that combines rugged capability with everyday practicality. Powered by a Flat-4 engine, the Outback delivers a balanced mix of power and fuel efficiency, making it well-suited for both city driving and off-road adventures. Its standard all-wheel drive ensures that it can handle a variety of road conditions, including snow, mud, and gravel. The exterior design is both sleek and robust, with high ground clearance and a rugged front grille that emphasizes its adventurous spirit. Inside, the Outback features a spacious and comfortable cabin with modern technology and ample legroom for both front and rear passengers. The intuitive infotainment system offers a large touchscreen, Apple CarPlay, and Android Auto compatibility, along with navigation features for easy route planning. The Outback’s cargo space is generous, making it ideal for hauling outdoor gear, groceries, or luggage. Subaru’s commitment to safety shines through with advanced features such as EyeSight Driver Assist Technology, which includes pre-collision braking and lane departure warning. With its strong off-road capabilities, high safety ratings, and comfortable interior, the Outback is an excellent choice for those who enjoy outdoor activities and need a reliable vehicle for all types of terrain. Whether navigating urban streets or exploring the great outdoors, the 2023 Subaru Outback excels in versatility and performance." },
     { make: "Toyota", model: "Corolla Cross", year: 2023, price: 24000, type: "SUV", color: "Yellow", country: "Japan", transmission: "CVT", horsepower: 169, acceleration: 8.0, engineType: "Inline-4", image: "toyotaCorollaCross2023.png", description: "The 2023 Toyota Corolla Cross is a compact SUV that offers a perfect balance of efficiency, versatility, and practicality. Powered by a 169-horsepower Inline-4 engine, the Corolla Cross delivers a smooth and responsive driving experience, making it a great choice for urban and highway driving. Its sleek exterior design features bold lines and an athletic stance, while its interior is spacious and equipped with modern amenities. The cabin offers comfortable seating for passengers, with plenty of legroom and a well-organized layout. The 2023 Corolla Cross is equipped with Toyota’s user-friendly infotainment system, which includes a touchscreen, Apple CarPlay, and Android Auto integration, allowing you to stay connected on the go. The SUV's cargo space is also impressive, with ample room for luggage or groceries, making it ideal for families or weekend trips. Toyota's reputation for reliability and longevity is evident in the Corolla Cross, ensuring that it will serve you well for many years. The vehicle also features a range of safety technologies, including Toyota Safety Sense, which provides features like pre-collision braking and lane departure warning. Whether you're navigating tight city streets or embarking on a weekend adventure, the Corolla Cross is built to provide comfort, convenience, and peace of mind." },
@@ -93,6 +117,9 @@ const carListings = [
     { make: "Honda", model: "CR-V", year: 2022, price: 32000, type: "SUV", color: "Silver", country: "Japan", transmission: "Automatic", horsepower: 190, acceleration: 8.2, engineType: "Turbocharged Inline-4", image: "hondaCRV2022.png", description: "The 2022 Honda CR-V is a compact SUV that combines style, performance, and practicality. Powered by a 190-horsepower turbocharged inline-4 engine, the CR-V offers a smooth and efficient ride, with 8.2-second acceleration to 60 mph. Its automatic transmission provides seamless shifting, while the cabin offers plenty of space and comfort for passengers and cargo alike. Standard features include an intuitive infotainment system, Apple CarPlay, Android Auto, and a suite of advanced safety features. The exterior features a bold design with sharp lines and a sleek profile, making the CR-V a standout in the compact SUV segment. The 2022 CR-V is perfect for families and individuals who want a reliable, versatile, and fuel-efficient vehicle." },
     { make: "Honda", model: "Fit", year: 2020, price: 18000, type: "Hatchback", color: "Blue", country: "Japan", transmission: "CVT", horsepower: 130, acceleration: 9.6, engineType: "Inline-4", image: "hondaFit2020.png", description: "The 2020 Honda Fit is a compact hatchback that combines practicality with a fun driving experience. Powered by a 130-horsepower inline-4 engine, the Fit delivers smooth acceleration and impressive fuel efficiency, with a 9.6-second time to reach 60 mph. Its continuously variable transmission (CVT) helps maximize fuel economy while providing a smooth ride. Inside, the Fit offers a surprisingly spacious cabin with plenty of room for passengers and cargo. The compact size makes it easy to maneuver through tight spaces, and the Fit’s agile handling makes it fun to drive around the city. The 2020 Honda Fit is a perfect choice for those looking for a small, affordable, and efficient car that doesn’t compromise on versatility or driving enjoyment." },
 
+
+
+
     { make: "Ford", model: "F-150", year: 2023, price: 40000, type: "Truck", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 400, acceleration: 6.0, engineType: "V6", image: "fordF1502023.png", description: "The 2023 Ford F-150 is a powerful full-size truck that combines rugged capability with advanced technology. With a 400-horsepower V6 engine, the F-150 delivers impressive towing and hauling capacity, along with strong acceleration at 6.0 seconds to 60 mph. Its automatic transmission ensures smooth shifting, and the truck's high ground clearance and four-wheel drive make it an excellent option for off-road adventures. The interior features a modern, tech-filled cabin with options like a large touchscreen infotainment system, driver-assistance features, and ample storage space. Whether for work or play, the 2023 F-150 offers outstanding versatility, making it a top choice in its class." },
     { make: "Ford", model: "Explorer", year: 2022, price: 37000, type: "SUV", color: "Black", country: "USA", transmission: "Automatic", horsepower: 300, acceleration: 7.0, engineType: "Turbocharged Inline-4", image: "fordExplorer2022.png", description: "The 2022 Ford Explorer is a midsize SUV that offers a balance of performance, comfort, and advanced features. Powered by a 300-horsepower turbocharged inline-4 engine, the Explorer accelerates from 0 to 60 mph in 7.0 seconds, delivering a smooth yet engaging drive. The automatic transmission helps maximize efficiency while offering seamless gear shifts. Inside, the Explorer features a spacious cabin with seating for up to seven passengers and a variety of tech features, including Ford’s SYNC infotainment system and available driver-assistance technologies. The black exterior provides a sleek, stylish look that complements the SUV's performance and utility." },
     { make: "Ford", model: "Fiesta", year: 2019, price: 15000, type: "Hatchback", color: "Brown", country: "USA", transmission: "Manual", horsepower: 120, acceleration: 9.5, engineType: "Inline-4", image: "fordFiesta2019.png", description: "The 2019 Ford Fiesta is a compact hatchback known for its affordability, agile handling, and stylish design. Powered by a 120-horsepower inline-4 engine, it offers an efficient and fun-to-drive experience with a 9.5-second time to 60 mph. The manual transmission provides a more connected driving experience, and the compact size makes it perfect for navigating tight urban spaces. The brown exterior gives the Fiesta a unique, sophisticated appearance, while the interior features a simple, functional layout with modern technology. Whether you need a commuter car or a zippy vehicle for city driving, the 2019 Fiesta offers great value and efficiency." },
@@ -115,7 +142,13 @@ const carListings = [
     { make: "Nissan", model: "Pathfinder", year: 2022, price: 34000, type: "SUV", color: "Black", country: "Japan", transmission: "Automatic", horsepower: 284, acceleration: 6.7, engineType: "V6", image: "nissanPathfinder2022.png", description: "The 2022 Nissan Pathfinder is a midsize SUV designed for families who need space, comfort, and capability. Powered by a V6 engine with 284 horsepower, it accelerates from 0 to 60 mph in 6.7 seconds, offering a powerful and responsive ride. The black exterior gives the Pathfinder a bold, sophisticated look. With an automatic transmission and advanced safety features, it provides a smooth and secure driving experience. Whether you're going on a family road trip or commuting to work, the Pathfinder offers versatility and convenience, with ample interior space and a user-friendly infotainment system." },
     { make: "BMW", model: "3 Series", year: 2023, price: 42000, type: "Sedan", color: "Black", country: "Germany", transmission: "Automatic", horsepower: 255, acceleration: 5.6, engineType: "Turbocharged Inline-4", image: "bmw3Series2023.png", description: "The 2023 BMW 3 Series is a luxury sedan that combines performance, style, and advanced technology. Powered by a turbocharged inline-4 engine producing 255 horsepower, it accelerates from 0 to 60 mph in 5.6 seconds, delivering a thrilling yet comfortable driving experience. The black exterior gives the 3 Series a sleek and refined appearance, while the automatic transmission ensures smooth and precise shifts. Inside, the 3 Series is equipped with premium materials, an intuitive infotainment system, and a suite of safety features. It's a perfect blend of sportiness and sophistication for those who appreciate the finer things in life." },
 
+
+
+
     //100
+
+
+
 
     { make: "BMW", model: "5 Series", year: 2022, price: 55000, type: "Sedan", color: "Black", country: "Germany", transmission: "Automatic", horsepower: 335, acceleration: 4.9, engineType: "Turbocharged Inline-6", image: "bmw5Series2022.png", description: "The 2022 BMW 5 Series is a luxury sedan that exudes elegance and performance. Powered by a turbocharged inline-6 engine producing 335 horsepower, it accelerates from 0 to 60 mph in 4.9 seconds, providing an exhilarating driving experience. The black exterior and refined design emphasize its premium status. With an automatic transmission, the 5 Series delivers smooth and responsive shifts. Inside, you'll find a blend of high-end materials, advanced technology, and comfort features. Whether for daily commuting or long road trips, the BMW 5 Series offers a perfect balance of performance and luxury." },
     { make: "BMW", model: "X3", year: 2021, price: 47000, type: "SUV", color: "White", country: "Germany", transmission: "Automatic", horsepower: 248, acceleration: 6.2, engineType: "Turbocharged Inline-4", image: "bmwX32021.png", description: "The 2021 BMW X3 is a stylish and versatile compact SUV that combines premium performance with practicality. Equipped with a turbocharged inline-4 engine generating 248 horsepower, it accelerates from 0 to 60 mph in 6.2 seconds, offering a smooth and responsive driving experience. The white exterior provides a clean and modern look, while the automatic transmission ensures a seamless ride. Inside, the X3 boasts a luxurious interior, a user-friendly infotainment system, and a variety of advanced safety features. It's an excellent choice for those who need an SUV with a sporty edge and refined luxury." },
@@ -128,6 +161,9 @@ const carListings = [
     { make: "Mercedes-Benz", model: "AMG GT", year: 2023, price: 130000, type: "Coupe", color: "Black", country: "Germany", transmission: "Automatic", horsepower: 523, acceleration: 3.7, engineType: "Twin-Turbo V8", image: "mercedesAMGGT2023.png", description: "The 2023 Mercedes-Benz AMG GT is a high-performance coupe that exemplifies the brand's commitment to power, precision, and style. With a twin-turbo V8 engine producing 523 horsepower, it accelerates from 0 to 60 mph in an impressive 3.7 seconds. The black exterior and aggressive design highlight its sporty nature. Inside, the AMG GT boasts a luxurious, driver-focused cockpit with advanced technology and premium materials. This coupe is ideal for those who seek an exhilarating driving experience paired with luxury and cutting-edge performance." },
     { make: "Mercedes-Benz", model: "A-Class", year: 2021, price: 33000, type: "Sedan", color: "Grey", country: "Germany", transmission: "Automatic", horsepower: 188, acceleration: 7.2, engineType: "Turbocharged Inline-4", image: "mercedesAClass2021.png", description: "The 2021 Mercedes-Benz A-Class Sedan is a compact luxury vehicle that offers a perfect blend of style, technology, and performance. Powered by a turbocharged inline-4 engine producing 188 horsepower, it accelerates from 0 to 60 mph in 7.2 seconds, delivering a smooth and responsive ride. The grey exterior gives it a sleek, modern look. Inside, the A-Class features a premium interior with advanced infotainment options and high-quality materials. This sedan is an excellent choice for those seeking a luxury vehicle at an accessible price point, with strong performance and modern features." },
 
+
+
+
     { make: "Mercedes-Benz", model: "S-Class", year: 2023, price: 120000, type: "Sedan", color: "Black", country: "Germany", transmission: "Automatic", horsepower: 429, acceleration: 4.8, engineType: "Turbocharged Inline-6", image: "mercedesSClass2023.png", description: "The 2023 Mercedes-Benz S-Class Sedan is the epitome of luxury, blending exceptional performance with advanced technology and opulence. Powered by a turbocharged inline-6 engine producing 429 horsepower, it accelerates from 0 to 60 mph in 4.8 seconds. The black exterior enhances its elegant presence, while the interior offers an unmatched level of luxury with state-of-the-art features and materials. The S-Class ensures a smooth, powerful drive with automatic transmission, making it perfect for those who seek the ultimate in comfort, performance, and refinement." },
     { make: "Mercedes-Benz", model: "CLA", year: 2022, price: 40000, type: "Sedan", color: "White", country: "Germany", transmission: "Automatic", horsepower: 221, acceleration: 6.3, engineType: "Turbocharged Inline-4", image: "mercedesCLA2022.png", description: "The 2022 Mercedes-Benz CLA Sedan offers a stylish and sporty design paired with premium features. Equipped with a turbocharged inline-4 engine generating 221 horsepower, it accelerates from 0 to 60 mph in 6.3 seconds. The white exterior gives it a sleek, modern appeal, while the interior is designed for comfort with luxury materials and high-tech features. With an automatic transmission, the CLA provides a dynamic driving experience, making it an excellent choice for those who want a blend of style, performance, and advanced technology." },
     { make: "Chevrolet", model: "Malibu", year: 2023, price: 27000, type: "Sedan", color: "White", country: "USA", transmission: "Automatic", horsepower: 160, acceleration: 8.0, engineType: "Turbocharged Inline-4", image: "chevroletMalibu2023.png", description: "The 2023 Chevrolet Malibu Sedan combines a stylish design with a fuel-efficient engine and modern technology. Powered by a turbocharged inline-4 engine with 160 horsepower, it delivers a smooth ride with an acceleration of 8.0 seconds from 0 to 60 mph. The white exterior provides a sleek and fresh look, while the interior focuses on comfort and convenience, featuring a user-friendly infotainment system and high-quality materials. With its automatic transmission and a balance of performance and economy, the Malibu is an ideal choice for those seeking a practical yet stylish sedan." },
@@ -138,6 +174,9 @@ const carListings = [
     { make: "BYD", model: "Han EV", year: 2023, price: 45000, type: "Sedan", color: "Blue", country: "China", transmission: "Automatic", horsepower: 517, acceleration: 3.9, engineType: "Electric", image: "bydHanEV2023.png", description: "The 2023 BYD Han EV is a luxury electric sedan that combines impressive performance with cutting-edge technology. Powered by an electric motor producing 517 horsepower, it accelerates from 0 to 60 mph in just 3.9 seconds, offering a thrilling ride. The blue exterior exudes sophistication, while the interior boasts premium materials and a high-tech infotainment system. With an automatic transmission and an all-electric powertrain, the Han EV provides a smooth and sustainable driving experience for those seeking luxury and performance." },
     { make: "BYD", model: "Tang EV", year: 2022, price: 42000, type: "SUV", color: "Black", country: "China", transmission: "Automatic", horsepower: 516, acceleration: 4.4, engineType: "Electric", image: "bydTangEV2022.png", description: "The 2022 BYD Tang EV is an all-electric SUV that offers a blend of power, versatility, and eco-friendly performance. With 516 horsepower and a 0 to 60 mph time of 4.4 seconds, it delivers a dynamic and exhilarating driving experience. The black exterior gives it a sleek, modern appearance, while the interior is spacious and filled with luxury features, including advanced tech and comfort amenities. The Tang EV provides smooth handling and zero emissions, making it an ideal choice for environmentally conscious drivers who want a versatile, high-performance SUV." },
     { make: "BYD", model: "Dolphin", year: 2023, price: 20000, type: "Hatchback", color: "Blue", country: "China", transmission: "Automatic", horsepower: 180, acceleration: 7.9, engineType: "Electric", image: "bydDolphin2023.png", description: "The 2023 BYD Dolphin is a compact electric hatchback that combines affordability with great efficiency. Powered by an electric motor delivering 180 horsepower, it accelerates from 0 to 60 mph in 7.9 seconds, providing a fun and smooth driving experience. The blue exterior gives the Dolphin a fresh, vibrant look, while the interior is designed for practicality, offering modern technology and comfort features. With an automatic transmission and an all-electric powertrain, the Dolphin is an ideal choice for those looking for a budget-friendly, eco-conscious vehicle." },
+
+
+
 
     { make: "Kia", model: "Optima", year: 2023, price: 35000, type: "Sedan", color: "Red", country: "South Korea", transmission: "Automatic", horsepower: 180, acceleration: 7.5, engineType: "Turbocharged Inline-4", image: "kiaOptima2023.png", description: "The 2023 Kia Optima is a stylish and efficient sedan that offers a comfortable driving experience. Equipped with a turbocharged inline-4 engine producing 180 horsepower, it accelerates from 0 to 60 mph in 7.5 seconds. The red exterior adds a bold, eye-catching touch, while the interior features a modern design with high-tech amenities. With automatic transmission and a focus on fuel efficiency, the Optima is an ideal choice for those seeking a dependable, sporty sedan with a refined look." },
     { make: "Kia", model: "Sorento", year: 2022, price: 45000, type: "SUV", color: "Black", country: "South Korea", transmission: "Automatic", horsepower: 281, acceleration: 6.8, engineType: "Turbocharged Inline-4", image: "kiaSorento2022.png", description: "The 2022 Kia Sorento is a versatile SUV that combines strong performance with a stylish design. Powered by a turbocharged inline-4 engine with 281 horsepower, it offers an impressive acceleration time of 6.8 seconds. The sleek black exterior gives it a sophisticated look, while the spacious interior offers comfort and advanced features for both driver and passengers. With automatic transmission and ample cargo space, the Sorento is perfect for families and those who enjoy outdoor adventures." },
@@ -150,6 +189,9 @@ const carListings = [
     { make: "Audi", model: "Q7", year: 2022, price: 72000, type: "SUV", color: "Blue", country: "Germany", transmission: "Automatic", horsepower: 335, acceleration: 5.7, engineType: "Turbocharged V6", image: "audiQ72022.png", description: "The 2022 Audi Q7 is a luxurious, full-size SUV that offers exceptional performance and a high level of comfort. With a turbocharged V6 engine producing 335 horsepower, it accelerates from 0 to 60 mph in 5.7 seconds. The blue exterior exudes sophistication, while the interior is packed with luxury features, ample space, and cutting-edge technology to ensure both comfort and convenience for all passengers. With automatic transmission and outstanding handling, the Q7 is a perfect choice for families who require both performance and luxury." },
     { make: "Audi", model: "RS5", year: 2023, price: 75000, type: "Coupe", color: "Red", country: "Germany", transmission: "Automatic", horsepower: 444, acceleration: 3.7, engineType: "Twin-Turbo V6", image: "audiRS52023.png", description: "The 2023 Audi RS5 is a high-performance coupe that combines breathtaking acceleration with sleek design. Powered by a twin-turbo V6 engine delivering 444 horsepower, it can go from 0 to 60 mph in just 3.7 seconds. The red exterior gives it an aggressive, sporty look, while the interior features a blend of luxury and performance-focused design. With automatic transmission and exceptional handling, the RS5 offers an exhilarating driving experience that’s sure to satisfy performance enthusiasts." },
 
+
+
+
     { make: "Porsche", model: "911", year: 2023, price: 120000, type: "Coupe", color: "Black", country: "Germany", transmission: "Automatic", horsepower: 379, acceleration: 4.2, engineType: "Twin-Turbo Flat-6", image: "porsche9112023.png", description: "The 2023 Porsche 911 is an iconic and high-performance coupe that delivers both luxury and speed. Featuring a twin-turbo flat-6 engine with 379 horsepower, it accelerates from 0 to 60 mph in just 4.2 seconds. The black exterior exudes sophistication and sportiness, while the interior is designed with premium materials for ultimate comfort and style. With automatic transmission and precision handling, the 911 offers an exhilarating driving experience." },
     { make: "Porsche", model: "Cayenne", year: 2023, price: 85000, type: "SUV", color: "Blue", country: "Germany", transmission: "Automatic", horsepower: 335, acceleration: 5.6, engineType: "V6", image: "porscheCayenne2023.png", description: "The 2023 Porsche Cayenne is a luxurious SUV that combines performance with versatility. Equipped with a V6 engine producing 335 horsepower, it accelerates from 0 to 60 mph in 5.6 seconds. The blue exterior provides a striking and elegant look, while the interior offers a blend of comfort, technology, and craftsmanship. With automatic transmission and responsive handling, the Cayenne is ideal for both urban and off-road adventures." },
     { make: "Porsche", model: "Macan", year: 2022, price: 65000, type: "SUV", color: "Green", country: "Germany", transmission: "Automatic", horsepower: 265, acceleration: 6.4, engineType: "Turbocharged Inline-4", image: "porscheMacan2022.png", description: "The 2022 Porsche Macan is a compact luxury SUV that delivers agile handling and sporty performance. Powered by a turbocharged inline-4 engine producing 265 horsepower, it accelerates from 0 to 60 mph in 6.4 seconds. The green exterior gives the Macan a unique and vibrant look, while the interior is equipped with high-end features for a comfortable and modern driving experience. With automatic transmission, the Macan is perfect for those who want both sportiness and practicality." },
@@ -160,6 +202,9 @@ const carListings = [
     { make: "Lexus", model: "ES 350", year: 2022, price: 45000, type: "Sedan", color: "Red", country: "Japan", transmission: "Automatic", horsepower: 302, acceleration: 6.6, engineType: "V6", image: "lexusES3502022.png", description: "The 2022 Lexus ES 350 is a refined sedan that offers a powerful V6 engine with 302 horsepower, accelerating from 0 to 60 mph in 6.6 seconds. The red exterior adds a bold, sophisticated touch, while the interior features premium materials for comfort and luxury. With automatic transmission and smooth handling, the ES 350 offers an enjoyable and relaxed driving experience." },
     { make: "Lexus", model: "LC 500", year: 2023, price: 92000, type: "Coupe", color: "Yellow", country: "Japan", transmission: "Automatic", horsepower: 471, acceleration: 4.4, engineType: "V8", image: "lexusLC5002023.png", description: "The 2023 Lexus LC 500 is a stunning luxury coupe that combines breathtaking performance with sophisticated design. Powered by a V8 engine delivering 471 horsepower, it accelerates from 0 to 60 mph in just 4.4 seconds. The yellow exterior turns heads wherever you go, while the interior offers a blend of high-end materials and cutting-edge technology. With automatic transmission, the LC 500 provides an exhilarating driving experience." },
     { make: "Lexus", model: "NX 350h", year: 2023, price: 45000, type: "SUV", color: "White", country: "Japan", transmission: "Automatic", horsepower: 239, acceleration: 7.0, engineType: "Hybrid", image: "lexusNX350h2023.png", description: "The 2023 Lexus NX 350h is a hybrid SUV that delivers a blend of efficiency and performance. With a hybrid engine producing 239 horsepower, it accelerates from 0 to 60 mph in 7.0 seconds. The white exterior gives it a sleek, modern look, while the interior is equipped with advanced features for comfort and convenience. With automatic transmission and impressive fuel efficiency, the NX 350h is a smart choice for eco-conscious drivers." },
+
+
+
 
     { make: "Mazda", model: "CX-5", year: 2024, price: 37000, type: "SUV", color: "Red", country: "Japan", transmission: "Automatic", horsepower: 250, acceleration: 6.4, engineType: "Turbocharged Inline-4", image: "mazdaCX52024.png", description: "The 2024 Mazda CX-5 is a stylish and performance-oriented SUV. With a turbocharged inline-4 engine producing 250 horsepower, it accelerates from 0 to 60 mph in 6.4 seconds. The red exterior gives it a bold, sporty look, while the interior offers premium materials and advanced technology. With automatic transmission and agile handling, the CX-5 delivers an engaging driving experience for those seeking both performance and practicality." },
     { make: "Mazda", model: "Mazda3", year: 2023, price: 27000, type: "Sedan", color: "Black", country: "Japan", transmission: "Automatic", horsepower: 186, acceleration: 7.5, engineType: "Inline-4", image: "mazdaMazda32023.png", description: "The 2023 Mazda3 is a compact sedan that combines sleek design with efficient performance. Powered by a 186-horsepower inline-4 engine, it accelerates from 0 to 60 mph in 7.5 seconds. The black exterior gives it a sophisticated, modern appearance, while the interior features advanced technology and high-quality materials. With automatic transmission and smooth handling, the Mazda3 is an ideal choice for those seeking a balance of style and practicality." },
@@ -172,6 +217,9 @@ const carListings = [
     { make: "Jeep", model: "Compass", year: 2023, price: 30000, type: "SUV", color: "Red", country: "USA", transmission: "Automatic", horsepower: 177, acceleration: 8.0, engineType: "Inline-4", image: "jeepCompass2023.png", description: "The 2023 Jeep Compass is a compact SUV with efficient performance and stylish design. Powered by an inline-4 engine with 177 horsepower, it accelerates from 0 to 60 mph in 8.0 seconds. The blue exterior provides a fresh, sporty look, while the interior offers comfort and convenience for daily drives. With automatic transmission and a smooth ride, the Compass is an excellent choice for those seeking a practical and fun-to-drive SUV." },
     { make: "Jeep", model: "Gladiator", year: 2023, price: 45000, type: "Truck", color: "Green", country: "USA", transmission: "Manual", horsepower: 285, acceleration: 6.8, engineType: "V6", image: "jeepGladiator2023.png", description: "The 2023 Jeep Gladiator is a rugged truck built for adventure and utility. Featuring a V6 engine with 285 horsepower, it accelerates from 0 to 60 mph in 6.8 seconds. The bold red exterior adds to its tough, off-road-ready appeal, while the manual transmission offers a more engaging driving experience. Whether you're hauling gear or tackling challenging terrain, the Gladiator is designed for those who want both performance and practicality in their truck." },
 
+
+
+
     { make: "GMC", model: "Yukon", year: 2023, price: 65000, type: "SUV", color: "Black", country: "USA", transmission: "Automatic", horsepower: 355, acceleration: 7.5, engineType: "V8", image: "gmcYukon2023.png", description: "The 2023 GMC Yukon is a bold and powerful SUV that combines luxury with rugged performance. Equipped with a V8 engine producing 355 horsepower, it accelerates from 0 to 60 mph in 7.5 seconds. The sleek black exterior enhances its commanding presence, while the spacious interior offers premium features for comfort. Whether you're navigating city streets or heading off-road, the Yukon provides both strength and style." },
     { make: "GMC", model: "Yukon XL", year: 2022, price: 70000, type: "SUV", color: "White", country: "USA", transmission: "Automatic", horsepower: 420, acceleration: 6.9, engineType: "V8", image: "gmcYukonXL2022.png", description: "The 2022 GMC Yukon XL is an extended version of the classic Yukon, offering more space and enhanced power. With a V8 engine producing 420 horsepower, it accelerates from 0 to 60 mph in 6.9 seconds. The white exterior exudes sophistication, while the larger cabin provides ample room for passengers and cargo. Perfect for families or those needing extra capacity, the Yukon XL combines luxury and utility." },
     { make: "GMC", model: "Yukon Denali", year: 2023, price: 75000, type: "SUV", color: "White", country: "USA", transmission: "Automatic", horsepower: 420, acceleration: 6.8, engineType: "V8", image: "gmcYukonDenali2023.png", description: "The 2023 GMC Yukon Denali is the ultimate luxury SUV, offering top-tier performance and comfort. Powered by a V8 engine delivering 420 horsepower, it accelerates from 0 to 60 mph in 6.8 seconds. The elegant white exterior adds to its premium appeal, while the meticulously designed interior includes high-end materials and technology. With superior performance and luxury, the Yukon Denali is perfect for those seeking the best in SUV excellence." },
@@ -182,6 +230,9 @@ const carListings = [
     { make: "Cadillac", model: "XT6", year: 2023, price: 60000, type: "SUV", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 310, acceleration: 7.3, engineType: "V6", image: "cadillacXT62023.png", description: "The 2023 Cadillac XT6 is a mid-size luxury SUV with a V6 engine delivering 310 horsepower. It accelerates from 0 to 60 mph in 7.3 seconds. The silver exterior highlights its sleek, modern design, while the spacious interior provides ample room for families. With advanced safety features and high-end technology, the XT6 is perfect for those seeking a refined, practical SUV with style." },
     { make: "Cadillac", model: "Escalade ESV", year: 2023, price: 85000, type: "SUV", color: "Red", country: "USA", transmission: "Automatic", horsepower: 420, acceleration: 5.9, engineType: "V8", image: "cadillacEscaladeESV2023.png", description: "The 2023 Cadillac Escalade ESV is an extended version of the iconic Escalade, offering more space and the same powerful V8 engine producing 420 horsepower. It accelerates from 0 to 60 mph in 5.9 seconds. The striking red exterior makes a bold statement, while the luxurious interior provides unmatched comfort and advanced technology. Ideal for families and those needing extra cargo space, the Escalade ESV offers performance and luxury in abundance." },
     { make: "Cadillac", model: "CT4", year: 2023, price: 37000, type: "Sedan", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 237, acceleration: 6.2, engineType: "Turbocharged Inline-4", image: "cadillacCT42023.png", description: "The 2023 Cadillac CT4 is a compact luxury sedan with a turbocharged inline-4 engine that produces 237 horsepower. It accelerates from 0 to 60 mph in 6.2 seconds. The blue exterior gives it a stylish and dynamic appearance, while the interior offers a balance of comfort and technology. Perfect for those looking for a more compact yet luxurious driving experience, the CT4 delivers in performance, design, and efficiency." },
+
+
+
 
     { make: "Lotus", model: "Emira", year: 2023, price: 75000, type: "Coupe", color: "Yellow", country: "UK", transmission: "Manual", horsepower: 360, acceleration: 4.3, engineType: "V6", image: "lotusEmira2023.png", description: "The 2023 Lotus Emira is a stunning sports coupe that combines sleek design with powerful performance. Equipped with a V6 engine producing 360 horsepower, it accelerates from 0 to 60 mph in just 4.3 seconds. The yellow exterior adds a bold touch, while the manual transmission gives drivers full control. A true driver's car, the Emira offers agile handling and exceptional performance, making it an ideal choice for those seeking thrills on both road and track." },
     { make: "Lotus", model: "Evija", year: 2023, price: 200000, type: "Electric Coupe", color: "Silver", country: "UK", transmission: "Automatic", horsepower: 2000, acceleration: 3.0, engineType: "Electric", image: "lotusEvija2023.png", description: "The 2023 Lotus Evija is a groundbreaking electric coupe that delivers an astonishing 2000 horsepower. With a 0 to 60 mph time of just 3.0 seconds, this hypercar redefines performance. The silver exterior highlights its futuristic design, while the electric powertrain ensures a sustainable yet exhilarating driving experience. The Evija combines cutting-edge technology with luxury and speed, making it one of the most exciting electric vehicles in the world." },
@@ -194,6 +245,9 @@ const carListings = [
     { make: "Lotus", model: "Elise", year: 2021, price: 58000, type: "Convertible", color: "Yellow", country: "UK", transmission: "Manual", horsepower: 220, acceleration: 4.5, engineType: "Inline-4", image: "lotusElise2021.png", description: "The 2021 Lotus Elise is a vibrant yellow convertible that combines lightweight performance with an engaging driving experience. Its inline-4 engine produces 220 horsepower and accelerates from 0 to 60 mph in 4.5 seconds. The manual transmission ensures an immersive connection with the car, making it ideal for driving enthusiasts who appreciate precision handling and pure performance in a compact, fun-to-drive package." },
     { make: "Lotus", model: "Evora GT", year: 2023, price: 95000, type: "Coupe", color: "Red", country: "UK", transmission: "Manual", horsepower: 416, acceleration: 3.9, engineType: "V6", image: "lotusEvoraGT2023.png", description: "The 2023 Lotus Evora GT is a red coupe that delivers exhilarating performance with a 416-horsepower V6 engine. It accelerates from 0 to 60 mph in 3.9 seconds, offering both speed and handling precision. The manual transmission enhances the driving experience, providing a deeper connection with the car. The Evora GT is the perfect balance of style, power, and performance, making it a standout in the Lotus lineup." },
 
+
+
+
     { make: "Chery", model: "Tiggo 8", year: 2023, price: 30000, type: "SUV", color: "Silver", country: "China", transmission: "Automatic", horsepower: 170, acceleration: 9.5, engineType: "Inline-4", image: "cheryTiggo82023.png", description: "The 2023 Chery Tiggo 8 is a silver SUV offering practicality and style. With a 170-horsepower inline-4 engine, it accelerates from 0 to 60 mph in 9.5 seconds. The automatic transmission ensures smooth shifting, while the spacious design makes it perfect for families or long trips. The Tiggo 8 combines comfort and functionality, providing a balanced driving experience for those seeking a reliable and affordable SUV." },
     { make: "Chery", model: "Arrizo 5", year: 2023, price: 15000, type: "Sedan", color: "Red", country: "China", transmission: "Manual", horsepower: 120, acceleration: 11.0, engineType: "Inline-4", image: "cheryArrizo52023.png", description: "The 2023 Chery Arrizo 5 is an affordable red sedan perfect for urban driving. With a 120-horsepower inline-4 engine, it provides a smooth ride while achieving efficient fuel economy. Its 11.0-second 0-60 mph time and manual transmission make it an excellent choice for those who appreciate simplicity and control. The Arrizo 5 is a practical, budget-friendly sedan with a focus on reliability and ease of use." },
     { make: "Chery", model: "Tiggo 2 Pro", year: 2023, price: 18000, type: "SUV", color: "Blue", country: "China", transmission: "Automatic", horsepower: 115, acceleration: 10.2, engineType: "Inline-4", image: "cheryTiggo2Pro2023.png", description: "The 2023 Chery Tiggo 2 Pro is a compact blue SUV that offers both style and efficiency. With a 115-horsepower inline-4 engine and a 10.2-second 0-60 mph time, it provides a balanced blend of performance and practicality. The automatic transmission ensures a smooth and effortless driving experience, while the Tiggo 2 Pro’s compact size makes it ideal for city driving. It's an affordable and reliable choice for those looking for a versatile SUV." },
@@ -204,6 +258,9 @@ const carListings = [
     { make: "Nissan", model: "GT-R", year: 2022, price: 105000, type: "Coupe", color: "Black", country: "Japan", transmission: "Automatic", horsepower: 565, acceleration: 3.0, engineType: "V6", image: "nissanGTR2022.png", description: "The 2022 Nissan GT-R is a sleek black coupe that blends luxury with performance. Equipped with a 565-horsepower V6 engine, it offers a 0-60 mph acceleration time of 3.0 seconds. Its automatic transmission provides smooth, responsive shifting, while the GT-R’s sharp design ensures it stands out on any road. A true icon of Japanese engineering, the 2021 GT-R offers thrilling driving dynamics and incredible speed." },
     { make: "Nissan", model: "GT-R", year: 2020, price: 100000, type: "Coupe", color: "White", country: "Japan", transmission: "Automatic", horsepower: 565, acceleration: 3.0, engineType: "V6", image: "nissanGTR2020.png", description: "The 2020 Nissan GT-R in white combines aggressive styling with exceptional power. Featuring a 565-horsepower V6 engine, it accelerates from 0 to 60 mph in 3.0 seconds. With automatic transmission and advanced all-wheel-drive system, the GT-R delivers precise handling and remarkable performance. Known for its impressive track record, the 2020 GT-R continues to offer an exhilarating driving experience for those who demand speed and precision." },
     { make: "Nissan", model: "GT-R", year: 2019, price: 95000, type: "Coupe", color: "Grey", country: "Japan", transmission: "Automatic", horsepower: 565, acceleration: 3.0, engineType: "V6", image: "nissanGTR2019.png", description: "The 2019 Nissan GT-R in grey is a high-performance coupe that delivers 565 horsepower from its V6 engine, reaching 60 mph in just 3.0 seconds. With automatic transmission and exceptional handling, it remains one of the most iconic and beloved performance cars in the world. The 2019 model continues to offer an incredible driving experience, combining blistering acceleration and sharp handling with the legendary durability and engineering of Nissan." },
+
+
+
 
     { make: "Dodge", model: "Charger", year: 2023, price: 45000, type: "Sedan", color: "Green", country: "USA", transmission: "Automatic", horsepower: 370, acceleration: 5.0, engineType: "V6", image: "dodgeCharger2023.png", description: "The 2023 Dodge Charger is a powerful green sedan that offers a 370-horsepower V6 engine. With a 0-60 mph acceleration of 5.0 seconds, it strikes a balance between performance and practicality. The automatic transmission provides smooth shifts, making it ideal for both daily driving and spirited runs. With its muscular design, the Charger remains a standout in the sedan category, delivering impressive speed and style." },
     { make: "Dodge", model: "Challenger", year: 2023, price: 55000, type: "Coupe", color: "Black", country: "USA", transmission: "Automatic", horsepower: 485, acceleration: 4.5, engineType: "V8", image: "dodgeChallenger2023.png", description: "The 2023 Dodge Challenger is a bold black coupe that commands attention with its 485-horsepower V8 engine. Accelerating from 0 to 60 mph in just 4.5 seconds, it delivers thrilling performance with every push of the pedal. The automatic transmission ensures precise shifts, while the muscle car design evokes the essence of American performance. The Challenger continues to offer unmatched power, style, and an exhilarating driving experience." },
@@ -216,6 +273,9 @@ const carListings = [
     { make: "Lamborghini", model: "Sián", year: 2023, price: 3000000, type: "Coupe", color: "Green", country: "Italy", transmission: "Automatic", horsepower: 819, acceleration: 2.8, engineType: "V12 Hybrid", image: "lamborghiniSian2023.png", description: "The 2023 Lamborghini Sián in striking green is a hybrid supercar that combines a 819-horsepower V12 engine with electric power. It accelerates from 0 to 60 mph in an astonishing 2.8 seconds. The automatic transmission ensures flawless performance, while the Sián’s cutting-edge hybrid technology and futuristic design represent the future of Lamborghini performance, making it a limited and exclusive masterpiece." },
     { make: "Lamborghini", model: "Centenario", year: 2023, price: 1800000, type: "Coupe", color: "White", country: "Italy", transmission: "Automatic", horsepower: 759, acceleration: 2.8, engineType: "V12", image: "lamborghiniCentenario2023.png", description: "The 2023 Lamborghini Centenario in white is a limited-edition coupe with 759 horsepower, powered by a naturally aspirated V12 engine. With a 0-60 mph time of 2.8 seconds, it provides exceptional speed and agility. Its automatic transmission ensures optimal power delivery, and the Centenario’s unique design and powerful performance make it one of the most sought-after supercars on the market." },
 
+
+
+
     { make: "Chery", model: "Tiggo 8 Pro", year: 2023, price: 30000, type: "SUV", color: "Silver", country: "China", transmission: "Automatic", horsepower: 170, acceleration: 9.5, engineType: "Inline-4", image: "cheryTiggo8Pro2023.png", description: "The 2023 Chery Tiggo 8 Pro in silver is a stylish and spacious SUV with a 170-horsepower inline-4 engine. It accelerates from 0-60 mph in 9.5 seconds, offering a smooth and comfortable ride. With its automatic transmission and impressive features, the Tiggo 8 Pro delivers excellent value for those seeking a versatile SUV with modern design and solid performance." },
     { make: "Chery", model: "Arrizo 6", year: 2023, price: 15000, type: "Sedan", color: "Red", country: "China", transmission: "Automatic", horsepower: 140, acceleration: 10.0, engineType: "Inline-4", image: "cheryArrizo62023.png", description: "The 2023 Chery Arrizo 6 in red is an affordable sedan that combines efficiency and style. Powered by a 140-horsepower inline-4 engine, it accelerates from 0-60 mph in 10.0 seconds. With its automatic transmission, the Arrizo 6 offers a smooth driving experience while maintaining a sleek design and practical features, making it a great choice for budget-conscious buyers." },
     { make: "Chery", model: "Tiggo 2", year: 2023, price: 17000, type: "SUV", color: "Blue", country: "China", transmission: "Automatic", horsepower: 110, acceleration: 11.2, engineType: "Inline-4", image: "cheryTiggo22023.png", description: "The 2023 Chery Tiggo 2 in blue is a compact SUV offering practicality and efficiency. With 110 horsepower from its inline-4 engine, it accelerates from 0-60 mph in 11.2 seconds. This affordable and versatile vehicle features automatic transmission and modern styling, making it a perfect choice for those looking for a reliable SUV on a budget." },
@@ -227,7 +287,13 @@ const carListings = [
     { make: "Peugeot", model: "Partner", year: 2023, price: 25000, type: "Van", color: "White", country: "France", transmission: "Automatic", horsepower: 130, acceleration: 11.0, engineType: "Inline-4", image: "peugeotPartner2023.png", description: "The 2023 Peugeot Partner in white is a reliable van designed for practical use. With a 130-horsepower inline-4 engine, it accelerates from 0-60 mph in 11.0 seconds. Featuring automatic transmission and ample cargo space, the Partner is an ideal choice for businesses or families looking for a versatile, spacious vehicle." },
     { make: "Peugeot", model: "Rifter", year: 2023, price: 28000, type: "Van", color: "Black", country: "France", transmission: "Automatic", horsepower: 130, acceleration: 10.5, engineType: "Inline-4", image: "peugeotRifter2023.png", description: "The 2023 Peugeot Rifter in black is a practical van that provides comfort and functionality. Equipped with a 130-horsepower inline-4 engine, it accelerates from 0-60 mph in 10.5 seconds. With automatic transmission and a spacious interior, the Rifter is perfect for families or businesses in need of a reliable and flexible vehicle." },
 
+
+
+
     //200
+
+
+
 
     { make: "Volvo", model: "XC90", year: 2023, price: 70000, type: "SUV", color: "Silver", country: "Sweden", transmission: "Automatic", horsepower: 400, acceleration: 5.5, engineType: "Hybrid", image: "volvoXC902023.png", description: "The 2023 Volvo XC90 in silver is a premium hybrid SUV that offers a perfect blend of luxury, performance, and eco-friendliness. With a 400-horsepower hybrid engine, it accelerates from 0-60 mph in 5.5 seconds. Featuring an automatic transmission, this SUV provides a smooth and efficient ride, ideal for families and those seeking a sophisticated driving experience." },
     { make: "Volvo", model: "S60", year: 2023, price: 45000, type: "Sedan", color: "Blue", country: "Sweden", transmission: "Automatic", horsepower: 250, acceleration: 6.8, engineType: "Inline-4", image: "volvoS602023.png", description: "The 2023 Volvo S60 in blue is a stylish sedan that combines Scandinavian design with performance. Powered by a 250-horsepower inline-4 engine, it accelerates from 0-60 mph in 6.8 seconds. With automatic transmission and a refined interior, the S60 offers a luxurious driving experience, making it ideal for those who value both style and substance." },
@@ -239,6 +305,9 @@ const carListings = [
     { make: "Land Rover", model: "Discovery", year: 2023, price: 60000, type: "SUV", color: "Blue", country: "UK", transmission: "Automatic", horsepower: 355, acceleration: 6.5, engineType: "V6", image: "landRoverDiscovery2023.png", description: "The 2023 Land Rover Discovery in blue offers a perfect balance of luxury and practicality. Powered by a 355-horsepower V6 engine, it accelerates from 0-60 mph in 6.5 seconds. With an automatic transmission, the Discovery is designed to provide a comfortable driving experience, whether you’re navigating city streets or exploring the great outdoors." },
     { make: "Land Rover", model: "Evoque", year: 2023, price: 50000, type: "SUV", color: "Silver", country: "UK", transmission: "Automatic", horsepower: 246, acceleration: 7.4, engineType: "Inline-4", image: "landRoverEvoque2023.png", description: "The 2023 Land Rover Evoque in silver is a stylish and compact SUV that delivers both performance and efficiency. Powered by a 246-horsepower inline-4 engine, it accelerates from 0-60 mph in 7.4 seconds. With an automatic transmission and a sleek design, the Evoque is perfect for urban drivers who want luxury and capability in a smaller package." },
     { make: "Land Rover", model: "Velar", year: 2023, price: 65000, type: "SUV", color: "White", country: "UK", transmission: "Automatic", horsepower: 395, acceleration: 5.2, engineType: "V6", image: "landRoverVelar2023.png", description: "The 2023 Land Rover Velar in white is a sophisticated and powerful SUV. With a 395-horsepower V6 engine, it accelerates from 0-60 mph in 5.2 seconds. Featuring automatic transmission, a refined interior, and a sleek exterior design, the Velar offers the perfect blend of performance and elegance, making it an excellent choice for those who seek style and substance." },
+
+
+
 
     { make: "Mitsubishi", model: "Outlander", year: 2023, price: 35000, type: "SUV", color: "Silver", country: "Japan", transmission: "Automatic", horsepower: 181, acceleration: 8.9, engineType: "Inline-4", image: "mitsubishiOutlander2023.png", description: "The 2023 Mitsubishi Outlander in silver is a reliable and spacious SUV perfect for families. Powered by a 181-horsepower inline-4 engine and featuring an automatic transmission, it accelerates from 0-60 mph in 8.9 seconds. Its modern design, combined with its practical features, makes it a great choice for those looking for an affordable yet capable SUV." },
     { make: "Mitsubishi", model: "Eclipse Cross", year: 2023, price: 28000, type: "SUV", color: "Red", country: "Japan", transmission: "Automatic", horsepower: 152, acceleration: 9.4, engineType: "Inline-4", image: "mitsubishiEclipseCross2023.png", description: "The 2023 Mitsubishi Eclipse Cross in red offers a compact and stylish SUV experience. With a 152-horsepower inline-4 engine and an acceleration of 9.4 seconds from 0-60 mph, this automatic SUV combines efficiency with performance. Its bold exterior design and comfortable interior make it a solid choice for those seeking a dynamic ride." },
@@ -262,11 +331,91 @@ const carListings = [
     { make: "Fiat", model: "Linea", year: 2023, price: 25000, type: "Sedan", color: "Red", country: "Italy", transmission: "Manual", horsepower: 115, acceleration: 11.0, engineType: "Inline-4", image: "fiatLinea2023.png", description: "The 2023 Fiat Linea in red is a sleek sedan with 115 horsepower and an acceleration of 11.0 seconds from 0-60 mph. Its manual transmission adds a more engaging driving experience, while its elegant design and comfortable ride make it suitable for both city and highway driving. The Linea offers an affordable entry into the sedan market, combining style with practicality." },
     { make: "Fiat", model: "Cinquecento", year: 2023, price: 23000, type: "Hatchback", color: "White", country: "Italy", transmission: "Automatic", horsepower: 90, acceleration: 12.0, engineType: "Inline-4", image: "fiatCinquecento2023.png", description: "The 2023 Fiat Cinquecento in white is a charming hatchback with 90 horsepower and a 0-60 mph time of 12.0 seconds. Its automatic transmission makes driving easy, while its compact size and strong power make it perfect for city driving and parking. The Cinquecento is a fun and quirky choice for those looking for a practical yet stylish vehicle." },
 
+
+
+
     { make: "GMC", model: "Sierra 1500", year: 2024, price: 45000, type: "Truck", color: "Black", country: "USA", transmission: "Automatic", horsepower: 355, acceleration: 6.5, engineType: "V8", image: "gmcSierra15002024.png", description: "The 2024 GMC Sierra 1500 in black is a powerful truck designed for performance and utility. With 355 horsepower and a 0-60 mph time of 6.5 seconds, the Sierra 1500 is perfect for those who need a tough vehicle with excellent towing capabilities. Its V8 engine ensures a smooth and powerful driving experience, making it an ideal choice for work or leisure." },
     { make: "GMC", model: "Yukon", year: 2024, price: 60000, type: "SUV", color: "White", country: "USA", transmission: "Automatic", horsepower: 420, acceleration: 5.9, engineType: "V8", image: "gmcYukon2024.png", description: "The 2024 GMC Yukon in white is a full-size SUV that delivers luxury and performance. Powered by a 420-horsepower V8 engine, it accelerates from 0-60 mph in 5.9 seconds, making it a great choice for families who seek both comfort and power. Its spacious interior and advanced features make the Yukon an excellent choice for long trips and daily commuting." },
     { make: "GMC", model: "Canyon", year: 2023, price: 35000, type: "Truck", color: "Red", country: "USA", transmission: "Automatic", horsepower: 308, acceleration: 7.2, engineType: "V6", image: "gmcCanyon2023.png", description: "The 2023 GMC Canyon in red is a midsize truck that blends style, performance, and practicality. With 308 horsepower and an acceleration of 7.2 seconds from 0-60 mph, it’s perfect for those who want a truck with strength but don’t need the full size of a heavy-duty model. The Canyon’s V6 engine ensures solid performance, whether you’re towing, hauling, or cruising around town." },
     { make: "GMC", model: "Terrain", year: 2023, price: 30000, type: "SUV", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 170, acceleration: 8.0, engineType: "Inline-4", image: "gmcTerrain2023.png", description: "The 2023 GMC Terrain in silver is a compact SUV designed for comfort and efficiency. With 170 horsepower and a 0-60 mph time of 8.0 seconds, it strikes the perfect balance between performance and fuel economy. Its modern features and spacious interior make it ideal for daily commutes and weekend getaways, offering a smooth and enjoyable ride for drivers and passengers alike." },
-    { make: "GMC", model: "Acadia", year: 2023, price: 45000, type: "SUV", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 230, acceleration: 8.5, engineType: "Inline-4", image: "gmcAcadia2023.png", description: "The 2023 GMC Acadia in blue is a midsize SUV with 230 horsepower and a 0-60 mph time of 8.5 seconds. This versatile vehicle combines power with practicality, making it a great choice for families or anyone needing extra space. The Acadia’s sleek design and comfortable interior, along with its impressive performance, provide an excellent driving experience for both city and off-road adventures." }
+    { make: "GMC", model: "Acadia", year: 2023, price: 45000, type: "SUV", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 230, acceleration: 8.5, engineType: "Inline-4", image: "gmcAcadia2023.png", description: "The 2023 GMC Acadia in blue is a midsize SUV with 230 horsepower and a 0-60 mph time of 8.5 seconds. This versatile vehicle combines power with practicality, making it a great choice for families or anyone needing extra space. The Acadia’s sleek design and comfortable interior, along with its impressive performance, provide an excellent driving experience for both city and off-road adventures." },
+    { make: "Chrysler", model: "300", year: 2023, price: 40000, type: "Sedan", color: "Black", country: "USA", transmission: "Automatic", horsepower: 292, acceleration: 6.3, engineType: "V6", image: "chrysler3002023.png", description: "The 2023 Chrysler 300 in black is a sophisticated sedan with a powerful 292-horsepower V6 engine. Accelerating from 0-60 mph in just 6.3 seconds, it combines performance with luxury. Its sleek design and premium interior make it an excellent choice for drivers seeking style and comfort." }, 
+    { make: "Chrysler", model: "Pacifica", year: 2023, price: 45000, type: "Minivan", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 287, acceleration: 7.5, engineType: "V6", image: "chryslerPacifica2023.png", description: "The 2023 Chrysler Pacifica in silver is a premium minivan designed for families. Powered by a 287-horsepower V6 engine, it accelerates to 60 mph in 7.5 seconds. With its spacious interior and advanced safety features, the Pacifica ensures comfort and peace of mind on every journey." }, 
+    { make: "Chrysler", model: "Voyager", year: 2023, price: 37000, type: "Minivan", color: "White", country: "USA", transmission: "Automatic", horsepower: 287, acceleration: 7.5, engineType: "V6", image: "chryslerVoyager2023.png", description: "The 2023 Chrysler Voyager in white is a practical and reliable minivan. With a 287-horsepower V6 engine and a 7.5-second 0-60 mph time, it delivers a smooth and efficient driving experience. Ideal for families, the Voyager offers ample space and modern features for daily commutes or long trips." }, 
+    { make: "Chrysler", model: "Aspen", year: 2009, price: 15000, type: "SUV", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 303, acceleration: 8.0, engineType: "V8", image: "chryslerAspen2009.png", description: "The 2009 Chrysler Aspen in blue is a classic SUV with a powerful 303-horsepower V8 engine. Offering an 8.0-second acceleration to 60 mph, it combines rugged capability with refined features, making it suitable for both off-road adventures and city driving." }, 
+    { make: "Chrysler", model: "300C", year: 2023, price: 42000, type: "Sedan", color: "Red", country: "USA", transmission: "Automatic", horsepower: 363, acceleration: 5.8, engineType: "V8", image: "chrysler300C2023.png", description: "The 2023 Chrysler 300C in red is a performance-focused sedan equipped with a 363-horsepower V8 engine. It boasts a 0-60 mph acceleration time of 5.8 seconds, combining power with luxury. Its bold design and high-end interior make it an excellent choice for drivers who appreciate speed and sophistication." },
+
+
+
+
+    { make: "Chrysler", model: "300S", year: 2022, price: 41000, type: "Sedan", color: "Grey", country: "USA", transmission: "Automatic", horsepower: 300, acceleration: 6.2, engineType: "V6", image: "chrysler300S2022.png", description: "The 2022 Chrysler 300S in gray is a stylish sedan with a robust 300-horsepower V6 engine. Accelerating to 60 mph in just 6.2 seconds, it delivers a powerful yet smooth ride. Its sleek design and premium features make it a top choice for those seeking comfort and performance." },
+    { make: "Chrysler", model: "Pacifica Hybrid", year: 2023, price: 49000, type: "Minivan", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 260, acceleration: 7.9, engineType: "Hybrid", image: "chryslerPacificaHybrid2023.png", description: "The 2023 Chrysler Pacifica Hybrid in blue is an eco-friendly minivan. With a 260-horsepower hybrid engine and a 7.9-second 0-60 mph time, it offers efficiency and performance. Perfect for families, the Pacifica Hybrid combines spaciousness with advanced hybrid technology." },
+    { make: "Chrysler", model: "Sebring", year: 2010, price: 8000, type: "Convertible", color: "White", country: "USA", transmission: "Automatic", horsepower: 173, acceleration: 9.1, engineType: "Inline-4", image: "chryslerSebring2010.png", description: "The 2010 Chrysler Sebring in white is a charming convertible with a 173-horsepower Inline-4 engine. It accelerates to 60 mph in 9.1 seconds, offering a relaxed driving experience. Ideal for sunny days, the Sebring delivers comfort and open-air driving fun." },
+    { make: "Chrysler", model: "Concorde", year: 2004, price: 5000, type: "Sedan", color: "White", country: "USA", transmission: "Automatic", horsepower: 214, acceleration: 8.8, engineType: "V6", image: "chryslerConcorde2004.png", description: "The 2004 Chrysler Concorde in white is a classic sedan with a 214-horsepower V6 engine. With an 8.8-second 0-60 mph time, it offers a smooth and reliable ride. Its spacious interior and refined design make it an excellent value for budget-conscious buyers." },
+    { make: "Chrysler", model: "Imperial", year: 1993, price: 3000, type: "Sedan", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 150, acceleration: 10.5, engineType: "V6", image: "chryslerImperial1993.png", description: "The 1993 Chrysler Imperial in dark blue is a vintage sedan with a 150-horsepower V6 engine. Its 10.5-second 0-60 mph time reflects its era, providing a comfortable and nostalgic driving experience. Perfect for enthusiasts of classic American cars." },
+    { make: "Ram", model: "1500", year: 2023, price: 45000, type: "Truck", color: "Grey", country: "USA", transmission: "Automatic", horsepower: 395, acceleration: 6.4, engineType: "V8", image: "ram15002023.png", description: "The 2023 Ram 1500 in grey offers powerful performance with a 395-horsepower V8 engine. Accelerating to 60 mph in 6.4 seconds, this truck combines strength and style for any tough task. Ideal for work and play, it provides reliability and luxury features." },
+    { make: "Ram", model: "2500", year: 2023, price: 55000, type: "Truck", color: "White", country: "USA", transmission: "Automatic", horsepower: 410, acceleration: 7.2, engineType: "V8", image: "ram25002023.png", description: "The 2023 Ram 2500 in white offers impressive performance with a 410-horsepower V8 engine. It reaches 60 mph in just 7.2 seconds, combining power with advanced features. This truck is built to tackle the toughest jobs while providing a comfortable and durable ride." },
+    { make: "Ram", model: "3500", year: 2023, price: 65000, type: "Truck", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 400, acceleration: 7.5, engineType: "Turbo Diesel I6", image: "ram35002023.png", description: "The 2023 Ram 3500 in silver is a heavy-duty truck with a 400-horsepower turbo diesel I6 engine. It accelerates to 60 mph in 7.5 seconds, offering unmatched towing capacity and durability. Designed for professionals who need both performance and power for challenging tasks." },
+    { make: "Ram", model: "ProMaster", year: 2023, price: 43000, type: "Van", color: "White", country: "USA", transmission: "Automatic", horsepower: 276, acceleration: 8.9, engineType: "V6", image: "ramProMaster2023.png", description: "The 2023 Ram ProMaster in white is a versatile van equipped with a 276-horsepower V6 engine. It accelerates to 60 mph in 8.9 seconds and offers outstanding cargo space and functionality. Perfect for businesses, it combines practicality with efficiency." },
+    { make: "Ram", model: "1500 Rebel", year: 2023, price: 58000, type: "Truck", color: "Yellow", country: "USA", transmission: "Automatic", horsepower: 395, acceleration: 6.1, engineType: "V8", image: "ram1500Rebel2023.png", description: "The 2023 Ram 1500 Rebel in yellow delivers aggressive power with a 395-horsepower V8 engine. It accelerates to 60 mph in just 6.1 seconds, offering off-road capability and rugged styling. Designed for adventure, this truck excels in both performance and luxury." },
+
+
+
+
+    { make: "Skoda", model: "Octavia", year: 2023, price: 25000, type: "Sedan", color: "Black", country: "Czech Republic", transmission: "Automatic", horsepower: 150, acceleration: 8.4, engineType: "Inline-4", image: "skodaOctavia2023.png", description: "The 2023 Skoda Octavia in black is a practical sedan with a 150-horsepower Inline-4 engine. It accelerates to 60 mph in 8.4 seconds, offering a smooth and efficient driving experience. This vehicle is designed for comfort, affordability, and reliability." },
+    { make: "Skoda", model: "Superb", year: 2023, price: 35000, type: "Sedan", color: "White", country: "Czech Republic", transmission: "Automatic", horsepower: 190, acceleration: 7.3, engineType: "Inline-4", image: "skodaSuperb2023.png", description: "The 2023 Skoda Superb in white features a 190-horsepower Inline-4 engine and an impressive 7.3-second 0-60 mph time. This sedan blends luxury, performance, and advanced technology for a comfortable driving experience, making it an excellent choice for long-distance travel." },
+    { make: "Skoda", model: "Kodiaq", year: 2023, price: 45000, type: "SUV", color: "Silver", country: "Czech Republic", transmission: "Automatic", horsepower: 245, acceleration: 6.5, engineType: "Inline-4", image: "skodaKodiaq2023.png", description: "The 2023 Skoda Kodiaq in silver offers 245 horsepower from an Inline-4 engine. Reaching 60 mph in 6.5 seconds, this SUV offers excellent handling, spacious interior, and advanced features, making it perfect for both city driving and off-road adventures." },
+    { make: "Skoda", model: "Kamiq", year: 2023, price: 22000, type: "SUV", color: "Red", country: "Czech Republic", transmission: "Automatic", horsepower: 150, acceleration: 9.1, engineType: "Inline-4", image: "skodaKamiq2023.png", description: "The 2023 Skoda Kamiq in red is a compact SUV with a 150-horsepower Inline-4 engine. It accelerates to 60 mph in 9.1 seconds, offering a fun-to-drive experience with great fuel efficiency, making it a perfect choice for city driving and everyday use." },
+    { make: "Skoda", model: "Scala", year: 2023, price: 23000, type: "Hatchback", color: "Blue", country: "Czech Republic", transmission: "Automatic", horsepower: 115, acceleration: 10.0, engineType: "Inline-4", image: "skodaScala2023.png", description: "The 2023 Skoda Scala in blue is a compact hatchback offering 115 horsepower from its Inline-4 engine. It reaches 60 mph in 10.0 seconds, providing an efficient and enjoyable driving experience. Ideal for those who want practicality and style in a compact package." },
+    { make: "Skoda", model: "Enyaq iV", year: 2023, price: 50000, type: "SUV", color: "Green", country: "Czech Republic", transmission: "Automatic", horsepower: 204, acceleration: 8.7, engineType: "Electric", image: "skodaEnyaq2023.png", description: "The 2023 Skoda Enyaq iV in green is an electric SUV offering 204 horsepower and an 8.7-second 0-60 mph time. It combines eco-friendly driving with the versatility of an SUV, offering impressive range and advanced technology for a sustainable driving experience." },
+    { make: "Skoda", model: "Fabia", year: 2022, price: 18000, type: "Hatchback", color: "Orange", country: "Czech Republic", transmission: "Manual", horsepower: 95, acceleration: 12.3, engineType: "Inline-3", image: "skodaFabia2022.png", description: "The 2022 Skoda Fabia in orange is a compact hatchback powered by a 95-horsepower Inline-3 engine. It accelerates to 60 mph in 12.3 seconds, making it an affordable and efficient choice for those seeking practicality and style in a small package." },
+    { make: "Skoda", model: "Rapid", year: 2021, price: 22000, type: "Sedan", color: "Orange", country: "Czech Republic", transmission: "Automatic", horsepower: 110, acceleration: 10.5, engineType: "Inline-4", image: "skodaRapid2021.png", description: "The 2021 Skoda Rapid in orange features a 110-horsepower Inline-4 engine. It reaches 60 mph in 10.5 seconds, offering a blend of style, performance, and practicality in a sleek sedan that's perfect for daily commutes and family use." },
+    { make: "Skoda", model: "Roomster", year: 2015, price: 12000, type: "MPV", color: "Black", country: "Czech Republic", transmission: "Manual", horsepower: 75, acceleration: 14.2, engineType: "Inline-4", image: "skodaRoomster2015.png", description: "The 2015 Skoda Roomster in black is a compact MPV powered by a 75-horsepower Inline-4 engine. It has a 14.2-second 0-60 mph time and offers a versatile interior, making it a practical choice for families needing both space and efficiency." },
+    { make: "Skoda", model: "Yeti", year: 2017, price: 25000, type: "SUV", color: "Brown", country: "Czech Republic", transmission: "Automatic", horsepower: 140, acceleration: 9.0, engineType: "Inline-4", image: "skodaYeti2017.png", description: "The 2017 Skoda Yeti in brown is an SUV with a 140-horsepower Inline-4 engine. It accelerates to 60 mph in 9.0 seconds, offering great off-road capabilities and a comfortable interior, making it an excellent choice for those seeking adventure and practicality." },
+
+
+
+
+    { make: "Buick", model: "Enclave", year: 2023, price: 55000, type: "SUV", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 310, acceleration: 7.2, engineType: "V6", image: "buickEnclave2023.png", description: "The 2023 Buick Enclave in silver is a spacious and versatile SUV designed for family comfort and performance. Powered by a 310-horsepower V6 engine, it accelerates from 0 to 60 mph in just 7.2 seconds, offering ample power for both city driving and longer road trips. With its stylish exterior and refined interior, this SUV provides seating for up to seven passengers and a host of modern features, including advanced safety technologies, a premium sound system, and a user-friendly infotainment system, making it an excellent choice for those who prioritize both luxury and practicality." },
+    { make: "Buick", model: "Encore", year: 2023, price: 28000, type: "SUV", color: "Red", country: "USA", transmission: "Automatic", horsepower: 155, acceleration: 9.5, engineType: "Inline-4", image: "buickEncore2023.png", description: "The 2023 Buick Encore in red is a compact and efficient SUV that offers great value for those looking for a blend of performance and style. Equipped with a 155-horsepower Inline-4 engine, it accelerates from 0 to 60 mph in 9.5 seconds, delivering a balanced combination of power and fuel efficiency. Its compact size makes it easy to maneuver in urban environments while offering a comfortable ride and ample interior space for passengers and cargo. The Encore also comes equipped with a range of advanced technology features, including Apple CarPlay, Android Auto, and a suite of driver assistance systems, ensuring a convenient and safe driving experience." },
+    { make: "Buick", model: "LaCrosse", year: 2020, price: 35000, type: "Sedan", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 305, acceleration: 6.5, engineType: "V6", image: "buickLaCrosse2020.png", description: "The 2020 Buick LaCrosse in blue is a luxurious sedan that offers a refined driving experience combined with powerful performance and sophisticated design. With its 305-horsepower V6 engine, it accelerates from 0 to 60 mph in just 6.5 seconds, making it a highly capable and dynamic vehicle on the road. The LaCrosse offers a smooth and comfortable ride with its spacious interior, high-quality materials, and cutting-edge technology features. It includes an advanced infotainment system, a premium sound system, and numerous safety features such as lane keep assist and forward collision warning. This sedan is ideal for those seeking a balance of performance, luxury, and practicality." },
+    { make: "Buick", model: "Regal", year: 2021, price: 35000, type: "Sedan", color: "White", country: "USA", transmission: "Automatic", horsepower: 250, acceleration: 7.1, engineType: "Inline-4", image: "buickRegal2021.png", description: "The 2021 Buick Regal in white is a stylish and efficient sedan that blends performance with comfort. Powered by a 250-horsepower Inline-4 engine, it accelerates from 0 to 60 mph in 7.1 seconds, offering solid power and a smooth driving experience. The Regal's sleek design is matched by its interior, which is both spacious and refined, with plenty of room for passengers and modern amenities such as a large touchscreen infotainment system, Apple CarPlay, and Android Auto. The car also comes equipped with a range of safety features, including forward collision alert and automatic emergency braking, ensuring peace of mind behind the wheel." },
+    { make: "Buick", model: "Verano", year: 2019, price: 22000, type: "Sedan", color: "Black", country: "USA", transmission: "Automatic", horsepower: 180, acceleration: 8.4, engineType: "Inline-4", image: "buickVerano2019.png", description: "The 2019 Buick Verano in black is a compact sedan that offers a perfect balance of performance, comfort, and efficiency. With its 180-horsepower Inline-4 engine, it delivers smooth acceleration and a relaxed driving experience, achieving 0 to 60 mph in 8.4 seconds. The Verano's stylish exterior is complemented by its comfortable interior, which features a well-designed cabin with high-quality materials and plenty of space for passengers. The sedan also comes with a range of technology features, including an easy-to-use infotainment system, Bluetooth connectivity, and a suite of safety features like rear-view camera and parking sensors. It's a great choice for those seeking an affordable yet well-equipped sedan." },
+    { make: "Acura", model: "MDX", year: 2023, price: 60000, type: "SUV", color: "Silver", country: "Japan", transmission: "Automatic", horsepower: 290, acceleration: 6.5, engineType: "V6", image: "acuraMDX2023.png", description: "The 2023 Acura MDX in silver is a luxurious three-row SUV that combines impressive performance, advanced technology, and comfort. Powered by a 290-horsepower V6 engine, it accelerates from 0 to 60 mph in just 6.5 seconds, offering strong acceleration and a smooth ride. The MDX offers ample seating for up to seven passengers, making it a perfect choice for families. Inside, the cabin is spacious and well-appointed, with premium materials, cutting-edge technology like a 12.3-inch touchscreen, Apple CarPlay, and Android Auto. The MDX also comes equipped with a comprehensive suite of safety features, including adaptive cruise control, lane keeping assist, and collision mitigation, ensuring a secure driving experience." },
+    { make: "Acura", model: "RDX", year: 2023, price: 42000, type: "SUV", color: "Red", country: "Japan", transmission: "Automatic", horsepower: 272, acceleration: 6.8, engineType: "Inline-4", image: "acuraRDX2023.png", description: "The 2023 Acura RDX in red is a compact luxury SUV that offers a dynamic driving experience, advanced features, and modern styling. Powered by a 272-horsepower Inline-4 engine, it delivers impressive performance with an acceleration time of 6.8 seconds from 0 to 60 mph. The RDX features a spacious, comfortable interior with high-quality materials and user-friendly technology, including a 10.2-inch infotainment screen, Apple CarPlay, and Android Auto. The exterior is sleek and athletic, reflecting the RDX’s sporty character, while its comprehensive safety features such as blind-spot monitoring, forward collision warning, and rear cross-traffic alert ensure peace of mind on the road." },
+    { make: "Acura", model: "TLX", year: 2023, price: 45000, type: "Sedan", color: "White", country: "Japan", transmission: "Automatic", horsepower: 272, acceleration: 5.8, engineType: "Inline-4", image: "acuraTLX2023.png", description: "The 2023 Acura TLX in white is a performance-oriented luxury sedan that delivers an engaging driving experience and modern technology. With a 272-horsepower Inline-4 engine, it accelerates from 0 to 60 mph in just 5.8 seconds, offering sharp acceleration and precise handling. The TLX’s interior is designed for comfort and sophistication, with premium materials and advanced features, including a 10.2-inch infotainment display, wireless Apple CarPlay, and Android Auto. It also includes a suite of safety technologies, such as lane departure warning, adaptive cruise control, and forward collision mitigation, making it an excellent choice for those seeking a balanced combination of performance and luxury." },
+    { make: "Acura", model: "ILX", year: 2022, price: 30000, type: "Sedan", color: "Blue", country: "Japan", transmission: "Automatic", horsepower: 201, acceleration: 7.3, engineType: "Inline-4", image: "acuraILX2022.png", description: "The 2022 Acura ILX in blue is a compact luxury sedan that offers a blend of efficiency, style, and performance. Powered by a 201-horsepower Inline-4 engine, it delivers a smooth yet engaging driving experience, accelerating from 0 to 60 mph in 7.3 seconds. The ILX features a well-designed interior with comfortable seating, premium materials, and modern technology such as a 7-inch touchscreen, Apple CarPlay, and Android Auto. It also includes a host of safety features like forward collision warning, lane keep assist, and a rearview camera, making it a great option for those seeking a luxury sedan at a more accessible price." },
+    { make: "Acura", model: "NSX", year: 2022, price: 157000, type: "Sports Car", color: "Yellow", country: "Japan", transmission: "Automatic", horsepower: 537, acceleration: 2.9, engineType: "Hybrid V6", image: "acuraNSX2022.png", description: "The 2022 Acura NSX in yellow is a high-performance hybrid sports car that combines cutting-edge technology, exceptional power, and stunning design. Powered by a 537-horsepower hybrid V6 engine, it accelerates from 0 to 60 mph in just 2.9 seconds, providing blistering speed and thrilling performance. The NSX’s sleek, aerodynamic body is complemented by a luxurious interior that includes advanced features such as a dual touchscreen infotainment system, premium audio, and leather upholstery. With its all-wheel-drive system and precision handling, the NSX delivers an exhilarating driving experience, making it the perfect choice for sports car enthusiasts who demand both speed and sophistication." },
+
+
+    
+    { make: "Lincoln", model: "Navigator", year: 2023, price: 90000, type: "SUV", color: "Black", country: "USA", transmission: "Automatic", horsepower: 450, acceleration: 5.8, engineType: "V6", image: "lincolnNavigator2023.png", description: "The 2023 Lincoln Navigator in black is a full-size luxury SUV that exudes elegance, power, and comfort. Powered by a 450-horsepower V6 engine, it delivers impressive performance, accelerating from 0 to 60 mph in just 5.8 seconds. The Navigator offers a spacious interior, with three rows of seating that can accommodate up to eight passengers, making it ideal for families. Its luxurious cabin features high-end materials, a 10-inch touchscreen, and a premium audio system. The Navigator also comes equipped with advanced safety features, including adaptive cruise control, lane-keeping assist, and automatic emergency braking, ensuring a secure and smooth driving experience." },
+    { make: "Lincoln", model: "Aviator", year: 2023, price: 75000, type: "SUV", color: "White", country: "USA", transmission: "Automatic", horsepower: 400, acceleration: 6.0, engineType: "V6", image: "lincolnAviator2023.png", description: "The 2023 Lincoln Aviator in white is a luxurious midsize SUV designed to deliver a refined driving experience and exceptional comfort. With a 400-horsepower V6 engine, it accelerates from 0 to 60 mph in 6.0 seconds, offering both power and smooth performance. The Aviator’s interior is elegant and spacious, with seating for up to seven passengers and a range of advanced features such as a 12.3-inch digital display, a 14-speaker audio system, and a panoramic sunroof. It also includes a suite of safety technologies like blind-spot monitoring, rear cross-traffic alert, and automatic emergency braking, making it an excellent choice for those who desire both luxury and security." },
+    { make: "Lincoln", model: "Corsair", year: 2023, price: 45000, type: "SUV", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 250, acceleration: 7.2, engineType: "Inline-4", image: "lincolnCorsair2023.png", description: "The 2023 Lincoln Corsair in blue is a compact luxury SUV that combines performance, comfort, and stylish design. Powered by a 250-horsepower Inline-4 engine, it delivers solid performance with an acceleration time of 7.2 seconds from 0 to 60 mph. Inside, the Corsair offers a premium cabin with comfortable seating, high-quality materials, and cutting-edge technology, including a 10.1-inch touchscreen, Apple CarPlay, and Android Auto. The exterior features sleek lines and a refined design, while the Corsair’s safety features, including a rearview camera, forward collision warning, and adaptive cruise control, ensure a secure driving experience for both driver and passengers." },
+    { make: "Lincoln", model: "Continental", year: 2020, price: 60000, type: "Sedan", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 400, acceleration: 6.2, engineType: "V6", image: "lincolnContinental2020.png", description: "The 2020 Lincoln Continental in silver is a full-size luxury sedan that offers a combination of power, sophistication, and advanced technology. With a 400-horsepower V6 engine, it accelerates from 0 to 60 mph in 6.2 seconds, offering both smooth cruising and responsive performance. The Continental’s interior is a sanctuary of luxury, featuring premium leather upholstery, a 10.1-inch touchscreen with Lincoln’s SYNC 3 system, and a 19-speaker Revel audio system for an unparalleled driving experience. It also includes a variety of advanced safety features such as automatic emergency braking, lane-keeping assist, and pedestrian detection, making it a perfect choice for those seeking both comfort and security." },
+    { make: "Lincoln", model: "MKZ", year: 2020, price: 40000, type: "Sedan", color: "Red", country: "USA", transmission: "Automatic", horsepower: 245, acceleration: 7.5, engineType: "Inline-4", image: "lincolnMKZ2020.png", description: "The 2020 Lincoln MKZ in red is a luxury sedan that blends comfort, style, and performance. Powered by a 245-horsepower Inline-4 engine, it offers an acceleration time of 7.5 seconds from 0 to 60 mph, providing a smooth and responsive drive. Inside, the MKZ features a sophisticated cabin with leather seating, a 10-inch touchscreen, and an intuitive infotainment system, making it easy to stay connected on the go. The MKZ is also equipped with advanced safety features such as adaptive cruise control, blind-spot monitoring, and rear cross-traffic alert, ensuring a secure and confident driving experience in all conditions."},
+    { make: "Mini", model: "Cooper", year: 2023, price: 28000, type: "Hatchback", color: "Yellow", country: "UK", transmission: "Automatic", horsepower: 134, acceleration: 7.1, engineType: "Inline-4", image: "miniCooper2023.png", description: "The 2023 Mini Cooper in yellow is a compact and stylish hatchback that offers a blend of fun driving dynamics and iconic design. Powered by a 134-horsepower Inline-4 engine, it delivers a peppy performance, accelerating from 0 to 60 mph in 7.1 seconds. The Cooper's distinctive exterior features sharp lines and a sporty profile, while its interior offers modern technology, including a 6.5-inch touchscreen, Bluetooth connectivity, and Apple CarPlay. The Mini Cooper is also equipped with a variety of safety features, including forward-collision warning and automatic emergency braking, ensuring a safe and enjoyable ride." },
+    { make: "Mini", model: "Countryman", year: 2023, price: 35000, type: "SUV", color: "Red", country: "UK", transmission: "Automatic", horsepower: 189, acceleration: 6.5, engineType: "Inline-4", image: "miniCountryman2023.png", description: "The 2023 Mini Countryman in red is a versatile and sporty SUV that combines the brand’s signature fun-to-drive nature with the practicality of an SUV. With a 189-horsepower Inline-4 engine, it accelerates from 0 to 60 mph in 6.5 seconds, offering a balance of power and efficiency. The Countryman offers a spacious and comfortable interior with seating for up to five passengers and features like a 6.5-inch infotainment screen, smartphone integration, and a panoramic sunroof. Its elevated ride height and all-wheel-drive options make it an ideal choice for those who want a compact SUV with a sporty edge and functional design." },
+    { make: "Mini", model: "Clubman", year: 2022, price: 32000, type: "Hatchback", color: "Blue", country: "UK", transmission: "Automatic", horsepower: 189, acceleration: 6.8, engineType: "Inline-4", image: "miniClubman2022.png", description: "The 2022 Mini Clubman in blue is a unique and charming hatchback that combines the Mini's signature compact size with added practicality and premium features. Powered by a 189-horsepower Inline-4 engine, it accelerates from 0 to 60 mph in 6.8 seconds, offering a responsive and agile driving experience. The Clubman features a distinctive split rear door design, which enhances the vehicle’s versatility, allowing easy access to the cargo area. Inside, the cabin is equipped with advanced technology, including a 6.5-inch display, Apple CarPlay, and a premium sound system. With its combination of performance, style, and practicality, the Clubman is a perfect choice for those looking for a compact car with a bit more flair." },
+    { make: "Mini", model: "Cooper S", year: 2022, price: 35000, type: "Hatchback", color: "Green", country: "UK", transmission: "Manual", horsepower: 189, acceleration: 6.2, engineType: "Inline-4", image: "miniCooperS2022.png", description: "The 2022 Mini Cooper S in green is a sporty and dynamic hatchback that delivers a thrilling driving experience. Powered by a 189-horsepower Inline-4 engine and equipped with a manual transmission, the Cooper S accelerates from 0 to 60 mph in just 6.2 seconds, providing sharp handling and quick acceleration. The Cooper S features sporty design elements, including a more aggressive front bumper, twin-exhaust pipes, and distinctive alloy wheels. Inside, the cabin is equipped with an 8.8-inch touchscreen, premium materials, and advanced technology. With its high-performance engine and nimble handling, the Cooper S is perfect for those who want a more spirited and engaging driving experience." },
+    { make: "Mini", model: "John Cooper Works", year: 2021, price: 42000, type: "Hatchback", color: "Black", country: "UK", transmission: "Automatic", horsepower: 228, acceleration: 5.9, engineType: "Inline-4", image: "miniJohnCooperWorks2021.png", description: "The 2021 Mini John Cooper Works in black is the high-performance variant of the Mini lineup, offering an exhilarating driving experience. With a 228-horsepower Inline-4 engine, it delivers a turbocharged performance and accelerates from 0 to 60 mph in just 5.9 seconds. The John Cooper Works model features a sport-tuned suspension, larger brakes, and aggressive styling, including distinctive body accents and a sportier rear spoiler. Inside, the cabin features sport bucket seats, a 6.5-inch infotainment screen, and premium materials. The John Cooper Works is ideal for those seeking a small, high-performance hatchback that is as thrilling to drive as it is stylish."},
+
+
+
+
+    { make: "Mini", model: "Cooper SE", year: 2021, price: 35000, type: "Hatchback", color: "White", country: "UK", transmission: "Automatic", horsepower: 181, acceleration: 6.9, engineType: "Electric", image: "miniCooperSE2021.png", description: "The 2021 Mini Cooper SE in white is an all-electric hatchback that brings the iconic Mini driving experience to the electric vehicle market. With a 181-horsepower electric motor, it accelerates from 0 to 60 mph in 6.9 seconds, offering quick and responsive acceleration. The Cooper SE features the compact and sporty design of the Mini Cooper, with sleek lines and a distinctive front grille. Inside, the cabin is equipped with modern technology, including a 6.5-inch touchscreen, Apple CarPlay, and a variety of safety features. This electric Mini is perfect for those seeking a fun and eco-friendly urban vehicle." },
+    { make: "Mini", model: "Convertible", year: 2020, price: 30000, type: "Convertible", color: "Pink", country: "UK", transmission: "Automatic", horsepower: 134, acceleration: 7.2, engineType: "Inline-4", image: "miniConvertible2020.png", description: "The 2020 Mini Convertible in pink is a stylish and fun open-air vehicle that combines the charm of the Mini Cooper with the freedom of a convertible. Powered by a 134-horsepower Inline-4 engine, it accelerates from 0 to 60 mph in 7.2 seconds, offering a spirited driving experience. The Convertible features a fully retractable roof, allowing drivers to enjoy the open sky while cruising through city streets. Inside, the cabin offers premium materials and features like a 6.5-inch infotainment screen and Apple CarPlay. With its unique color and sporty handling, the Mini Convertible is perfect for those looking for a playful and stylish ride." },
+    { make: "Mini", model: "Countryman Plug-in Hybrid", year: 2020, price: 38000, type: "SUV", color: "Orange", country: "UK", transmission: "Automatic", horsepower: 221, acceleration: 6.8, engineType: "Hybrid", image: "miniCountrymanPHEV2020.png", description: "The 2020 Mini Countryman Plug-in Hybrid in orange is a compact SUV that combines the practicality of an SUV with the efficiency of a plug-in hybrid powertrain. With a total output of 221 horsepower, it accelerates from 0 to 60 mph in 6.8 seconds, offering a balance of power and efficiency. The hybrid system allows for short electric-only trips, while the gasoline engine provides added range. Inside, the Countryman Plug-in Hybrid features a spacious and comfortable cabin, a 6.5-inch touchscreen, Apple CarPlay, and advanced safety features. This SUV is an excellent choice for those looking for a greener option without compromising on style or performance." },
+    { make: "Mini", model: "Cooper S Countryman", year: 2022, price: 37000, type: "SUV", color: "Silver", country: "UK", transmission: "Automatic", horsepower: 189, acceleration: 6.7, engineType: "Inline-4", image: "miniCooperSCountryman2022.png", description: "The 2022 Mini Cooper S Countryman in silver is a sporty and stylish compact SUV that offers a more powerful engine and refined design. Powered by a 189-horsepower Inline-4 engine, it accelerates from 0 to 60 mph in 6.7 seconds, providing a balance of performance and efficiency. The Cooper S Countryman features sporty design elements, including a more aggressive front grille and larger wheels. Inside, it offers a premium cabin with a 6.5-inch infotainment screen, Apple CarPlay, and a spacious rear seat. With its dynamic performance and upscale features, this Mini SUV is perfect for those who want a versatile and fun-to-drive vehicle." },
+    { make: "Mini", model: "Clubman S", year: 2021, price: 33000, type: "Hatchback", color: "Grey", country: "UK", transmission: "Automatic", horsepower: 189, acceleration: 6.4, engineType: "Inline-4", image: "miniClubmanS2021.png", description: "The 2021 Mini Clubman S in grey is a premium and sporty hatchback that blends performance with practicality. Powered by a 189-horsepower Inline-4 engine, it accelerates from 0 to 60 mph in 6.4 seconds, offering sharp handling and a responsive driving experience. The Clubman S features a unique split rear door design, making it easier to access the cargo area. Inside, the cabin is equipped with a 6.5-inch infotainment screen, premium upholstery, and modern features like Apple CarPlay. With its distinctive design and strong performance, the Clubman S is a perfect choice for those looking for a fun and functional compact car."},
+    { make: "Infiniti", model: "QX80", year: 2023, price: 85000, type: "SUV", color: "Black", country: "Japan", transmission: "Automatic", horsepower: 400, acceleration: 6.5, engineType: "V8", image: "infinitiQX802023.png", description: "The 2023 Infiniti QX80 in black is a full-size luxury SUV that combines powerful performance with premium features. Powered by a 400-horsepower V8 engine, it accelerates from 0 to 60 mph in 6.5 seconds, offering a strong and refined driving experience. The QX80 features a spacious and luxurious cabin with seating for up to eight passengers, high-quality materials, and advanced technology like a 12.3-inch infotainment system, Apple CarPlay, and advanced safety features. This large luxury SUV is perfect for families or those who need a high-performance vehicle with plenty of room." },
+    { make: "Infiniti", model: "Q50", year: 2023, price: 45000, type: "Sedan", color: "Silver", country: "Japan", transmission: "Automatic", horsepower: 300, acceleration: 5.1, engineType: "V6", image: "infinitiQ502023.png", description: "The 2023 Infiniti Q50 in silver is a luxurious sedan that delivers a smooth, performance-oriented driving experience. Equipped with a 300-horsepower V6 engine, it accelerates from 0 to 60 mph in 5.1 seconds, offering a blend of power and efficiency. The Q50 features a refined and comfortable interior with leather upholstery, a 16-speaker audio system, and a 7-inch touchscreen infotainment system. Advanced safety features include adaptive cruise control and lane-keeping assist. The Q50 is ideal for those who want a high-performance sedan with a touch of luxury." },
+    { make: "Infiniti", model: "Q60", year: 2022, price: 55000, type: "Coupe", color: "Red", country: "Japan", transmission: "Automatic", horsepower: 400, acceleration: 5.0, engineType: "V6", image: "infinitiQ602022.png", description: "The 2022 Infiniti Q60 in red is a stunning luxury coupe that combines striking looks with strong performance. Powered by a 400-horsepower V6 engine, it accelerates from 0 to 60 mph in just 5.0 seconds, offering an exhilarating driving experience. The Q60 features a sleek and aerodynamic design, with a sophisticated and tech-forward cabin, including a 7-inch touchscreen and a 13-speaker sound system. With its bold design and powerful engine, the Q60 is a great option for those seeking a stylish and fast luxury coupe." },
+    { make: "Infiniti", model: "QX55", year: 2022, price: 55000, type: "SUV", color: "Blue", country: "Japan", transmission: "Automatic", horsepower: 268, acceleration: 6.4, engineType: "Inline-4", image: "infinitiQX552022.png", description: "The 2022 Infiniti QX55 in blue is a stylish compact luxury SUV that offers a dynamic design and comfortable driving experience. Powered by a 268-horsepower Inline-4 engine, it accelerates from 0 to 60 mph in 6.4 seconds, making it both fun to drive and fuel-efficient. The QX55 features a sleek coupe-like design, with a premium interior that includes leather upholstery, a 6.5-inch touchscreen, and advanced safety features. With its performance, style, and technology, the QX55 is an excellent choice for those looking for a luxury SUV with a unique design." },
+    { make: "Infiniti", model: "Q70", year: 2020, price: 60000, type: "Sedan", color: "White", country: "Japan", transmission: "Automatic", horsepower: 330, acceleration: 5.5, engineType: "V6", image: "infinitiQ702020.png", description: "The 2020 Infiniti Q70 in white is a luxurious full-size sedan that offers a blend of performance, comfort, and advanced technology. Powered by a 330-horsepower V6 engine, it accelerates from 0 to 60 mph in 5.5 seconds, delivering a smooth and responsive driving experience. The Q70 features a spacious and refined cabin with premium materials, a 7-inch touchscreen, and a 16-speaker audio system. It also includes advanced safety features such as adaptive cruise control and lane-keeping assist. The Q70 is ideal for those seeking a top-tier luxury sedan with strong performance and high-end features." },
+
+
+
 
 ];
 
@@ -275,7 +424,31 @@ const carListings = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // pictures:
+
+
+
+
+
+
 
 
 // Toyota Camry 2020:           https://s3.amazonaws.com/di-enrollment-api/toyota/models/2020/camry/colors/celestial_silver_metallic.jpg
@@ -289,6 +462,9 @@ const carListings = [
 // Kia Sportage 2022:           https://cdn.motor1.com/images/mgl/MBlPE/s1/2022-kia-sportage-front-quarter.jpg
 // Hyundai Tucson 2022:         https://platform.cstatic-images.com/in/v2/stock_photos/3f3be551-ec11-4f0f-91f8-c6d738e8dee4/9a7bab43-2cdb-4be5-9c3d-a7babd98e935.png
 
+
+
+
 // Mazda CX-5 2023:             https://di-sitebuilder-assets.s3.amazonaws.com/Mazda/model-pages/2022/CX-5/trim-2.5-S.png
 // Volkswagen Golf GTI 2022:    https://www.cnet.com/a/img/resize/bd0f20e058657b2a2ba9cc1c54e1b58673486910/hub/2022/03/30/e072f29e-c57b-4101-a036-1921695e7721/2022-vw-golf-gti-long-term-001.jpg?auto=webp&fit=crop&height=675&width=1200
 // Nissan Altima 2021:          https://di-sitebuilder-assets.s3.amazonaws.com/Nissan/MLP/Altima/2021/colors/Brilliant+Silver+Metallic.jpg
@@ -299,6 +475,9 @@ const carListings = [
 // Ford Fusion 2017:            https://cars.usnews.com/static/images/Auto/izmo/Colors/ford_17fusionsesa2fa_lightningblue.jpg
 // Chevrolet Malibu 2018:       https://cdn.jdpower.com/Models/640x480/2018-Chevrolet-Malibu-Hybrid.jpg
 // Honda Accord 2019:           https://platform.cstatic-images.com/in/v2/stock_photos/36f04758-5aab-42bc-912c-8e3420db060d/d5c9cc6a-43e6-4128-9154-17ff7f67955b.png
+
+
+
 
 // Hyundai Elantra 2020:        https://media.motorfuse.com/img.cfm/type/3/img/0F16CD4A4D00D7D5C3E6AFC0C42B0B10F5CB41
 // Subaru Impreza 2017:         https://lh3.googleusercontent.com/proxy/ziZA1Uv7T97SzcIhK7_vYJwLTOoDkB43O57dPCuwev3zq-odewKDKpGd5r3SqiDg2EuzeKUw_m1UKKHccufeERl7yE38J6lJUMkdL0AE9-FbbbF-PNoNVOuorIsVm7NQ2qIkGU3QO2ROKrBWmpg
@@ -311,6 +490,9 @@ const carListings = [
 // Devel Sixteen 2024:          https://upload.wikimedia.org/wikipedia/commons/5/56/Devel_Sixteen_V-8_Prototype_%28cropped%29.jpg
 // Zarooq Sand Racer 2020:      https://www.blessthisstuff.com/imagens/stuff/zarooq-sand-racer-2.jpg
 
+
+
+
 // Barq Rena Max 2023:          https://www.moveelectric.com/sites/default/files/styles/article/public/2022-03/BARQ%20LEAD%20HERO.jpg?itok=6ryGixSU
 // Ceer EV Series 2024:         https://hips.hearstapps.com/hmg-prod/images/foxtron-1667830222.jpg?crop=0.504xw:1.00xh;0.196xw,0&resize=1200:*
 // Sham Car 2008:               https://api.keyfinder.net/Uploads/Attachments/8abad08b-7b21-48c6-95d3-af31a2cce14f_638587314874480387.jpg
@@ -322,6 +504,9 @@ const carListings = [
 // Emin Auto Model X 2024:      https://carbike360-ae.s3.me-central-1.amazonaws.com/tesla_model_x_2024_left_side_front_view_5ecff00fd8.jpg
 // Renault Algeria Edition 2023:https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnr3xewqduyekIGRV6C1Z5OFT9cMQv6YR9szNhVg2EzhFE4FEg42fRZipiLtp0xJpG5PI&usqp=CAU
 
+
+
+
 // Pak Suzuki Alto 2021:        https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM2SEFgSwovlw2IenrbnVlVGVkC2-5X5TjPQ&s
 // Proton Saga 2020:            https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPT7bgn4Ob_Blf8bGbc6dT_0L-e3E5O5jLHQ&s
 // Esemka Bima EV 2022:         https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX_3RUv96YQUmHnnS075ROo3kNMYlQg6Misw&s
@@ -331,6 +516,9 @@ const carListings = [
 // Xpeng E7 2023:               https://www.motortrend.com/uploads/2022/07/XPeng-P7-front-three-quarter-1.jpg
 // Geely Geometry A 2022:       https://cdn.wheel-size.com/automobile/body/geely-geometry-e-2022-2024-1702023618.8343275.jpg
 // Great Wall Motors Ora Good Cat 2022: https://www.topgear.com/sites/default/files/2022/11/1-Ora-Funky-Cat-review.jpg
+
+
+
 
 // Honda Accord 2022:           https://platform.cstatic-images.com/large/in/v2/stock_photos/82ade758-2efe-4764-90bc-45229fdb28a9/c9896353-f768-4b07-8bd3-3aaf4d1c4d3f.png
 // Subaru Outback 2023:         https://file.kelleybluebookimages.com/kbb/base/evox/CP/51251/2023-Subaru-Outback-front_51251_032_1861x838_K1X_cropped.png
@@ -343,6 +531,9 @@ const carListings = [
 // Fiat 500 Abarth 2023:        https://www.motortrend.com/uploads/2022/11/New-Fiat-500e-Abarth-EV-hatchback-23.jpg
 // Toyota RAV4 2022:            https://dealerinspire-image-library-prod.s3.us-east-1.amazonaws.com/images/jynhempukIxZFuy1XaL8HEGDLb7ly0tkLw4SDSHj.png
 
+
+
+
 // Toyota Supra 2023:           https://www.earnhardttoyota.com/assets/stock/ColorMatched_01/Transparent/640/cc_2022TOC13_01_640/cc_2022TOC130004_01_640_D05.png
 // Toyota Highlander 2021:      https://images.hgmsites.net/lrg/2021-toyota-highlander-le-fwd-natl-angular-front-exterior-view_100767712_l.jpg
 // Toyota Tacoma 2020:          https://www.motortrend.com/uploads/sites/10/2019/11/2020-toyota-tacoma-trd-off-road-crew-cab-4wd-pick-up-angular-front.png
@@ -353,6 +544,9 @@ const carListings = [
 // Toyota RAV4 2020:            https://www.seegertoyota.com/static/dealer-12152/2020_Rav4_US_XLE-FWD_08W9_002.png
 // Toyota Supra 2020:           https://images-cdn.ubuy.co.in/653cc8744047b71cd07f49bd-han-s-2020-toyota-supra-orange-jada.jpg
 // Toyota Highlander 2019:      https://platform.cstatic-images.com/in/v2/stock_photos/68a778fa-0728-4489-ad03-e0c0d4da8ac5/6a0b5b56-b90f-4e04-b299-78604add1916.png
+
+
+
 
 // Toyota Tacoma 2018:          https://www.motortrend.com/uploads/sites/10/2017/12/2018-toyota-tacoma-trd-off-road-double-pickup-angular-front.png?w=768&width=768&q=75&format=webp
 // Toyota Corolla 2021:         https://di-enrollment-api.s3.amazonaws.com/toyota/models/2021/corolla/colors/BLUEPRINT.jpg
@@ -365,6 +559,9 @@ const carListings = [
 // Honda CR-V 2022:             https://ymimg1.b8cdn.com/resized/car_version/24287/pictures/8506310/listing_main_14317_st1280_046.jpg
 // Honda Fit 2020:              https://hips.hearstapps.com/hmg-prod/images/new-honda-fit-101-1571792277.jpg
 
+
+
+
 // Ford F-150 2023:             https://img3.d2cmedia.ca/mb674f5c753622d/3847/9955072/1/Ford-F_150-2023.jpg
 // Ford Explorer 2022:          https://platform.cstatic-images.com/in/v2/stock_photos/ca440793-7ca2-468b-b3b2-50e27c628eca/8f7adfd5-c009-4a60-822a-0e0bcce06d9b.png
 // Ford Fiesta 2019:            https://assets-clean.local-car-finder.com/images/13069/13069_st1280_089.png
@@ -376,10 +573,61 @@ const carListings = [
 // Tesla Model S 2023:          https://file.kelleybluebookimages.com/kbb/base/evox/CP/52152/2023-Tesla-Model%20S-front_52152_032_1822x709_PPMR_cropped.png
 // Tesla Model X 2023:          https://platform.cstatic-images.com/in/v2/stock_photos/0ad9d380-f18a-46f6-a1bb-6abf77b17d96/a55af2e3-e16c-4856-81f5-fd6f590f075e.png
 
+
+
+
 // Tesla Model Y 2022:          https://img.autobytel.com/chrome/colormatched_01/white/640/cc_2022tss02_01_640/cc_2022tss020005_01_640_solb.jpg
 // Tesla Cybertruck 2024:       https://file.kelleybluebookimages.com/kbb/base/evox/CP/54001/2024-Tesla-Cybertruck-front_54001_032_1860x792_EVOX01_cropped.png
 // Tesla Roadster 2022:         https://assets.superhivemarket.com/store/productimage/158052/image/original-3209f21261e8504a35fbc4bb5d010a64.png
 // Tesla Semi 2023:             https://d2hucwwplm5rxi.cloudfront.net/wp-content/uploads/2023/01/25103144/All-about-Tesla-Semi-truck-_-Body-6-25-1-23-1024x640.jpg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -403,13 +651,49 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     displayCars(carListings);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
     searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -426,6 +710,30 @@ document.addEventListener("DOMContentLoaded", () => {
         const horsepower = parseInt(document.getElementById("car-horsepower").value) || 0;
         const acceleration = parseFloat(document.getElementById("car-acceleration").value) || Infinity;
         const engine = document.getElementById("car-engine").value.toLowerCase();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -454,6 +762,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
+
+
+
+
+
             return isMakeMatch && isModelMatch && isYearMatch && isTypeMatch && isPriceMatch &&
                    isColorMatch && isCountryMatch && isTransmissionMatch &&
                    isHorsepowerMatch && isAccelerationMatch && isEngineMatch;
@@ -462,12 +778,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-
         displayCars(filteredCars);
     });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -499,6 +823,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
+
+
+
+
+
+
     carList.addEventListener("click", (e) => {
         if (e.target.classList.contains("info-button")) {
             const carData = e.target.dataset;
@@ -508,4 +838,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+
+
+
+
+
+
 });
+
+
+
+
+
+
+
+
