@@ -174,7 +174,6 @@ form button:hover {
 }
 
 
-/* Responsive design */
 @media (max-width: 768px) {
     .car-list {
         flex-direction: column;
