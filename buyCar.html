@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Car</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Buy and Sell Cars</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Purchase Your Car</h2>
+        <form id="buy-car-form" method="get" action="buy.html">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">Credit Card</option>
+                <option value="debit-card">Debit Card</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="cash">Cash</option>
+            </select>
+
+            <button type="submit" style="margin: 40px 0px;">Submit Purchase</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Buy and Sell Cars. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('buy-car-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Your purchase request has been submitted successfully!');
+            // Here you can add code to handle the form submission, e.g., sending data to a server
+        });
+    </script>
+</body>
+</html>
