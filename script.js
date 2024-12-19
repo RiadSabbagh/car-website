@@ -1,25 +1,6 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Here the list (the map) of all the cars (in total 556 cars)
 
 
 const carListings = [
@@ -454,8 +435,303 @@ const carListings = [
     { make: "Hummer", model: "EV", year: 2022, price: 80000, type: "Electric Pickup", color: "White", country: "USA", transmission: "Automatic", horsepower: 1000, acceleration: 3.0, engineType: "Electric", image: "hummerEV2022.png", description: "The 2022 Hummer EV in white is an electric pickup truck that delivers both power and sustainability. With 1000 horsepower and an electric motor, it accelerates from 0 to 60 mph in just 3.0 seconds. This fully electric vehicle offers a combination of extreme performance and eco-friendliness, redefining what an electric truck can do." },
     { make: "Hummer", model: "H2 SUT", year: 2021, price: 75000, type: "Pickup", color: "Red", country: "USA", transmission: "Automatic", horsepower: 393, acceleration: 7.5, engineType: "V8", image: "hummerH2SUT2021.png", description: "The 2021 Hummer H2 SUT in red is a striking pickup that combines strength with style. Powered by a 393-horsepower V8 engine and automatic transmission, it accelerates from 0 to 60 mph in 7.5 seconds. Its robust frame and pickup capabilities make it an excellent choice for those who need power and versatility." },
     { make: "Hummer", model: "H3T", year: 2020, price: 40000, type: "Pickup", color: "Blue", country: "USA", transmission: "Manual", horsepower: 300, acceleration: 8.2, engineType: "V8", image: "hummerH3T2020.png", description: "The 2020 Hummer H3T in blue is a powerful and versatile pickup truck. With a 300-horsepower V8 engine and manual transmission, it accelerates from 0 to 60 mph in 8.2 seconds. The rugged design and off-road capabilities make it a great option for those who need a tough vehicle for both work and play." },
+    { make: "Renault", model: "Clio", year: 2021, price: 18000, type: "Hatchback", color: "Red", country: "France", transmission: "Manual", horsepower: 90, acceleration: 11.0, engineType: "Inline-4", image: "renaultClio2021.png", description: "The 2021 Renault Clio in red is a compact and stylish hatchback designed for city driving. Powered by a 90-horsepower Inline-4 engine and equipped with a manual transmission, it offers an efficient and practical choice for daily commutes, accelerating from 0 to 60 mph in 11.0 seconds." },
+    { make: "Renault", model: "Captur", year: 2022, price: 24000, type: "SUV", color: "Blue", country: "France", transmission: "Automatic", horsepower: 130, acceleration: 10.5, engineType: "Inline-4", image: "renaultCaptur2022.png", description: "The 2022 Renault Captur in blue is a compact SUV offering a blend of style and performance. With a 130-horsepower Inline-4 engine and automatic transmission, it accelerates from 0 to 60 mph in 10.5 seconds. Its elevated design and advanced features make it ideal for families and adventurous drivers." },
+    { make: "Renault", model: "Megane", year: 2020, price: 21000, type: "Sedan", color: "White", country: "France", transmission: "Manual", horsepower: 115, acceleration: 11.2, engineType: "Inline-4", image: "renaultMegane2020.png", description: "The 2020 Renault Megane in white is a sleek and comfortable sedan. Featuring a 115-horsepower Inline-4 engine with manual transmission, it accelerates from 0 to 60 mph in 11.2 seconds. This versatile sedan is a great choice for drivers seeking a balance of efficiency and practicality." },
+    { make: "Renault", model: "Kadjar", year: 2021, price: 26000, type: "SUV", color: "Silver", country: "France", transmission: "Automatic", horsepower: 140, acceleration: 9.6, engineType: "Inline-4", image: "renaultKadjar2021.png", description: "The 2021 Renault Kadjar in silver is a refined SUV with impressive power and versatility. Equipped with a 140-horsepower Inline-4 engine and automatic transmission, it accelerates from 0 to 60 mph in 9.6 seconds. Its spacious interior and sleek design make it a practical and stylish choice for families." },
+    { make: "Renault", model: "Zoe", year: 2022, price: 32000, type: "Electric Hatchback", color: "Green", country: "France", transmission: "Automatic", horsepower: 135, acceleration: 9.5, engineType: "Electric", image: "renaultZoe2022.png", description: "The 2022 Renault Zoe in green is a fully electric hatchback, combining sustainability with efficiency. With a 135-horsepower electric motor, it accelerates from 0 to 60 mph in 9.5 seconds. Its eco-friendly design and compact size make it an excellent choice for urban drivers focused on reducing their carbon footprint." },
 
 
+    { make: "Renault", model: "Twingo", year: 2020, price: 15000, type: "City Car", color: "Yellow", country: "France", transmission: "Manual", horsepower: 75, acceleration: 12.9, engineType: "Inline-3", image: "renaultTwingo2020.png", description: "The 2020 Renault Twingo in yellow is a cheerful and compact city car. Powered by a 75-horsepower Inline-3 engine and featuring a manual transmission, it delivers agile handling and a practical driving experience for urban environments." },
+    { make: "Renault", model: "Espace", year: 2021, price: 40000, type: "MPV", color: "Black", country: "France", transmission: "Automatic", horsepower: 225, acceleration: 7.6, engineType: "Inline-4", image: "renaultEspace2021.png", description: "The 2021 Renault Espace in black is a luxurious multi-purpose vehicle (MPV) designed for comfort and space. With a 225-horsepower Inline-4 engine and automatic transmission, it combines performance with practicality, accelerating from 0 to 60 mph in 7.6 seconds." },
+    { make: "Renault", model: "Arkana", year: 2022, price: 33000, type: "SUV Coupe", color: "Red", country: "France", transmission: "Automatic", horsepower: 140, acceleration: 9.8, engineType: "Inline-4", image: "renaultArkana2022.png", description: "The 2022 Renault Arkana in red is a stylish SUV coupe that blends elegance and capability. Powered by a 140-horsepower Inline-4 engine and featuring an automatic transmission, it offers a balanced driving experience with an acceleration of 9.8 seconds from 0 to 60 mph." },
+    { make: "Renault", model: "Trafic", year: 2019, price: 35000, type: "Van", color: "White", country: "France", transmission: "Manual", horsepower: 120, acceleration: 13.0, engineType: "Inline-4", image: "renaultTrafic2019.png", description: "The 2019 Renault Trafic in white is a reliable and versatile van built for utility. With a 120-horsepower Inline-4 engine and manual transmission, it is ideal for transporting goods or passengers, offering a robust and functional driving solution." },
+    { make: "Renault", model: "Koleos", year: 2020, price: 29000, type: "SUV", color: "Silver", country: "France", transmission: "Automatic", horsepower: 160, acceleration: 9.3, engineType: "Inline-4", image: "renaultKoleos2020.png", description: "The 2020 Renault Koleos in silver is a spacious and well-equipped SUV. Featuring a 160-horsepower Inline-4 engine and automatic transmission, it accelerates from 0 to 60 mph in 9.3 seconds, delivering a comfortable and capable ride for all journeys." },
+    { make: "SEAT", model: "Ibiza", year: 2021, price: 19000, type: "Hatchback", color: "Blue", country: "Spain", transmission: "Manual", horsepower: 110, acceleration: 9.3, engineType: "Inline-3", image: "seatIbiza2021.png", description: "The 2021 SEAT Ibiza in blue is a vibrant hatchback offering agility and efficiency. With a 110-horsepower Inline-3 engine and manual transmission, it provides a sporty yet economical driving experience, accelerating to 60 mph in 9.3 seconds." },
+    { make: "SEAT", model: "Leon", year: 2022, price: 24000, type: "Hatchback", color: "Red", country: "Spain", transmission: "Automatic", horsepower: 130, acceleration: 8.4, engineType: "Inline-4", image: "seatLeon2022.png", description: "The 2022 SEAT Leon in red is a dynamic hatchback with modern features. Equipped with a 130-horsepower Inline-4 engine and automatic transmission, it delivers a smooth and engaging drive, reaching 60 mph in just 8.4 seconds." },
+    { make: "SEAT", model: "Ateca", year: 2020, price: 29000, type: "SUV", color: "White", country: "Spain", transmission: "Automatic", horsepower: 150, acceleration: 8.5, engineType: "Inline-4", image: "seatAteca2020.png", description: "The 2020 SEAT Ateca in white is a stylish and capable SUV. Powered by a 150-horsepower Inline-4 engine with automatic transmission, it offers excellent performance and versatility, accelerating to 60 mph in 8.5 seconds." },
+    { make: "SEAT", model: "Arona", year: 2021, price: 23000, type: "SUV", color: "Grey", country: "Spain", transmission: "Manual", horsepower: 115, acceleration: 9.8, engineType: "Inline-3", image: "seatArona2021.png", description: "The 2021 SEAT Arona in grey is a compact SUV perfect for city driving. Featuring a 115-horsepower Inline-3 engine and manual transmission, it combines practicality with spirited performance, reaching 60 mph in 9.8 seconds." },
+    { make: "SEAT", model: "Tarraco", year: 2022, price: 35000, type: "SUV", color: "Black", country: "Spain", transmission: "Automatic", horsepower: 190, acceleration: 8.0, engineType: "Inline-4", image: "seatTarraco2022.png", description: "The 2022 SEAT Tarraco in black is a premium SUV offering spaciousness and power. Its 190-horsepower Inline-4 engine with automatic transmission ensures a robust and refined ride, achieving 60 mph in just 8.0 seconds." },
+
+    { make: "Jaguar", model: "XF", year: 2021, price: 45000, type: "Sedan", color: "Black", country: "UK", transmission: "Automatic", horsepower: 296, acceleration: 6.5, engineType: "Inline-4", image: "jaguarXF2021.png", description: "The 2021 Jaguar XF in black is a luxurious sedan combining elegance with performance. Powered by a 296-horsepower Inline-4 engine and automatic transmission, it delivers a smooth and powerful ride, reaching 60 mph in 6.5 seconds." },
+    { make: "Jaguar", model: "F-Pace", year: 2022, price: 60000, type: "SUV", color: "White", country: "UK", transmission: "Automatic", horsepower: 340, acceleration: 5.9, engineType: "V6", image: "jaguarFPace2022.png", description: "The 2022 Jaguar F-Pace in white is a premium SUV offering style and versatility. Its 340-horsepower V6 engine paired with automatic transmission ensures dynamic performance, accelerating to 60 mph in just 5.9 seconds." },
+    { make: "Jaguar", model: "I-Pace", year: 2023, price: 70000, type: "Electric SUV", color: "Red", country: "UK", transmission: "Automatic", horsepower: 394, acceleration: 4.8, engineType: "Electric", image: "jaguarIPace2023.png", description: "The 2023 Jaguar I-Pace in red is an all-electric SUV that combines innovation with luxury. Boasting a 394-horsepower electric powertrain and automatic transmission, it offers thrilling acceleration to 60 mph in just 4.8 seconds." },
+    { make: "Jaguar", model: "E-Pace", year: 2020, price: 42000, type: "SUV", color: "Blue", country: "UK", transmission: "Automatic", horsepower: 246, acceleration: 7.0, engineType: "Inline-4", image: "jaguarEPace2020.png", description: "The 2020 Jaguar E-Pace in blue is a compact SUV designed for both style and functionality. Equipped with a 246-horsepower Inline-4 engine and automatic transmission, it delivers spirited performance, reaching 60 mph in 7.0 seconds." },
+    { make: "Jaguar", model: "F-Type", year: 2022, price: 75000, type: "Coupe", color: "Silver", country: "UK", transmission: "Automatic", horsepower: 575, acceleration: 3.5, engineType: "V8", image: "jaguarFType2022.png", description: "The 2022 Jaguar F-Type in silver is a high-performance coupe that exudes power and sophistication. With a 575-horsepower V8 engine and automatic transmission, it delivers a thrilling driving experience, reaching 60 mph in just 3.5 seconds." },
+
+    { make: "Rolls-Royce", model: "Phantom", year: 2022, price: 450000, type: "Sedan", color: "Black", country: "UK", transmission: "Automatic", horsepower: 563, acceleration: 5.1, engineType: "V12", image: "rollsRoycePhantom2022.png", description: "The 2022 Rolls-Royce Phantom in black is the epitome of luxury and elegance. Featuring a 563-horsepower V12 engine and automatic transmission, it delivers a smooth and commanding performance, accelerating to 60 mph in 5.1 seconds." }, 
+    { make: "Rolls-Royce", model: "Ghost", year: 2021, price: 350000, type: "Sedan", color: "White", country: "UK", transmission: "Automatic", horsepower: 563, acceleration: 4.8, engineType: "V12", image: "rollsRoyceGhost2021.png", description: "The 2021 Rolls-Royce Ghost in white is a sophisticated sedan blending contemporary design with supreme comfort. Its 563-horsepower V12 engine and automatic transmission enable a refined yet powerful drive, reaching 60 mph in 4.8 seconds." }, 
+    { make: "Rolls-Royce", model: "Cullinan", year: 2023, price: 400000, type: "SUV", color: "Silver", country: "UK", transmission: "Automatic", horsepower: 563, acceleration: 5.2, engineType: "V12", image: "rollsRoyceCullinan2023.png", description: "The 2023 Rolls-Royce Cullinan in silver is a luxurious SUV offering unparalleled comfort and performance. Powered by a 563-horsepower V12 engine with automatic transmission, it accelerates to 60 mph in 5.2 seconds while maintaining ultimate refinement." }, 
+    { make: "Rolls-Royce", model: "Dawn", year: 2020, price: 340000, type: "Convertible", color: "Blue", country: "UK", transmission: "Automatic", horsepower: 563, acceleration: 4.9, engineType: "V12", image: "rollsRoyceDawn2020.png", description: "The 2020 Rolls-Royce Dawn in blue is a stunning convertible designed for open-air luxury. With a 563-horsepower V12 engine and automatic transmission, it delivers effortless acceleration to 60 mph in 4.9 seconds." }, 
+    { make: "Rolls-Royce", model: "Wraith", year: 2021, price: 380000, type: "Coupe", color: "Red", country: "UK", transmission: "Automatic", horsepower: 624, acceleration: 4.4, engineType: "V12", image: "rollsRoyceWraith2021.png", description: "The 2021 Rolls-Royce Wraith in red is a powerful and elegant coupe. Boasting a 624-horsepower V12 engine and automatic transmission, it delivers an exhilarating performance, reaching 60 mph in an impressive 4.4 seconds." },
+
+
+    { make: "Maserati", model: "Ghibli", year: 2022, price: 79000, type: "Sedan", color: "Black", country: "Italy", transmission: "Automatic", horsepower: 345, acceleration: 5.5, engineType: "V6", image: "maseratiGhibli2022.png", description: "The 2022 Maserati Ghibli in black is an exquisite sedan that combines Italian luxury with dynamic performance. Powered by a 345-horsepower V6 engine and automatic transmission, it accelerates to 60 mph in 5.5 seconds." }, 
+    { make: "Maserati", model: "Levante", year: 2023, price: 87000, type: "SUV", color: "White", country: "Italy", transmission: "Automatic", horsepower: 424, acceleration: 5.0, engineType: "V6", image: "maseratiLevante2023.png", description: "The 2023 Maserati Levante in white is a stylish and powerful SUV. Featuring a 424-horsepower V6 engine and automatic transmission, it delivers an exhilarating ride with an acceleration to 60 mph in just 5.0 seconds." },
+     { make: "Maserati", model: "GranTurismo", year: 2021, price: 134000, type: "Coupe", color: "Red", country: "Italy", transmission: "Automatic", horsepower: 454, acceleration: 4.8, engineType: "V8", image: "maseratiGranTurismo2021.png", description: "The 2021 Maserati GranTurismo in red is a stunning coupe designed for enthusiasts. Its 454-horsepower V8 engine and automatic transmission deliver exceptional performance, reaching 60 mph in 4.8 seconds." },
+      { make: "Maserati", model: "MC20", year: 2022, price: 210000, type: "Sports Car", color: "Blue", country: "Italy", transmission: "Automatic", horsepower: 621, acceleration: 2.9, engineType: "V6 Twin Turbo", image: "maseratiMC202022.png", description: "The 2022 Maserati MC20 in blue is a revolutionary sports car that defines Italian craftsmanship. Equipped with a 621-horsepower V6 twin-turbo engine and automatic transmission, it sprints to 60 mph in a breathtaking 2.9 seconds." },
+       { make: "Maserati", model: "Quattroporte", year: 2020, price: 104000, type: "Sedan", color: "Grey", country: "Italy", transmission: "Automatic", horsepower: 424, acceleration: 5.0, engineType: "V6", image: "maseratiQuattroporte2020.png", description: "The 2020 Maserati Quattroporte in grey is a luxurious sedan offering exceptional comfort and power. Its 424-horsepower V6 engine and automatic transmission ensure a smooth yet thrilling ride, accelerating to 60 mph in 5.0 seconds." },
+
+
+    { make: "Bentley", model: "Continental GT", year: 2023, price: 230000, type: "Coupe", color: "Silver", country: "UK", transmission: "Automatic", horsepower: 542, acceleration: 3.9, engineType: "V8", image: "bentleyContinentalGT2023.png", description: "The 2023 Bentley Continental GT in silver is a luxurious coupe that blends elegance with performance. Powered by a 542-horsepower V8 engine, it accelerates to 60 mph in a swift 3.9 seconds, offering an unparalleled driving experience." },
+     { make: "Bentley", model: "Bentayga", year: 2022, price: 185000, type: "SUV", color: "Black", country: "UK", transmission: "Automatic", horsepower: 626, acceleration: 3.8, engineType: "W12", image: "bentleyBentayga2022.png", description: "The 2022 Bentley Bentayga in black is a high-performance SUV with unmatched luxury. Featuring a 626-horsepower W12 engine, it achieves 60 mph in just 3.8 seconds, combining power with sophistication." },
+      { make: "Bentley", model: "Flying Spur", year: 2021, price: 198000, type: "Sedan", color: "White", country: "UK", transmission: "Automatic", horsepower: 626, acceleration: 3.7, engineType: "W12", image: "bentleyFlyingSpur2021.png", description: "The 2021 Bentley Flying Spur in white is a premium sedan that redefines luxury and performance. Its 626-horsepower W12 engine and advanced transmission deliver a remarkable acceleration of 3.7 seconds to 60 mph." },
+       { make: "Bentley", model: "Mulsanne", year: 2020, price: 305000, type: "Sedan", color: "Grey", country: "UK", transmission: "Automatic", horsepower: 505, acceleration: 4.9, engineType: "V8", image: "bentleyMulsanne2020.png", description: "The 2020 Bentley Mulsanne in grey is a masterpiece of automotive luxury. Equipped with a 505-horsepower V8 engine, it combines refined craftsmanship with a smooth acceleration to 60 mph in 4.9 seconds." }, { make: "Bentley", model: "Continental GT Speed", year: 2023, price: 274000, type: "Coupe", color: "Green", country: "UK", transmission: "Automatic", horsepower: 650, acceleration: 3.5, engineType: "W12", image: "bentleyContinentalGTSpeed2023.png", description: "The 2023 Bentley Continental GT Speed in green is a high-performance coupe that exudes sophistication. Powered by a 650-horsepower W12 engine, it races to 60 mph in an exhilarating 3.5 seconds." },
+
+
+    { make: "Aston Martin", model: "DB11", year: 2023, price: 220000, type: "Coupe", color: "Silver", country: "UK", transmission: "Automatic", horsepower: 528, acceleration: 3.9, engineType: "V8", image: "astonMartinDB112023.png", description: "The 2023 Aston Martin DB11 in silver is a luxurious coupe with exceptional performance. Featuring a 528-horsepower V8 engine, it accelerates to 60 mph in a mere 3.9 seconds, blending elegance with power." },
+     { make: "Aston Martin", model: "Vantage", year: 2022, price: 140000, type: "Coupe", color: "Black", country: "UK", transmission: "Automatic", horsepower: 503, acceleration: 3.6, engineType: "V8", image: "astonMartinVantage2022.png", description: "The 2022 Aston Martin Vantage in black is a sleek and powerful coupe. With a 503-horsepower V8 engine, it sprints to 60 mph in just 3.6 seconds, delivering an exhilarating driving experience." },
+      { make: "Aston Martin", model: "DBX", year: 2021, price: 180000, type: "SUV", color: "Blue", country: "UK", transmission: "Automatic", horsepower: 542, acceleration: 4.3, engineType: "V8", image: "astonMartinDBX2021.png", description: "The 2021 Aston Martin DBX in blue is a luxury SUV that combines practicality with performance. Powered by a 542-horsepower V8 engine, it achieves 60 mph in just 4.3 seconds, offering a refined ride." },
+       { make: "Aston Martin", model: "Rapide AMR", year: 2020, price: 210000, type: "Sedan", color: "Green", country: "UK", transmission: "Automatic", horsepower: 595, acceleration: 4.4, engineType: "V12", image: "astonMartinRapideAMR2020.png", description: "The 2020 Aston Martin Rapide AMR in green is a high-performance sedan with distinctive style. Its 595-horsepower V12 engine provides thrilling acceleration, reaching 60 mph in 4.4 seconds." }, { make: "Aston Martin", model: "Vanquish S", year: 2019, price: 300000, type: "Coupe", color: "Red", country: "UK", transmission: "Automatic", horsepower: 580, acceleration: 3.5, engineType: "V12", image: "astonMartinVanquishS2019.png", description: "The 2019 Aston Martin Vanquish S in red is an iconic coupe that defines luxury and speed. Featuring a 580-horsepower V12 engine, it rockets to 60 mph in just 3.5 seconds, epitomizing pure driving pleasure." },
+
+
+    { make: "Pagani", model: "Huayra Roadster BC", year: 2021, price: 3500000, type: "Convertible", color: "Silver", country: "Italy", transmission: "Automatic", horsepower: 791, acceleration: 2.8, engineType: "V12", image: "paganiHuayraRoadsterBC2021.png", description: "The 2021 Pagani Huayra Roadster BC in silver is a masterpiece of automotive engineering. Featuring a 791-horsepower V12 engine and accelerating to 60 mph in just 2.8 seconds, this convertible offers an unparalleled driving experience." },
+     { make: "Pagani", model: "Huayra R", year: 2022, price: 3100000, type: "Coupe", color: "Black", country: "Italy", transmission: "Sequential", horsepower: 838, acceleration: 2.7, engineType: "V12", image: "paganiHuayraR2022.png", description: "The 2022 Pagani Huayra R in black is a track-focused coupe that redefines speed and precision. With an 838-horsepower V12 engine, it reaches 60 mph in a blistering 2.7 seconds, delivering an adrenaline-fueled ride." },
+      { make: "Pagani", model: "Zonda HP Barchetta", year: 2018, price: 17000000, type: "Convertible", color: "Blue", country: "Italy", transmission: "Manual", horsepower: 789, acceleration: 3.1, engineType: "V12", image: "paganiZondaHPBarchetta2018.png", description: "The 2018 Pagani Zonda HP Barchetta in blue is a rare and stunning convertible. Equipped with a 789-horsepower V12 engine, it accelerates to 60 mph in 3.1 seconds, making it a collector's dream." },
+       { make: "Pagani", model: "Zonda Cinque", year: 2010, price: 2000000, type: "Coupe", color: "White", country: "Italy", transmission: "Sequential", horsepower: 678, acceleration: 3.4, engineType: "V12", image: "paganiZondaCinque2010.png", description: "The 2010 Pagani Zonda Cinque in white is an iconic coupe with exceptional craftsmanship. Its 678-horsepower V12 engine propels it to 60 mph in 3.4 seconds, blending luxury with performance." }, { make: "Pagani", model: "Zonda Revolucion", year: 2013, price: 2800000, type: "Coupe", color: "Black", country: "Italy", transmission: "Sequential", horsepower: 800, acceleration: 2.6, engineType: "V12", image: "paganiZondaRevolucion2013.png", description: "The 2013 Pagani Zonda Revolucion in black is a track-focused marvel. With an 800-horsepower V12 engine and a 2.6-second sprint to 60 mph, it delivers an unmatched performance experience." },
+
+
+    { make: "Tata Motors", model: "Nexon", year: 2023, price: 22000, type: "SUV", color: "Blue", country: "India", transmission: "Automatic", horsepower: 120, acceleration: 9.9, engineType: "Inline-4", image: "tataNexon2023.png", description: "The 2023 Tata Nexon in blue offers a well-rounded performance with a 120-horsepower inline-4 engine. With an acceleration of 9.9 seconds to 60 mph, this automatic SUV is designed for everyday driving with style and comfort." },
+     { make: "Tata Motors", model: "Harrier", year: 2022, price: 25000, type: "SUV", color: "Red", country: "India", transmission: "Automatic", horsepower: 170, acceleration: 8.2, engineType: "Inline-4", image: "tataHarrier2022.png", description: "The 2022 Tata Harrier in red is a powerful SUV, equipped with a 170-horsepower inline-4 engine. It accelerates to 60 mph in 8.2 seconds, offering a refined driving experience with modern features." },
+      { make: "Tata Motors", model: "Altroz", year: 2021, price: 15000, type: "Hatchback", color: "Silver", country: "India", transmission: "Manual", horsepower: 86, acceleration: 11.3, engineType: "Inline-4", image: "tataAltroz2021.png", description: "The 2021 Tata Altroz in silver is a compact and efficient hatchback with an 86-horsepower inline-4 engine. Its 11.3-second acceleration to 60 mph makes it a great choice for urban driving with practicality and value." },
+       { make: "Tata Motors", model: "Tiago", year: 2020, price: 12000, type: "Hatchback", color: "Orange", country: "India", transmission: "Manual", horsepower: 84, acceleration: 12.0, engineType: "Inline-3", image: "tataTiago2020.png", description: "The 2020 Tata Tiago in orange is a budget-friendly hatchback featuring an 84-horsepower inline-3 engine. Its 12.0-second acceleration to 60 mph makes it an economical yet reliable choice for city driving." }, { make: "Tata Motors", model: "Tigor", year: 2019, price: 13000, type: "Sedan", color: "White", country: "India", transmission: "Manual", horsepower: 85, acceleration: 10.7, engineType: "Inline-3", image: "tataTigor2019.png", description: "The 2019 Tata Tigor in white is a practical sedan with an 85-horsepower inline-3 engine. It accelerates to 60 mph in 10.7 seconds, offering a spacious and comfortable ride for those seeking a value-driven sedan." },
+
+
+    { make: "Changan", model: "CS75 Plus", year: 2023, price: 25000, type: "SUV", color: "Black", country: "China", transmission: "Automatic", horsepower: 178, acceleration: 9.5, engineType: "Inline-4", image: "changanCS75Plus2023.png", description: "The 2023 Changan CS75 Plus in black is a powerful SUV with a 178-horsepower inline-4 engine. It accelerates to 60 mph in 9.5 seconds, offering a balanced mix of performance, comfort, and modern design for a daily commute." },
+     { make: "Changan", model: "Eado", year: 2022, price: 18000, type: "Sedan", color: "Blue", country: "China", transmission: "Manual", horsepower: 138, acceleration: 10.1, engineType: "Inline-4", image: "changanEado2022.png", description: "The 2022 Changan Eado in blue is a sleek sedan with a 138-horsepower inline-4 engine. Its 10.1-second acceleration to 60 mph ensures a solid driving experience, making it a great value for those who need comfort and efficiency." },
+      { make: "Changan", model: "Alsvin", year: 2021, price: 12000, type: "Sedan", color: "White", country: "China", transmission: "Manual", horsepower: 95, acceleration: 12.5, engineType: "Inline-3", image: "changanAlsvin2021.png", description: "The 2021 Changan Alsvin in white is a budget-friendly sedan with a 95-horsepower inline-3 engine. Its 12.5-second acceleration to 60 mph makes it an ideal choice for urban driving, combining affordability and practicality." },
+       { make: "Changan", model: "CS55", year: 2020, price: 22000, type: "SUV", color: "Red", country: "China", transmission: "Automatic", horsepower: 162, acceleration: 9.0, engineType: "Inline-4", image: "changanCS552020.png", description: "The 2020 Changan CS55 in red is a stylish SUV with a 162-horsepower inline-4 engine. It accelerates to 60 mph in 9.0 seconds, offering good performance along with modern features and a spacious interior for families." }, { make: "Changan", model: "CS35 Plus", year: 2019, price: 15000, type: "SUV", color: "Silver", country: "China", transmission: "Manual", horsepower: 132, acceleration: 10.3, engineType: "Inline-4", image: "changanCS35Plus2019.png", description: "The 2019 Changan CS35 Plus in silver is an affordable SUV with a 132-horsepower inline-4 engine. It delivers a 10.3-second acceleration to 60 mph, making it a practical and value-driven choice for those seeking versatility." },
+
+
+    { make: "Geely", model: "Emgrand X7", year: 2023, price: 28000, type: "SUV", color: "Black", country: "China", transmission: "Automatic", horsepower: 150, acceleration: 9.8, engineType: "Inline-4", image: "geelyEmgrandX72023.png", description: "The 2023 Geely Emgrand X7 in black is a versatile SUV equipped with a 150-horsepower inline-4 engine. With an acceleration of 9.8 seconds to 60 mph, it combines practicality and performance for both city and highway driving." },
+     { make: "Geely", model: "Binyue", year: 2022, price: 23000, type: "SUV", color: "Red", country: "China", transmission: "Automatic", horsepower: 177, acceleration: 8.2, engineType: "Inline-4", image: "geelyBinyue2022.png", description: "The 2022 Geely Binyue in red features a 177-horsepower inline-4 engine and accelerates to 60 mph in 8.2 seconds. This stylish SUV is perfect for those who want a blend of sporty performance and practicality." },
+      { make: "Geely", model: "Emgrand", year: 2021, price: 16000, type: "Sedan", color: "White", country: "China", transmission: "Manual", horsepower: 133, acceleration: 10.5, engineType: "Inline-4", image: "geelyEmgrand2021.png", description: "The 2021 Geely Emgrand in white offers a well-rounded sedan experience with a 133-horsepower inline-4 engine. Its 10.5-second acceleration to 60 mph is balanced with practicality, offering a good value for daily commuting." },
+       { make: "Geely", model: "Geometry A", year: 2020, price: 25000, type: "Sedan", color: "Blue", country: "China", transmission: "Automatic", horsepower: 163, acceleration: 7.9, engineType: "Electric", image: "geelyGeometryA2020.png", description: "The 2020 Geely Geometry A in blue is a modern electric sedan with 163 horsepower, offering a 7.9-second acceleration to 60 mph. It's an eco-friendly option with impressive performance, ideal for those looking for sustainability and efficiency." }, { make: "Geely", model: "Tugella", year: 2019, price: 27000, type: "SUV", color: "Silver", country: "China", transmission: "Automatic", horsepower: 241, acceleration: 6.8, engineType: "V6", image: "geelyTugella2019.png", description: "The 2019 Geely Tugella in silver is a powerful SUV with a 241-horsepower V6 engine. With a 6.8-second acceleration to 60 mph, it delivers exceptional performance, making it a great choice for those looking for luxury and power in an SUV." }, 
+
+
+
+    { make: "Great Wall", model: "Haval H9", year: 2023, price: 35000, type: "SUV", color: "Black", country: "China", transmission: "Automatic", horsepower: 224, acceleration: 8.0, engineType: "Inline-4", image: "greatWallHavalH92023.png", description: "The 2023 Great Wall Haval H9 in black is a powerful SUV with a 224-horsepower inline-4 engine. It accelerates to 60 mph in 8.0 seconds, offering a perfect balance of performance and utility for off-road adventures and daily drives." },
+     { make: "Great Wall", model: "Haval Jolion", year: 2022, price: 23000, type: "SUV", color: "Red", country: "China", transmission: "Automatic", horsepower: 148, acceleration: 9.5, engineType: "Inline-4", image: "greatWallHavalJolion2022.png", description: "The 2022 Great Wall Haval Jolion in red features a 148-horsepower inline-4 engine and accelerates to 60 mph in 9.5 seconds. This SUV is designed for a stylish and comfortable ride while providing a solid balance between performance and efficiency." },
+      { make: "Great Wall", model: "P-Series", year: 2021, price: 28000, type: "Pickup", color: "Blue", country: "China", transmission: "Manual", horsepower: 150, acceleration: 10.0, engineType: "Inline-4", image: "greatWallPSeries2021.png", description: "The 2021 Great Wall P-Series in blue is a durable pickup truck with a 150-horsepower inline-4 engine. With an acceleration of 10.0 seconds to 60 mph, it's built for work and versatility, making it an excellent choice for those who need a practical truck." },
+       { make: "Great Wall", model: "Haval F7", year: 2020, price: 26000, type: "SUV", color: "White", country: "China", transmission: "Automatic", horsepower: 187, acceleration: 8.3, engineType: "Inline-4", image: "greatWallHavalF72020.png", description: "The 2020 Great Wall Haval F7 in white combines a 187-horsepower inline-4 engine with an 8.3-second 0-60 mph time. This SUV offers modern features, a stylish design, and a comfortable driving experience for everyday use and family trips." }, { make: "Great Wall", model: "GWM Steed 5", year: 2019, price: 22000, type: "Pickup", color: "Silver", country: "China", transmission: "Manual", horsepower: 141, acceleration: 11.0, engineType: "Inline-4", image: "greatWallSteed52019.png", description: "The 2019 Great Wall GWM Steed 5 in silver is a reliable pickup truck with a 141-horsepower inline-4 engine. It accelerates to 60 mph in 11.0 seconds and provides a robust option for those in need of a workhorse vehicle for various tasks." },
+
+
+
+    { make: "Fisker", model: "Ocean", year: 2023, price: 37000, type: "SUV", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 550, acceleration: 3.9, engineType: "Electric", image: "fiskerOcean2023.png", description: "The 2023 Fisker Ocean in silver is a high-performance electric SUV with 550 horsepower. It accelerates from 0-60 mph in just 3.9 seconds, offering a combination of eco-friendly driving and exhilarating speed." },
+     { make: "Fisker", model: "Ocean Extreme", year: 2023, price: 69000, type: "SUV", color: "Black", country: "USA", transmission: "Automatic", horsepower: 550, acceleration: 3.6, engineType: "Electric", image: "fiskerOceanExtreme2023.png", description: "The 2023 Fisker Ocean Extreme in black offers top-tier performance with 550 horsepower and an acceleration time of 3.6 seconds to 60 mph. As a high-end electric SUV, it blends luxury, sustainability, and cutting-edge technology." },
+      { make: "Fisker", model: "Fisker Karma", year: 2016, price: 100000, type: "Sedan", color: "White", country: "USA", transmission: "Automatic", horsepower: 403, acceleration: 6.3, engineType: "Hybrid", image: "fiskerKarma2016.png", description: "The 2016 Fisker Karma in white is a luxury hybrid sedan with 403 horsepower. With an acceleration of 6.3 seconds to 60 mph, it combines electric and gasoline power for a unique driving experience, making it an eco-conscious yet powerful vehicle." },
+       { make: "Fisker", model: "Ocean Sport", year: 2023, price: 37000, type: "SUV", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 275, acceleration: 6.9, engineType: "Electric", image: "fiskerOceanSport2023.png", description: "The 2023 Fisker Ocean Sport in blue is an electric SUV that offers 275 horsepower and an acceleration time of 6.9 seconds to 60 mph. A more affordable option in the Ocean lineup, it delivers impressive performance and environmental efficiency." },
+
+
+
+
+    { make: "Rivian", model: "R1T", year: 2023, price: 73000, type: "Pickup", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 835, acceleration: 3.0, engineType: "Electric", image: "rivianR1T2023.png", description: "The 2023 Rivian R1T is a high-performance electric pickup truck, delivering 835 horsepower and accelerating from 0-60 mph in just 3.0 seconds. With a bold blue exterior, it's built for both rugged terrains and a thrilling driving experience." },
+     { make: "Rivian", model: "R1S", year: 2023, price: 75000, type: "SUV", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 835, acceleration: 3.0, engineType: "Electric", image: "rivianR1S2023.png", description: "The 2023 Rivian R1S is a sleek silver electric SUV that offers 835 horsepower and accelerates from 0-60 mph in just 3.0 seconds. Combining luxury, utility, and sustainability, it’s perfect for both city driving and off-road adventures." },
+      { make: "Rivian", model: "R1T Launch Edition", year: 2022, price: 74000, type: "Pickup", color: "Black", country: "USA", transmission: "Automatic", horsepower: 835, acceleration: 3.0, engineType: "Electric", image: "rivianR1TLaunchEdition2022.png", description: "The 2022 Rivian R1T Launch Edition is a striking black electric pickup truck with 835 horsepower. It accelerates in 3.0 seconds, offering a premium driving experience for those seeking performance and adventure in one vehicle." },
+       { make: "Rivian", model: "R1S Adventure", year: 2023, price: 80000, type: "SUV", color: "Green", country: "USA", transmission: "Automatic", horsepower: 835, acceleration: 3.0, engineType: "Electric", image: "rivianR1SAdventure2023.png", description: "The 2023 Rivian R1S Adventure in green is a powerful electric SUV with 835 horsepower and an acceleration of 3.0 seconds to 60 mph. Designed for both luxury and off-road capability, it’s the ultimate electric adventure vehicle." },
+
+
+
+    { make: "Lucid Motors", model: "Air Dream Edition", year: 2023, price: 169000, type: "Sedan", color: "White", country: "USA", transmission: "Automatic", horsepower: 1111, acceleration: 2.5, engineType: "Electric", image: "lucidAirDreamEdition2023.png", description: "The 2023 Lucid Motors Air Dream Edition is a luxury electric sedan with an impressive 1111 horsepower and a 0-60 mph acceleration time of 2.5 seconds. With a sleek white exterior, it's designed for ultimate performance and elegance." },
+     { make: "Lucid Motors", model: "Air Grand Touring", year: 2023, price: 139000, type: "Sedan", color: "Black", country: "USA", transmission: "Automatic", horsepower: 800, acceleration: 3.0, engineType: "Electric", image: "lucidAirGrandTouring2023.png", description: "The 2023 Lucid Motors Air Grand Touring is a sophisticated black electric sedan, offering 800 horsepower and a 0-60 mph acceleration of just 3.0 seconds. A perfect blend of luxury and performance." },
+      { make: "Lucid Motors", model: "Air Touring", year: 2023, price: 95000, type: "Sedan", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 620, acceleration: 3.2, engineType: "Electric", image: "lucidAirTouring2023.png", description: "The 2023 Lucid Motors Air Touring is a stylish blue electric sedan with 620 horsepower and 0-60 mph acceleration in 3.2 seconds. It's built for both performance and comfort with a modern design." },
+       { make: "Lucid Motors", model: "Air Pure", year: 2023, price: 79000, type: "Sedan", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 480, acceleration: 4.2, engineType: "Electric", image: "lucidAirPure2023.png", description: "The 2023 Lucid Motors Air Pure is a sleek silver electric sedan, offering 480 horsepower and a 0-60 mph acceleration of 4.2 seconds. It combines efficiency with luxury for a refined driving experience." }, { make: "Lucid Motors", model: "Gravity", year: 2025, price: 80000, type: "SUV", color: "Red", country: "USA", transmission: "Automatic", horsepower: 600, acceleration: 3.5, engineType: "Electric", image: "lucidGravity2025.png", description: "The 2025 Lucid Motors Gravity is an electric SUV with 600 horsepower and a 0-60 mph acceleration of 3.5 seconds. It combines power with a bold red design, offering an exciting and eco-friendly ride." }, { make: "Lucid Motors", model: "Air Sapphire", year: 2024, price: 250000, type: "Sedan", color: "Grey", country: "USA", transmission: "Automatic", horsepower: 1200, acceleration: 2.0, engineType: "Electric", image: "lucidAirSapphire2024.png", description: "The 2024 Lucid Motors Air Sapphire is a high-performance luxury sedan with 1200 horsepower and a stunning 0-60 mph time of just 2.0 seconds. The sleek gray exterior complements its unparalleled speed and sophistication." },
+
+
+
+    { make: "McLaren", model: "720S", year: 2023, price: 300000, type: "Coupe", color: "Orange", country: "UK", transmission: "Automatic", horsepower: 710, acceleration: 2.7, engineType: "V8", image: "mclaren720S2023.png", description: "The 2023 McLaren 720S is an orange coupe that delivers 710 horsepower and accelerates from 0-60 mph in 2.7 seconds. A masterpiece of British engineering with a powerful V8 engine for thrilling performance." },
+     { make: "McLaren", model: "765LT", year: 2023, price: 350000, type: "Coupe", color: "Black", country: "UK", transmission: "Automatic", horsepower: 755, acceleration: 2.7, engineType: "V8", image: "mclaren765LT2023.png", description: "The 2023 McLaren 765LT is a strong coupe that boasts 755 horsepower and a 0-60 mph time of 2.7 seconds. Its aggressive styling and V8 engine provide extraordinary performance on both the road and the track." },
+      { make: "McLaren", model: "Artura", year: 2023, price: 230000, type: "Coupe", color: "White", country: "UK", transmission: "Automatic", horsepower: 671, acceleration: 3.0, engineType: "Hybrid", image: "mclarenArtura2023.png", description: "The 2023 McLaren Artura is a hybrid coupe with 671 horsepower and 0-60 mph acceleration in 3.0 seconds. Its white exterior and cutting-edge technology make it a perfect blend of performance and sustainability." },
+       { make: "McLaren", model: "P1", year: 2015, price: 1400000, type: "Coupe", color: "Yellow", country: "UK", transmission: "Automatic", horsepower: 903, acceleration: 2.8, engineType: "Hybrid", image: "mclarenP12015.png", description: "The 2015 McLaren P1 is a yellow hybrid coupe with 903 horsepower, achieving 0-60 mph in 2.8 seconds. It's a hypercar that combines power and efficiency with stunning performance." }, { make: "McLaren", model: "Senna", year: 2021, price: 1000000, type: "Coupe", color: "Green", country: "UK", transmission: "Automatic", horsepower: 800, acceleration: 2.7, engineType: "V8", image: "mclarenSenna2021.png", description: "The 2021 McLaren Senna is a green coupe with 800 horsepower and a 0-60 mph time of 2.7 seconds. A track-focused vehicle with a V8 engine and aerodynamically optimized design for pure driving excitement." }, { make: "McLaren", model: "Speedtail", year: 2020, price: 2500000, type: "Coupe", color: "Silver", country: "UK", transmission: "Automatic", horsepower: 1035, acceleration: 3.0, engineType: "Hybrid", image: "mclarenSpeedtail2020.png", description: "The 2020 McLaren Speedtail is a silver hybrid coupe with 1035 horsepower and accelerates from 0-60 mph in 3.0 seconds. This futuristic hypercar is engineered for top speed and luxury with remarkable performance." } ,
+
+
+
+    { make: "Koenigsegg", model: "Agera RS", year: 2015, price: 2500000, type: "Coupe", color: "Red", country: "Sweden", transmission: "Automatic", horsepower: 1160, acceleration: 2.9, engineType: "V8", image: "koenigseggAgeraRS2015.png", description: "The 2015 Koenigsegg Agera RS is a red coupe boasting 1160 horsepower and acceleration from 0-60 mph in just 2.9 seconds. Known for its incredible speed and cutting-edge technology, this Swedish masterpiece pushes the limits of automotive engineering." },
+     { make: "Koenigsegg", model: "Jesko", year: 2021, price: 3200000, type: "Coupe", color: "Blue", country: "Sweden", transmission: "Automatic", horsepower: 1280, acceleration: 2.5, engineType: "V8", image: "koenigseggJesko2021.png", description: "The 2021 Koenigsegg Jesko is a blue coupe with 1280 horsepower and a 0-60 mph acceleration time of 2.5 seconds. With its advanced V8 engine and track-ready capabilities, the Jesko offers a thrilling performance experience." },
+      { make: "Koenigsegg", model: "Regera", year: 2019, price: 2200000, type: "Coupe", color: "Orange", country: "Sweden", transmission: "Automatic", horsepower: 1500, acceleration: 2.8, engineType: "Hybrid", image: "koenigseggRegera2019.png", description: "The 2019 Koenigsegg Regera is an orange hybrid coupe that generates an astounding 1500 horsepower and accelerates from 0-60 mph in 2.8 seconds. Combining electric and combustion power, the Regera offers unmatched performance and innovation." },
+       { make: "Koenigsegg", model: "One:1", year: 2014, price: 2700000, type: "Coupe", color: "Black", country: "Sweden", transmission: "Automatic", horsepower: 1341, acceleration: 2.8, engineType: "V8", image: "koenigseggOne12014.png", description: "The 2014 Koenigsegg One:1 is a black coupe with 1341 horsepower and a 0-60 mph time of 2.8 seconds. This hypercar’s name comes from its weight-to-power ratio, making it a standout in speed and handling." }, { make: "Koenigsegg", model: "Gemera", year: 2023, price: 1800000, type: "Coupe", color: "White", country: "Sweden", transmission: "Automatic", horsepower: 1700, acceleration: 3.0, engineType: "Hybrid", image: "koenigseggGemera2023.png", description: "The 2023 Koenigsegg Gemera is a white hybrid coupe with 1700 horsepower and accelerates from 0-60 mph in 3.0 seconds. It is designed as a 4-seater hypercar, combining remarkable power with luxurious comfort and state-of-the-art technology." } ,
+
+
+
+    { make: "Spyker", model: "C8 Aileron", year: 2015, price: 275000, type: "Coupe", color: "Yellow", country: "Netherlands", transmission: "Manual", horsepower: 525, acceleration: 3.7, engineType: "V8", image: "spykerC8Aileron2015.png", description: "The 2015 Spyker C8 Aileron is a yellow coupe that delivers 525 horsepower and accelerates from 0-60 mph in 3.7 seconds. This elegant and powerful vehicle features Spyker’s signature craftsmanship and performance." },
+     { make: "Spyker", model: "C8 Laviolette", year: 2009, price: 150000, type: "Coupe", color: "Silver", country: "Netherlands", transmission: "Manual", horsepower: 400, acceleration: 4.5, engineType: "V8", image: "spykerC8Laviolette2009.png", description: "The 2009 Spyker C8 Laviolette is a silver coupe with 400 horsepower and a 0-60 mph acceleration time of 4.5 seconds. Known for its distinctive design and manual transmission, it’s a true enthusiast’s car." },
+      { make: "Spyker", model: "B6 Venator", year: 2013, price: 150000, type: "Coupe", color: "Red", country: "Netherlands", transmission: "Automatic", horsepower: 375, acceleration: 4.2, engineType: "V6", image: "spykerB6Venator2013.png", description: "The 2013 Spyker B6 Venator is a red coupe powered by a 375 horsepower V6 engine, offering acceleration from 0-60 mph in 4.2 seconds. With its automatic transmission, it blends performance with refined luxury." },
+       { make: "Spyker", model: "C12 Zagato", year: 2006, price: 350000, type: "Coupe", color: "Black", country: "Netherlands", transmission: "Manual", horsepower: 500, acceleration: 3.9, engineType: "W12", image: "spykerC12Zagato2006.png", description: "The 2006 Spyker C12 Zagato is a black coupe with a W12 engine producing 500 horsepower and a 0-60 mph acceleration time of 3.9 seconds. Its manual transmission and striking design make it a standout in performance and luxury." }, { make: "Spyker", model: "C8 Spyder", year: 2002, price: 100000, type: "Convertible", color: "Blue", country: "Netherlands", transmission: "Manual", horsepower: 400, acceleration: 4.7, engineType: "V8", image: "spykerC8Spyder2002.png", description: "The 2002 Spyker C8 Spyder is a blue convertible with 400 horsepower and a 0-60 mph time of 4.7 seconds. Known for its distinctive open-top driving experience, it combines performance with luxury and manual precision." } ,
+
+
+
+    { make: "Mahindra", model: "XUV700", year: 2022, price: 35000, type: "SUV", color: "Silver", country: "India", transmission: "Automatic", horsepower: 200, engineType: "Turbocharged Inline-4", image: "mahindraXUV7002022.png", description: "The 2022 Mahindra XUV700 is a silver SUV powered by a turbocharged inline-4 engine with 200 horsepower. It comes with automatic transmission and offers a smooth and powerful driving experience." },
+     { make: "Mahindra", model: "Thar", year: 2021, price: 25000, type: "SUV", color: "Red", country: "India", transmission: "Manual", horsepower: 150, engineType: "Inline-4", image: "mahindraThar2021.png", description: "The 2021 Mahindra Thar is a red SUV with a manual transmission, featuring a 150 horsepower inline-4 engine. It's known for its rugged design and off-road capabilities." },
+      { make: "Wuling", model: "Hong Guang Mini EV", year: 2021, price: 8000, type: "Hatchback", color: "Yellow", country: "China", transmission: "Automatic", horsepower: 27, engineType: "Electric", image: "wulingHongGuangMiniEV2021.png", description: "The 2021 Wuling Hong Guang Mini EV is a small electric hatchback, offering 27 horsepower and an automatic transmission. It provides an affordable and eco-friendly solution for city driving." },
+       { make: "Wuling", model: "Cao Cao", year: 2020, price: 15000, type: "Van", color: "White", country: "China", transmission: "Manual", horsepower: 90, engineType: "Inline-4", image: "wulingCaoCao2020.png", description: "The 2020 Wuling Cao Cao is a white van with a manual transmission and 90 horsepower. Ideal for businesses or families, it offers practicality with its spacious design and reliable performance." }, { make: "Dongfeng", model: "Joyear X5", year: 2021, price: 20000, type: "SUV", color: "Green", country: "China", transmission: "Automatic", horsepower: 150, engineType: "Inline-4", image: "dongfengJoyearX52021.png", description: "The 2021 Dongfeng Joyear X5 is a green SUV with a 150 horsepower inline-4 engine. It combines modern styling and comfort with automatic transmission for a smooth driving experience." }, { make: "Dongfeng", model: "DFM Fengon 5", year: 2022, price: 22000, type: "SUV", color: "Blue", country: "China", transmission: "Automatic", horsepower: 180, engineType: "Turbocharged Inline-4", image: "dongfengFengon52022.png", description: "The 2022 Dongfeng DFM Fengon 5 is a blue SUV with a turbocharged inline-4 engine producing 180 horsepower. It offers advanced features and a smooth automatic transmission for an enhanced driving experience." } ,
+
+
+    { make: "Proton", model: "X70", year: 2021, price: 28000, type: "SUV", color: "Black", country: "Malaysia", transmission: "Automatic", horsepower: 174, engineType: "Turbocharged Inline-4", image: "protonX702021.png", description: "The 2021 Proton X70 is a black SUV with a turbocharged inline-4 engine producing 174 horsepower. It offers automatic transmission and modern features for a smooth, comfortable drive." },
+     { make: "Proton", model: "Saga", year: 2020, price: 12000, type: "Sedan", color: "Silver", country: "Malaysia", transmission: "Manual", horsepower: 94, engineType: "Inline-4", image: "protonSaga2020.png", description: "The 2020 Proton Saga is a silver sedan with a 94 horsepower inline-4 engine. It offers manual transmission and is an affordable and reliable choice for city driving." },
+      { make: "Troller", model: "T4", year: 2020, price: 35000, type: "SUV", color: "Yellow", country: "Brazil", transmission: "Manual", horsepower: 174, engineType: "Inline-4", image: "trollerT42020.png", description: "The 2020 Troller T4 is a yellow SUV with a 174 horsepower inline-4 engine and manual transmission. It is designed for rugged terrain, offering durability and off-road capabilities." },
+       { make: "Troller", model: "T4", year: 2021, price: 37000, type: "SUV", color: "Green", country: "Brazil", transmission: "Manual", horsepower: 174, engineType: "Inline-4", image: "trollerT42021.png", description: "The 2021 Troller T4 is a green SUV powered by a 174 horsepower inline-4 engine with manual transmission. Known for its off-road prowess, it offers a powerful and rugged driving experience." }, { make: "Caterham", model: "Seven 270", year: 2021, price: 37000, type: "Sports Car", color: "Red", country: "UK", transmission: "Manual", horsepower: 135, engineType: "Inline-4", image: "caterhamSeven2702021.png", description: "The 2021 Caterham Seven 270 is a red sports car with a 135 horsepower inline-4 engine and manual transmission. It's a lightweight and agile car built for performance and driving excitement." }, { make: "Caterham", model: "Seven 420R", year: 2021, price: 47000, type: "Sports Car", color: "Blue", country: "UK", transmission: "Manual", horsepower: 210, engineType: "Inline-4", image: "caterhamSeven420R2021.png", description: "The 2021 Caterham Seven 420R is a blue sports car with a 210 horsepower inline-4 engine and manual transmission. It combines power and precision for a thrilling driving experience." } ,
+
+
+    { make: "Morgan", model: "Plus Four", year: 2021, price: 65000, type: "Sports Car", color: "Green", country: "UK", transmission: "Manual", horsepower: 180, engineType: "Inline-4", image: "morganPlusFour2021.png", description: "The 2021 Morgan Plus Four is a green sports car with a 180 horsepower inline-4 engine and manual transmission. It combines classic design with modern performance for an exhilarating driving experience." },
+     { make: "Morgan", model: "Roadster", year: 2020, price: 70000, type: "Sports Car", color: "Red", country: "UK", transmission: "Manual", horsepower: 280, engineType: "V6", image: "morganRoadster2020.png", description: "The 2020 Morgan Roadster is a red sports car powered by a 280 horsepower V6 engine and manual transmission. It offers a thrilling ride with a focus on high performance and classic styling." },
+      { make: "Foton", model: "Tunland", year: 2020, price: 25000, type: "Pickup Truck", color: "White", country: "China", transmission: "Manual", horsepower: 160, engineType: "Inline-4", image: "fotonTunland2020.png", description: "The 2020 Foton Tunland is a white pickup truck with a 160 horsepower inline-4 engine and manual transmission. It’s a practical, durable truck designed for work and everyday use." },
+       { make: "Foton", model: "Sauvana", year: 2021, price: 35000, type: "SUV", color: "Black", country: "China", transmission: "Automatic", horsepower: 218, engineType: "V6", image: "fotonSauvana2021.png", description: "The 2021 Foton Sauvana is a black SUV with a 218 horsepower V6 engine and automatic transmission. It offers a spacious interior and strong performance for both city and off-road driving." }, { make: "SsangYong", model: "Tivoli", year: 2021, price: 23000, type: "SUV", color: "Blue", country: "South Korea", transmission: "Automatic", horsepower: 128, engineType: "Inline-4", image: "ssangyongTivoli2021.png", description: "The 2021 SsangYong Tivoli is a blue SUV with a 128 horsepower inline-4 engine and automatic transmission. Compact yet spacious, it is designed for urban driving and efficient fuel economy." }, { make: "SsangYong", model: "Korando", year: 2021, price: 28000, type: "SUV", color: "Silver", country: "South Korea", transmission: "Automatic", horsepower: 164, engineType: "Inline-4", image: "ssangyongKorando2021.png", description: "The 2021 SsangYong Korando is a silver SUV powered by a 164 horsepower inline-4 engine and automatic transmission. It offers a balanced combination of style, comfort, and versatility." } ,
+
+
+    { make: "Karma Automotive", model: "Revero GT", year: 2021, price: 135000, type: "Sedan", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 536, engineType: "Electric + Inline-4", image: "karmaReveroGT2021.png", description: "The 2021 Karma Revero GT is a silver sedan that blends electric and inline-4 power to produce 536 horsepower. This luxury sedan offers a refined driving experience with advanced technology and eco-friendly performance." },
+     { make: "Karma Automotive", model: "GS-6", year: 2022, price: 85000, type: "Sedan", color: "Black", country: "USA", transmission: "Automatic", horsepower: 400, engineType: "Electric + Inline-4", image: "karmaGS62022.png", description: "The 2022 Karma GS-6 is a sleek black sedan powered by a combination of electric and inline-4 engines, delivering 400 horsepower. It combines high performance with eco-conscious driving." },
+      { make: "Pininfarina", model: "Battista", year: 2021, price: 2300000, type: "Sports Car", color: "Red", country: "Italy", transmission: "Automatic", horsepower: 1900, engineType: "Electric", image: "pininfarinaBattista2021.png", description: "The 2021 Pininfarina Battista is an extraordinary red sports car with 1900 horsepower, powered entirely by electric motors. It stands as one of the most powerful electric cars ever produced, offering exceptional speed and handling." },
+       { make: "Pininfarina", model: "Pininfarina Sergio", year: 2015, price: 3000000, type: "Sports Car", color: "Yellow", country: "Italy", transmission: "Manual", horsepower: 590, engineType: "V8", image: "pininfarinaSergio2015.png", description: "The 2015 Pininfarina Sergio is a yellow, manual transmission sports car with a 590 horsepower V8 engine. This rare and exclusive vehicle offers unmatched performance and a timeless design." }, { make: "Ruf", model: "CTR", year: 2021, price: 775000, type: "Sports Car", color: "Yellow", country: "Germany", transmission: "Manual", horsepower: 700, engineType: "Flat-6", image: "rufCTR2021.png", description: "The 2021 Ruf CTR is a yellow sports car with a 700 horsepower flat-6 engine and manual transmission. Known for its incredible speed and engineering precision, it delivers an exhilarating driving experience." }, { make: "Ruf", model: "Ruf Turbo R", year: 2020, price: 250000, type: "Sports Car", color: "Blue", country: "Germany", transmission: "Manual", horsepower: 700, engineType: "Flat-6", image: "rufTurboR2020.png", description: "The 2020 Ruf Turbo R is a blue sports car powered by a 700 horsepower flat-6 engine and manual transmission. It combines high performance with sleek design, delivering an unmatched driving thrill." } ,
+
+
+    { make: "Mitsuoka", model: "Roadster", year: 2020, price: 43000, type: "Convertible", color: "Red", country: "Japan", transmission: "Manual", horsepower: 140, engineType: "Inline-4", image: "mitsuokaRoadster2020.png", description: "The 2020 Mitsuoka Roadster is a red convertible with a manual transmission and a 140 horsepower inline-4 engine. This stylish roadster offers an exciting driving experience with its retro-inspired design." },
+     { make: "Mitsuoka", model: "Orochi", year: 2015, price: 120000, type: "Coupe", color: "Black", country: "Japan", transmission: "Automatic", horsepower: 237, engineType: "V6", image: "mitsuokaOrochi2015.png", description: "The 2015 Mitsuoka Orochi is a striking black coupe with an automatic transmission and a 237 horsepower V6 engine. Its unique design and powerful performance make it a standout on the road." },
+      { make: "Lancia", model: "Delta", year: 2019, price: 35000, type: "Hatchback", color: "Blue", country: "Italy", transmission: "Manual", horsepower: 190, engineType: "Inline-4", image: "lanciaDelta2019.png", description: "The 2019 Lancia Delta is a blue hatchback with a manual transmission and a 190 horsepower inline-4 engine. It offers a balance of performance and practicality with Italian flair." },
+       { make: "Lancia", model: "Ypsilon", year: 2021, price: 25000, type: "Hatchback", color: "White", country: "Italy", transmission: "Automatic", horsepower: 85, engineType: "Inline-4", image: "lanciaYpsilon2021.png", description: "The 2021 Lancia Ypsilon is a white hatchback featuring an automatic transmission and an 85 horsepower inline-4 engine. It combines efficiency and compact design for city driving." }, { make: "Ginetta", model: "G60", year: 2021, price: 100000, type: "Sports Car", color: "Green", country: "UK", transmission: "Manual", horsepower: 315, engineType: "V6", image: "ginettaG602021.png", description: "The 2021 Ginetta G60 is a green sports car equipped with a manual transmission and a 315 horsepower V6 engine. This high-performance car delivers exceptional handling and speed for enthusiasts." }, { make: "Ginetta", model: "G56", year: 2020, price: 85000, type: "Sports Car", color: "Black", country: "UK", transmission: "Manual", horsepower: 300, engineType: "V6", image: "ginettaG562020.png", description: "The 2020 Ginetta G56 is a black sports car powered by a 300 horsepower V6 engine and manual transmission. It's designed for drivers who appreciate power, precision, and a thrilling experience." } ,
+
+
+    { make: "Borgward", model: "BX7", year: 2020, price: 35000, type: "SUV", color: "Silver", country: "Germany", transmission: "Automatic", horsepower: 220, engineType: "Inline-4", image: "borgwardBX72020.png", description: "The 2020 Borgward BX7 is a sleek silver SUV with an automatic transmission and a 220 horsepower inline-4 engine. It combines modern German engineering with versatility for family and adventure." },
+     { make: "Borgward", model: "Isabella", year: 2021, price: 45000, type: "Sedan", color: "White", country: "Germany", transmission: "Automatic", horsepower: 250, engineType: "Inline-4", image: "borgwardIsabella2021.png", description: "The 2021 Borgward Isabella is a refined white sedan with an automatic transmission and a 250 horsepower inline-4 engine. It offers a balance of luxury, performance, and German craftsmanship." },
+      { make: "Wiesmann", model: "MF4", year: 2021, price: 120000, type: "Sports Car", color: "Red", country: "Germany", transmission: "Manual", horsepower: 400, engineType: "V8", image: "wiesmannMF42021.png", description: "The 2021 Wiesmann MF4 is a striking red sports car powered by a 400 horsepower V8 engine with a manual transmission. This German masterpiece blends elegance with high performance." },
+       { make: "Wiesmann", model: "GT MF5", year: 2020, price: 150000, type: "Sports Car", color: "Blue", country: "Germany", transmission: "Manual", horsepower: 507, engineType: "V8", image: "wiesmannGTMF52020.png", description: "The 2020 Wiesmann GT MF5 is a blue sports car with a powerful 507 horsepower V8 engine and manual transmission. It's a luxurious and high-performance vehicle designed for enthusiasts." }, { make: "Rimac", model: "C_Two", year: 2021, price: 2000000, type: "Sports Car", color: "Black", country: "Croatia", transmission: "Automatic", horsepower: 1914, engineType: "Electric", image: "rimacCTwo2021.png", description: "The 2021 Rimac C_Two is a cutting-edge black electric sports car with a jaw-dropping 1914 horsepower. Its advanced features and lightning-fast performance define the future of high-performance electric cars." }, { make: "Rimac", model: "Nevera", year: 2022, price: 2200000, type: "Sports Car", color: "White", country: "Croatia", transmission: "Automatic", horsepower: 1914, engineType: "Electric", image: "rimacNevera2022.png", description: "The 2022 Rimac Nevera is a white electric sports car delivering 1914 horsepower, showcasing the best in electric performance. This Croatian hypercar sets new standards for speed, technology, and luxury." } ,
+
+
+    { make: "Vauxhall", model: "Astra", year: 2020, price: 23000, type: "Hatchback", color: "Blue", country: "UK", transmission: "Manual", horsepower: 145, engineType: "Inline-4", image: "vauxhallAstra2020.png", description: "The 2020 Vauxhall Astra is a stylish blue hatchback with a manual transmission and 145 horsepower inline-4 engine. It offers practicality, efficiency, and a fun driving experience, all with British engineering." },
+     { make: "Vauxhall", model: "Corsa", year: 2021, price: 19000, type: "Hatchback", color: "Red", country: "UK", transmission: "Automatic", horsepower: 100, engineType: "Inline-3", image: "vauxhallCorsa2021.png", description: "The 2021 Vauxhall Corsa is a vibrant red hatchback with an automatic transmission and a 100 horsepower inline-3 engine. Compact, efficient, and perfect for city driving, it’s an ideal choice for urban commuters." },
+      { make: "Polestar", model: "Polestar 1", year: 2020, price: 150000, type: "Sports Car", color: "Black", country: "Sweden", transmission: "Automatic", horsepower: 619, engineType: "Hybrid", image: "polestar1_2020.png", description: "The 2020 Polestar 1 is a stunning black hybrid sports car, offering 619 horsepower with automatic transmission. This Swedish masterpiece combines performance, luxury, and eco-friendly hybrid technology." },
+       { make: "Polestar", model: "Polestar 2", year: 2021, price: 65000, type: "Sedan", color: "Silver", country: "Sweden", transmission: "Automatic", horsepower: 408, engineType: "Electric", image: "polestar2_2021.png", description: "The 2021 Polestar 2 is a sleek silver electric sedan with 408 horsepower and an automatic transmission. It combines cutting-edge Swedish electric technology with luxury and performance, setting a new standard for electric vehicles." } ,
+
+    { make: "Isuzu", model: "D-Max", year: 2020, price: 30000, type: "Pickup Truck", color: "White", country: "Japan", transmission: "Automatic", horsepower: 164, engineType: "Inline-4", image: "isuzuDMax2020.png", description: "The 2020 Isuzu D-Max is a rugged white pickup truck, equipped with a 164 horsepower inline-4 engine and automatic transmission. A reliable workhorse for both commercial and off-road adventures, offering impressive towing and hauling capabilities." },
+     { make: "Isuzu", model: "MU-X", year: 2021, price: 35000, type: "SUV", color: "Silver", country: "Japan", transmission: "Automatic", horsepower: 190, engineType: "Inline-4", image: "isuzuMUX2021.png", description: "The 2021 Isuzu MU-X is a versatile silver SUV with a 190 horsepower inline-4 engine and automatic transmission. Perfect for family adventures and off-road journeys, it delivers both comfort and durability in a stylish package." } ,
+
+
+    { make: "Bugatti", model: "Chiron", year: 2021, price: 3000000, type: "Sports Car", color: "Blue", country: "France", transmission: "Automatic", horsepower: 1500, engineType: "W16", image: "bugattiChiron2021.png", description: "The 2021 Bugatti Chiron is a high-performance blue sports car with a W16 engine delivering 1500 horsepower. Equipped with an automatic transmission, this car represents the pinnacle of engineering and luxury, offering extreme speed and unmatched performance." },
+     { make: "Bugatti", model: "Veyron", year: 2015, price: 1700000, type: "Sports Car", color: "Red", country: "France", transmission: "Automatic", horsepower: 1200, engineType: "W16", image: "bugattiVeyron2015.png", description: "The 2015 Bugatti Veyron is a red sports car powered by a W16 engine producing 1200 horsepower. Known for its legendary speed, it set numerous world records and remains a symbol of automotive excellence." },
+      { make: "Bugatti", model: "Divo", year: 2020, price: 5000000, type: "Sports Car", color: "Grey", country: "France", transmission: "Automatic", horsepower: 1500, engineType: "W16", image: "bugattiDivo2020.png", description: "The 2020 Bugatti Divo is a sleek gray sports car with a W16 engine and 1500 horsepower. Combining extreme performance with luxurious design, it is engineered for agility and handling, offering a truly unique driving experience." },
+       { make: "Bugatti", model: "Centodieci", year: 2022, price: 9000000, type: "Sports Car", color: "White", country: "France", transmission: "Automatic", horsepower: 1600, engineType: "W16", image: "bugattiCentodieci2022.png", description: "The 2022 Bugatti Centodieci is an exclusive white sports car with a W16 engine generating 1600 horsepower. This limited edition model showcases exceptional speed and advanced technology, celebrating the brand’s rich legacy." },
+        { make: "Bugatti", model: "La Voiture Noire", year: 2021, price: 18000000, type: "Sports Car", color: "Black", country: "France", transmission: "Automatic", horsepower: 1500, engineType: "W16", image: "bugattiLaVoitureNoire2021.png", description: "The 2021 Bugatti La Voiture Noire is a luxurious black sports car powered by a W16 engine with 1500 horsepower. With its unmatched design and world-class performance, it’s one of the most expensive cars in the world, blending art and engineering seamlessly." }, 
+
+    { make: "Tesla", model: "Model S Plaid", year: 2025, price: 120000, type: "Sedan", color: "Red", country: "USA", transmission: "Automatic", horsepower: 1020, engineType: "Electric", image: "teslaModelSPlaid2025.png", description: "The 2025 Tesla Model S Plaid is a high-performance electric sedan that delivers 1020 horsepower. With an automatic transmission and advanced electric technology, it offers exceptional speed, efficiency, and cutting-edge features." },
+     { make: "BMW", model: "i8 Roadster", year: 2025, price: 160000, type: "Convertible", color: "Blue", country: "Germany", transmission: "Automatic", horsepower: 600, engineType: "Hybrid", image: "bmwi8Roadster2025.png", description: "The 2025 BMW i8 Roadster is a stunning blue hybrid convertible, blending electric and gasoline power with 600 horsepower. Known for its futuristic design and eco-friendly performance, it delivers a thrilling driving experience." },
+      { make: "Mercedes-Benz", model: "EQS", year: 2025, price: 150000, type: "Sedan", color: "Silver", country: "Germany", transmission: "Automatic", horsepower: 516, engineType: "Electric", image: "mercedesEQ2025.png", description: "The 2025 Mercedes-Benz EQS is a silver electric sedan that combines luxury and sustainability. With 516 horsepower and a sleek design, it offers top-tier comfort and advanced electric performance, making it a leader in the electric vehicle market." },
+       { make: "Audi", model: "A9 e-tron", year: 2025, price: 120000, type: "SUV", color: "Black", country: "Germany", transmission: "Automatic", horsepower: 402, engineType: "Electric", image: "audiA9etron2025.png", description: "The 2025 Audi A9 e-tron is a luxurious black electric SUV, offering 402 horsepower and a sophisticated design. Featuring an automatic transmission, it delivers a premium driving experience with eco-friendly electric performance." },
+        { make: "Rivian", model: "R1S", year: 2025, price: 75000, type: "SUV", color: "Green", country: "USA", transmission: "Automatic", horsepower: 750, engineType: "Electric", image: "rivianR1S2025.png", description: "The 2025 Rivian R1S is a rugged green electric SUV with 750 horsepower. Built for adventure, it offers advanced electric performance, off-road capability, and a spacious, eco-friendly interior for those who love the great outdoors." } ,
+
+    { make: "Lucid Motors", model: "Air Sapphire", year: 2025, price: 250000, type: "Sedan", color: "White", country: "USA", transmission: "Automatic", horsepower: 1200, engineType: "Electric", image: "lucidAirSapphire2025.png", description: "The 2025 Lucid Motors Air Sapphire is a high-performance electric sedan, offering 1200 horsepower in a sleek white design. Combining luxury, speed, and efficiency, it delivers an unmatched driving experience with cutting-edge technology." },
+     { make: "Porsche", model: "Taycan Turbo S", year: 2025, price: 185000, type: "Sedan", color: "Grey", country: "Germany", transmission: "Automatic", horsepower: 750, engineType: "Electric", image: "porscheTaycan2025.png", description: "The 2025 Porsche Taycan Turbo S is a gray electric sedan that offers 750 horsepower and delivers a thrilling performance. With a sophisticated design, it blends luxury and high-performance electric driving technology." },
+      { make: "Ford", model: "Mustang Mach-E GT", year: 2025, price: 65000, type: "SUV", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 480, engineType: "Electric", image: "fordMachEGT2025.png", description: "The 2025 Ford Mustang Mach-E GT is a blue electric SUV that combines performance and practicality. With 480 horsepower, it offers a perfect balance of sportiness and efficiency, making it ideal for daily driving and adventure." },
+       { make: "Chevrolet", model: "Silverado EV", year: 2025, price: 80000, type: "Truck", color: "Red", country: "USA", transmission: "Automatic", horsepower: 664, engineType: "Electric", image: "chevroletSilveradoEV2025.png", description: "The 2025 Chevrolet Silverado EV is a powerful red electric truck, offering 664 horsepower. With an automatic transmission and rugged electric performance, it's designed for both work and play, providing a sustainable solution for tough tasks." },
+        { make: "Hyundai", model: "Ioniq 7", year: 2025, price: 85000, type: "SUV", color: "Silver", country: "South Korea", transmission: "Automatic", horsepower: 350, engineType: "Electric", image: "hyundaiIoniq72025.png", description: "The 2025 Hyundai Ioniq 7 is a silver electric SUV designed for families, offering 350 horsepower. With spacious interiors, advanced features, and eco-friendly performance, it’s a great option for those seeking a sustainable family vehicle." } ,
+
+    { make: "BMW", model: "iX M60", year: 2025, price: 105000, type: "SUV", color: "White", country: "Germany", transmission: "Automatic", horsepower: 610, engineType: "Electric", image: "bmwiXM602025.png", description: "The 2025 BMW iX M60 is a white electric SUV, boasting 610 horsepower. Combining BMW’s luxury with electric power, it provides an exhilarating driving experience while maintaining a focus on sustainability and innovation." },
+     { make: "Audi", model: "Q6 e-tron", year: 2025, price: 80000, type: "SUV", color: "Blue", country: "Germany", transmission: "Automatic", horsepower: 350, engineType: "Electric", image: "audiQ6etron2025.png", description: "The 2025 Audi Q6 e-tron is a blue electric SUV that offers a powerful 350 horsepower. With its luxurious interior, advanced features, and electric performance, it’s the perfect combination of style, sustainability, and practicality." },
+      { make: "Mercedes-Benz", model: "EQE SUV", year: 2025, price: 90000, type: "SUV", color: "Silver", country: "Germany", transmission: "Automatic", horsepower: 400, engineType: "Electric", image: "mercedesEQESUV2025.png", description: "The 2025 Mercedes-Benz EQE SUV is a silver electric SUV with 400 horsepower. It combines Mercedes-Benz’s signature luxury and performance with the benefits of electric power, making it an ideal choice for those seeking an eco-friendly and refined driving experience." },
+       { make: "Rivian", model: "R1T", year: 2025, price: 73000, type: "Truck", color: "Red", country: "USA", transmission: "Automatic", horsepower: 800, engineType: "Electric", image: "rivianR1T2025.png", description: "The 2025 Rivian R1T is a red electric truck offering 800 horsepower. Built for adventure and utility, it combines ruggedness with electric innovation, making it an excellent choice for both off-road enthusiasts and those needing a versatile work vehicle." } ,
+
+
+    { make: "Hyundai", model: "Accent", year: 2013, price: 9000, type: "Sedan", color: "Blue", country: "South Korea", transmission: "Automatic", horsepower: 138, engineType: "Inline-4", image: "hyundaiAccent2013.png", description: "The 2013 Hyundai Accent is a blue sedan with 138 horsepower. Known for its reliability and efficient fuel economy, it’s a great choice for anyone seeking an affordable and practical daily driver." },
+     { make: "Toyota", model: "Yaris", year: 2012, price: 8500, type: "Hatchback", color: "Silver", country: "Japan", transmission: "Automatic", horsepower: 106, engineType: "Inline-4", image: "toyotaYaris2012.png", description: "The 2012 Toyota Yaris is a silver hatchback with 106 horsepower. With a reputation for dependability and fuel efficiency, it’s an ideal choice for those looking for a compact car that’s easy to maneuver and maintain." },
+      { make: "Ford", model: "Fiesta", year: 2014, price: 9500, type: "Hatchback", color: "Red", country: "USA", transmission: "Manual", horsepower: 120, engineType: "Inline-4", image: "fordFiesta2014.png", description: "The 2014 Ford Fiesta is a red hatchback with 120 horsepower and a manual transmission. Known for its fun-to-drive nature and nimble handling, it’s a great option for those who enjoy a sporty compact car." },
+       { make: "Chevrolet", model: "Sonic", year: 2013, price: 8900, type: "Sedan", color: "Green", country: "USA", transmission: "Automatic", horsepower: 138, engineType: "Inline-4", image: "chevroletSonic2013.png", description: "The 2013 Chevrolet Sonic is a green sedan with 138 horsepower. Offering a balance of practicality and efficiency, this car is perfect for those who want a compact car with a bit of extra power and style." },
+        { make: "Nissan", model: "Versa", year: 2011, price: 7500, type: "Sedan", color: "White", country: "Japan", transmission: "Manual", horsepower: 122, engineType: "Inline-4", image: "nissanVersa2011.png", description: "The 2011 Nissan Versa is a white sedan with 122 horsepower and a manual transmission. A solid choice for those looking for an economical and straightforward car, it offers good value for money and practicality." } ,
+
+
+    { make: "Honda", model: "Civic", year: 2007, price: 4500, type: "Sedan", color: "Blue", country: "Japan", transmission: "Automatic", horsepower: 140, engineType: "Inline-4", image: "hondaCivic2007.png", description: "The 2007 Honda Civic is a blue sedan with 140 horsepower. Known for its reliability and fuel efficiency, it’s a great option for anyone looking for an affordable, well-rounded car." },
+     { make: "Toyota", model: "Corolla", year: 2005, price: 4000, type: "Sedan", color: "Red", country: "Japan", transmission: "Manual", horsepower: 130, engineType: "Inline-4", image: "toyotaCorolla2005.png", description: "The 2005 Toyota Corolla is a red sedan with 130 horsepower. A well-established model known for its durability and low cost of ownership, it’s a practical choice for those looking for a dependable compact car." },
+      { make: "Ford", model: "Focus", year: 2006, price: 3500, type: "Hatchback", color: "Silver", country: "USA", transmission: "Manual", horsepower: 130, engineType: "Inline-4", image: "fordFocus2006.png", description: "The 2006 Ford Focus is a silver hatchback with 130 horsepower. A versatile and affordable compact car, the Focus is known for its fun-to-drive handling and practicality." },
+       { make: "Chevrolet", model: "Aveo", year: 2007, price: 3200, type: "Sedan", color: "Black", country: "USA", transmission: "Automatic", horsepower: 103, engineType: "Inline-4", image: "chevroletAveo2007.png", description: "The 2007 Chevrolet Aveo is a black sedan with 103 horsepower. It offers excellent value for money, providing a budget-friendly option for anyone looking for a small, simple car." },
+        { make: "Nissan", model: "Altima", year: 2004, price: 4800, type: "Sedan", color: "White", country: "Japan", transmission: "Automatic", horsepower: 175, engineType: "Inline-4", image: "nissanAltima2004.png", description: "The 2004 Nissan Altima is a white sedan with 175 horsepower. Offering a comfortable ride with plenty of space, it’s a solid choice for those looking for a midsize sedan with good performance." } ,
+
+
+    { make: "Hyundai", model: "Elantra", year: 2005, price: 4500, type: "Sedan", color: "Grey", country: "South Korea", transmission: "Automatic", horsepower: 140, engineType: "Inline-4", image: "hyundaiElantra2005.png", description: "The 2005 Hyundai Elantra is a grey sedan with 140 horsepower. A reliable and budget-friendly car, it offers great fuel efficiency and a smooth ride, making it a solid choice for daily commutes." },
+     { make: "Mazda", model: "Mazda3", year: 2006, price: 4200, type: "Sedan", color: "Blue", country: "Japan", transmission: "Manual", horsepower: 160, engineType: "Inline-4", image: "mazdaMazda32006.png", description: "The 2006 Mazda3 is a blue sedan with 160 horsepower. Known for its sporty handling and stylish design, it’s a fun-to-drive car with a good balance of performance and practicality." },
+      { make: "Volkswagen", model: "Jetta", year: 2004, price: 3900, type: "Sedan", color: "Silver", country: "Germany", transmission: "Manual", horsepower: 115, engineType: "Inline-4", image: "volkswagenJetta2004.png", description: "The 2004 Volkswagen Jetta is a silver sedan with 115 horsepower. Offering a comfortable and well-built interior, the Jetta is a great option for those seeking a compact sedan with European engineering." },
+       { make: "Toyota", model: "Matrix", year: 2005, price: 4800, type: "Hatchback", color: "Red", country: "Japan", transmission: "Automatic", horsepower: 130, engineType: "Inline-4", image: "toyotaMatrix2005.png", description: "The 2005 Toyota Matrix is a red hatchback with 130 horsepower. A versatile and practical car, it offers ample cargo space and excellent fuel efficiency, making it a great choice for urban driving." },
+        { make: "Ford", model: "Taurus", year: 2003, price: 3500, type: "Sedan", color: "Green", country: "USA", transmission: "Automatic", horsepower: 155, engineType: "V6", image: "fordTaurus2003.png", description: "The 2003 Ford Taurus is a green sedan with 155 horsepower. A spacious and comfortable car with a strong V6 engine, the Taurus is ideal for families or anyone looking for a reliable midsize sedan." },
+
+
+    { make: "Honda", model: "Civic", year: 2014, price: 9500, type: "Sedan", color: "Black", country: "Japan", transmission: "Automatic", horsepower: 143, engineType: "Inline-4", image: "hondaCivic2014.png", description: "The 2014 Honda Civic is a sleek black sedan with 143 horsepower. Known for its reliability, fuel efficiency, and comfortable ride, it's a great choice for daily driving with a reputation for longevity." },
+     { make: "Chevrolet", model: "Malibu", year: 2013, price: 9500, type: "Sedan", color: "Silver", country: "USA", transmission: "Automatic", horsepower: 197, engineType: "Inline-4", image: "chevroletMalibu2013.png", description: "The 2013 Chevrolet Malibu is a silver sedan with 197 horsepower. A midsize car offering a smooth, comfortable ride and advanced features, it's perfect for those seeking style and performance." },
+      { make: "Ford", model: "Fusion", year: 2012, price: 8900, type: "Sedan", color: "White", country: "USA", transmission: "Automatic", horsepower: 175, engineType: "Inline-4", image: "fordFusion2012.png", description: "The 2012 Ford Fusion is a white sedan with 175 horsepower. With a comfortable interior and solid performance, it stands out as a reliable and affordable option in the midsize sedan market." },
+       { make: "Toyota", model: "Prius", year: 2011, price: 7500, type: "Hatchback", color: "Blue", country: "Japan", transmission: "Automatic", horsepower: 134, engineType: "Hybrid", image: "toyotaPrius2011.png", description: "The 2011 Toyota Prius is a blue hybrid hatchback with 134 horsepower. Known for its incredible fuel efficiency and eco-friendly design, it's a top choice for drivers seeking low emissions and low running costs." },
+        { make: "Nissan", model: "Altima", year: 2010, price: 7200, type: "Sedan", color: "Red", country: "Japan", transmission: "Automatic", horsepower: 175, engineType: "Inline-4", image: "nissanAltima2010.png", description: "The 2010 Nissan Altima is a red sedan with 175 horsepower. Offering a smooth drive, spacious interior, and reliable performance, the Altima is a solid choice for those looking for a comfortable and affordable sedan." },
+
+
+    { make: "Honda", model: "Accord", year: 2009, price: 6500, type: "Sedan", color: "Silver", country: "Japan", transmission: "Automatic", horsepower: 190, engineType: "Inline-4", image: "hondaAccord2009.png", description: "The 2009 Honda Accord is a silver sedan with 190 horsepower. Known for its reliability, comfortable ride, and fuel efficiency, it offers a balance of performance and practicality for everyday driving." },
+     { make: "Ford", model: "Escape", year: 2008, price: 5500, type: "SUV", color: "Green", country: "USA", transmission: "Automatic", horsepower: 171, engineType: "Inline-4", image: "fordEscape2008.png", description: "The 2008 Ford Escape is a green SUV with 171 horsepower. With its compact size, ruggedness, and versatility, it provides excellent performance for both urban and off-road adventures." },
+      { make: "Chevrolet", model: "Impala", year: 2007, price: 4500, type: "Sedan", color: "Black", country: "USA", transmission: "Automatic", horsepower: 211, engineType: "V6", image: "chevroletImpala2007.png", description: "The 2007 Chevrolet Impala is a black sedan with 211 horsepower. A full-size car with strong performance and spacious interior, it’s ideal for those who need power, comfort, and value." },
+       { make: "Toyota", model: "Camry", year: 2006, price: 4300, type: "Sedan", color: "White", country: "Japan", transmission: "Automatic", horsepower: 158, engineType: "Inline-4", image: "toyotaCamry2006.png", description: "The 2006 Toyota Camry is a white sedan with 158 horsepower. A reliable and comfortable sedan with a reputation for longevity and smooth performance, it's a great option for those seeking everyday efficiency." },
+        { make: "Nissan", model: "Maxima", year: 2005, price: 4000, type: "Sedan", color: "Blue", country: "Japan", transmission: "Automatic", horsepower: 255, engineType: "V6", image: "nissanMaxima2005.png", description: "The 2005 Nissan Maxima is a blue sedan with 255 horsepower. Known for its powerful engine and sporty feel, the Maxima offers a combination of luxury and performance in a mid-size sedan." },
+
+
+    { make: "Honda", model: "Civic", year: 2004, price: 3500, type: "Sedan", color: "Red", country: "Japan", transmission: "Manual", horsepower: 115, engineType: "Inline-4", image: "hondaCivic2004.png", description: "The 2004 Honda Civic is a red sedan with 115 horsepower. Known for its reliability and fuel efficiency, it offers a straightforward driving experience, ideal for those who need a budget-friendly, practical vehicle." },
+     { make: "Chevrolet", model: "Malibu", year: 2002, price: 2400, type: "Sedan", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 140, engineType: "Inline-4", image: "chevroletMalibu2002.png", description: "The 2002 Chevrolet Malibu is a blue sedan with 140 horsepower. A compact car offering practicality, fuel efficiency, and a comfortable ride, it’s a solid choice for those on a budget seeking reliable transportation." },
+      { make: "Toyota", model: "Corolla", year: 2001, price: 2200, type: "Sedan", color: "Green", country: "Japan", transmission: "Manual", horsepower: 130, engineType: "Inline-4", image: "toyotaCorolla2001.png", description: "The 2001 Toyota Corolla is a green sedan with 130 horsepower. Known for its exceptional reliability and long-lasting performance, it’s a compact car that offers excellent value and low maintenance costs." },
+       { make: "Nissan", model: "Sentra", year: 2000, price: 1900, type: "Sedan", color: "Black", country: "Japan", transmission: "Automatic", horsepower: 125, engineType: "Inline-4", image: "nissanSentra2000.png", description: "The 2000 Nissan Sentra is a black sedan with 125 horsepower. A budget-friendly compact car, it combines practicality and efficiency, making it a great option for anyone seeking a simple, low-cost vehicle for daily commuting." },
+
+
+    { make: "Honda", model: "Accord", year: 1999, price: 2200, type: "Sedan", color: "Silver", country: "Japan", transmission: "Automatic", horsepower: 145, engineType: "Inline-4", image: "hondaAccord1999.png", description: "The 1999 Honda Accord is a silver sedan with 145 horsepower. Known for its smooth ride, reliability, and fuel efficiency, it's an excellent choice for anyone seeking an affordable and dependable vehicle." },
+     { make: "Ford", model: "Mustang", year: 1998, price: 3200, type: "Coupe", color: "Red", country: "USA", transmission: "Manual", horsepower: 305, engineType: "V8", image: "fordMustang1998.png", description: "The 1998 Ford Mustang is a red coupe with 305 horsepower. A classic American muscle car, offering powerful V8 performance and aggressive styling, it’s perfect for enthusiasts looking for speed and thrill on the road." },
+      { make: "Chevrolet", model: "Cavalier", year: 1997, price: 1800, type: "Sedan", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 120, engineType: "Inline-4", image: "chevroletCavalier1997.png", description: "The 1997 Chevrolet Cavalier is a blue sedan with 120 horsepower. This affordable and practical compact car offers a smooth ride and decent fuel economy, making it a great option for budget-conscious buyers." },
+       { make: "BMW", model: "3 Series", year: 1995, price: 3500, type: "Sedan", color: "Black", country: "Germany", transmission: "Automatic", horsepower: 140, engineType: "Inline-6", image: "bmw3Series1995.png", description: "The 1995 BMW 3 Series is a black sedan with 140 horsepower. A luxury car known for its handling, performance, and style, the 3 Series offers a more refined driving experience, ideal for those seeking a blend of performance and comfort." },
+        { make: "Toyota", model: "Camry", year: 1992, price: 2200, type: "Sedan", color: "White", country: "Japan", transmission: "Manual", horsepower: 130, engineType: "Inline-4", image: "toyotaCamry1992.png", description: "The 1992 Toyota Camry is a white sedan with 130 horsepower. Renowned for its reliability, low maintenance costs, and fuel efficiency, the Camry is an excellent value for anyone looking for a solid, practical vehicle." },
+
+
+    { make: "Chevrolet", model: "C10", year: 1989, price: 5000, type: "Pickup", color: "Red", country: "USA", transmission: "Manual", horsepower: 150, engineType: "V6", image: "chevroletC101989.png", description: "The 1989 Chevrolet C10 is a red pickup with 150 horsepower. A classic American truck known for its toughness and reliability, perfect for those who need a workhorse or want a vintage ride with rugged charm." },
+     { make: "Ford", model: "Mustang", year: 1987, price: 4500, type: "Coupe", color: "Blue", country: "USA", transmission: "Manual", horsepower: 225, engineType: "V8", image: "fordMustang1987.png", description: "The 1987 Ford Mustang is a blue coupe with 225 horsepower. A standout in American muscle cars, it features powerful V8 performance and a sleek design, perfect for enthusiasts seeking speed and iconic styling." },
+      { make: "BMW", model: "5 Series", year: 1985, price: 6000, type: "Sedan", color: "Silver", country: "Germany", transmission: "Automatic", horsepower: 120, engineType: "Inline-6", image: "bmw5Series1985.png", description: "The 1985 BMW 5 Series is a silver sedan with 120 horsepower. Known for its luxurious feel and precise engineering, this sedan offers both comfort and performance for those seeking a high-quality European vehicle." },
+       { make: "Mercedes-Benz", model: "300E", year: 1989, price: 7000, type: "Sedan", color: "White", country: "Germany", transmission: "Automatic", horsepower: 177, engineType: "Inline-6", image: "mercedes300E1989.png", description: "The 1989 Mercedes-Benz 300E is a white sedan with 177 horsepower. A high-end luxury vehicle offering exceptional comfort, smooth performance, and advanced technology for its time, ideal for those who appreciate refined engineering." },
+        { make: "Honda", model: "Civic", year: 1986, price: 2000, type: "Hatchback", color: "Green", country: "Japan", transmission: "Manual", horsepower: 92, engineType: "Inline-4", image: "hondaCivic1986.png", description: "The 1986 Honda Civic is a green hatchback with 92 horsepower. A reliable and economical compact car, known for its fuel efficiency and low maintenance costs, making it a great option for budget-conscious drivers." },
+
+
+    { make: "Chevrolet", model: "Chevelle SS", year: 1970, price: 15000, type: "Muscle", color: "Orange", country: "USA", transmission: "Manual", horsepower: 375, engineType: "V8", image: "chevroletChevelleSS1970.png", description: "The 1970 Chevrolet Chevelle SS is an iconic muscle car with 375 horsepower and an orange exterior. Known for its power and bold design, this car delivers impressive performance and a thrilling driving experience, a true classic in American muscle history." },
+     { make: "Ford", model: "Mustang Mach 1", year: 1971, price: 18000, type: "Muscle", color: "Red", country: "USA", transmission: "Manual", horsepower: 330, engineType: "V8", image: "fordMustangMach11971.png", description: "The 1971 Ford Mustang Mach 1 is a red muscle car with 330 horsepower. A legend in performance, it combines power, handling, and style, making it a top choice for enthusiasts who appreciate classic American muscle and thrilling speed." },
+      { make: "Dodge", model: "Charger", year: 1973, price: 12000, type: "Muscle", color: "Blue", country: "USA", transmission: "Automatic", horsepower: 280, engineType: "V8", image: "dodgeCharger1973.png", description: "The 1973 Dodge Charger is a blue muscle car with 280 horsepower. With its aggressive styling and powerful V8 engine, the Charger stands as a symbol of American performance and muscle, offering a thrilling driving experience for fans of classic muscle cars." },
+       { make: "Porsche", model: "911 Turbo", year: 1976, price: 25000, type: "Sports", color: "Yellow", country: "Germany", transmission: "Manual", horsepower: 245, engineType: "Flat-6", image: "porsche911Turbo1976.png", description: "The 1976 Porsche 911 Turbo is a yellow sports car with 245 horsepower. A true icon of German engineering, the 911 Turbo offers exceptional performance, precise handling, and sleek design, making it a must-have for sports car enthusiasts." },
+        { make: "Volkswagen", model: "Beetle", year: 1979, price: 3500, type: "Hatchback", color: "Green", country: "Germany", transmission: "Manual", horsepower: 48, engineType: "Inline-4", image: "volkswagenBeetle1979.png", description: "The 1979 Volkswagen Beetle is a green hatchback with 48 horsepower. A timeless symbol of simplicity and reliability, this classic car offers an affordable and fun driving experience with a charming design that has captured hearts worldwide." },
+
+
+    { make: "Chevrolet", model: "Corvette", year: 1953, price: 15000, type: "Sports", color: "White", country: "USA", transmission: "Manual", horsepower: 150, engineType: "V8", image: "chevroletCorvette1953.png", description: "The 1953 Chevrolet Corvette is a white sports car with 150 horsepower. As the first year of production for this iconic American sports car, the Corvette offers timeless style and exceptional performance, becoming a symbol of American automotive engineering." },
+     { make: "Ford", model: "Thunderbird", year: 1955, price: 20000, type: "Convertible", color: "Red", country: "USA", transmission: "Automatic", horsepower: 198, engineType: "V8", image: "fordThunderbird1955.png", description: "The 1955 Ford Thunderbird is a red convertible with 198 horsepower. Known for its elegance and luxury, this car combines stylish design with powerful performance, making it one of the most popular early American sports cars." },
+      { make: "Jaguar", model: "E-Type", year: 1961, price: 25000, type: "Sports", color: "Green", country: "UK", transmission: "Manual", horsepower: 265, engineType: "Inline-6", image: "jaguarEType1961.png", description: "The 1961 Jaguar E-Type is a green sports car with 265 horsepower. A classic of British automotive design, the E-Type is revered for its sleek styling and outstanding performance, often considered one of the most beautiful cars ever built." },
+       { make: "Porsche", model: "911", year: 1964, price: 28000, type: "Sports", color: "Silver", country: "Germany", transmission: "Manual", horsepower: 130, engineType: "Flat-6", image: "porsche9111964.png", description: "The 1964 Porsche 911 is a silver sports car with 130 horsepower. As the first generation of the legendary 911, it combines understated elegance with impressive engineering, setting the foundation for one of the most iconic sports car brands in history." },
+        { make: "Ford", model: "Mustang", year: 1967, price: 22000, type: "Muscle", color: "Blue", country: "USA", transmission: "Manual", horsepower: 271, engineType: "V8", image: "fordMustang1967.png", description: "The 1967 Ford Mustang is a blue muscle car with 271 horsepower. A cornerstone of American muscle cars, the 1967 Mustang offers powerful performance and aggressive styling, making it a favorite for enthusiasts and collectors alike." },
+
+
+    { make: "Ford", model: "Model A", year: 1931, price: 8000, type: "Sedan", color: "Black", country: "USA", transmission: "Manual", horsepower: 40, engineType: "Inline-4", image: "fordModelA1931.png", description: "The 1931 Ford Model A is a classic black sedan with 40 horsepower. Known for its reliability and affordability, the Model A was a popular choice during the Great Depression and helped establish Ford as a leader in the automotive industry." },
+     { make: "Chevrolet", model: "Master Deluxe", year: 1941, price: 12000, type: "Sedan", color: "Red", country: "USA", transmission: "Manual", horsepower: 90, engineType: "Inline-6", image: "chevroletMasterDeluxe1941.png", description: "The 1941 Chevrolet Master Deluxe is a red sedan with 90 horsepower. This stylish and robust vehicle was one of Chevrolet's top models during the early 1940s, offering great comfort and performance during the pre-war era." },
+      { make: "Cadillac", model: "Series 62", year: 1947, price: 15000, type: "Sedan", color: "Green", country: "USA", transmission: "Automatic", horsepower: 150, engineType: "V8", image: "cadillacSeries621947.png", description: "The 1947 Cadillac Series 62 is a green sedan with 150 horsepower. Known for its luxury and smooth ride, the Series 62 became a symbol of Cadillac's reputation for fine craftsmanship and powerful performance in the post-war era." },
+       { make: "Chrysler", model: "New Yorker", year: 1948, price: 13000, type: "Sedan", color: "Blue", country: "USA", transmission: "Manual", horsepower: 135, engineType: "Inline-8", image: "chryslerNewYorker1948.png", description: "The 1948 Chrysler New Yorker is a blue sedan with 135 horsepower. With its striking design and powerful inline-8 engine, the New Yorker was a luxury vehicle known for its performance and exceptional quality in the late 1940s." },
+        { make: "Packard", model: "Super Eight", year: 1939, price: 14000, type: "Luxury", color: "Silver", country: "USA", transmission: "Manual", horsepower: 120, engineType: "Inline-8", image: "packardSuperEight1939.png", description: "The 1939 Packard Super Eight is a silver luxury car with 120 horsepower. Known for its elegance and advanced engineering, the Super Eight was a prestigious model that offered a combination of luxury, comfort, and refined style during the late 1930s." },
+
+    { make: "Ford", model: "Model T", year: 1925, price: 600, type: "Sedan", color: "Black", country: "USA", transmission: "Manual", horsepower: 20, engineType: "Inline-4", image: "fordModelT1925.png", description: "The 1925 Ford Model T, often referred to as the 'Tin Lizzie,' is a black sedan with 20 horsepower. This car revolutionized the automotive industry by making automobiles affordable for the masses, thanks to Ford's innovative mass production techniques." },
+     { make: "Chevrolet", model: "Series 490", year: 1924, price: 500, type: "Sedan", color: "Green", country: "USA", transmission: "Manual", horsepower: 35, engineType: "Inline-4", image: "chevroletSeries4901924.png", description: "The 1924 Chevrolet Series 490 is a green sedan with 35 horsepower. This model was Chevrolet's first attempt to compete with the Ford Model T, offering more power and better styling for the entry-level market." },
+      { make: "Buick", model: "Master Six", year: 1929, price: 800, type: "Sedan", color: "Blue", country: "USA", transmission: "Manual", horsepower: 60, engineType: "Inline-6", image: "buickMasterSix1929.png", description: "The 1929 Buick Master Six is a blue sedan with 60 horsepower. Known for its smooth ride and solid performance, the Master Six became a popular choice for middle-class families during the late 1920s." },
+       { make: "Rolls-Royce", model: "Silver Ghost", year: 1924, price: 15000, type: "Luxury", color: "Silver", country: "UK", transmission: "Manual", horsepower: 40, engineType: "Inline-6", image: "rollsRoyceSilverGhost1924.png", description: "The 1924 Rolls-Royce Silver Ghost is a silver luxury sedan with 40 horsepower. As one of the most prestigious and renowned luxury cars of its time, the Silver Ghost was known for its refined craftsmanship and smooth driving experience." },
+        { make: "Mercedes-Benz", model: "190", year: 1927, price: 2000, type: "Luxury", color: "Black", country: "Germany", transmission: "Manual", horsepower: 40, engineType: "Inline-6", image: "mercedesBenz1901927.png", description: "The 1927 Mercedes-Benz 190 is a black luxury sedan with 40 horsepower. This model was part of the early lineup for Mercedes-Benz, offering both prestige and reliability with its elegant design and impressive engineering." },
+
+
+    { make: "Benz", model: "Velo", year: 1894, price: 1000, type: "Carriage", color: "Black", country: "Germany", transmission: "Manual", horsepower: 1, engineType: "Single-cylinder", image: "benzVelo1894.png", description: "The 1894 Benz Velo is a black carriage-style vehicle with 1 horsepower. As one of the first practical automobiles, it was powered by a single-cylinder engine and is regarded as one of the earliest commercial cars produced by Benz & Cie." },
+     { make: "Panhard et Levassor", model: "Type A", year: 1891, price: 3000, type: "Sedan", color: "Green", country: "France", transmission: "Manual", horsepower: 3, engineType: "Inline-4", image: "panhardLevassorTypeA1891.png", description: "The 1891 Panhard et Levassor Type A is a green sedan with 3 horsepower. It was one of the first vehicles to use a modern internal combustion engine and is considered a pioneer in the development of the motorcar." },
+      { make: "Peugeot", model: "Type 3", year: 1891, price: 2500, type: "Carriage", color: "Black", country: "France", transmission: "Manual", horsepower: 2, engineType: "Inline-2", image: "peugeotType31891.png", description: "The 1891 Peugeot Type 3 is a black carriage with 2 horsepower. This early automobile marked Peugeot's entry into the car manufacturing industry, showcasing the company’s innovation in the use of an inline-2 engine." },
+       { make: "Ford", model: "Quadricycle", year: 1896, price: 500, type: "Car", color: "Red", country: "USA", transmission: "Manual", horsepower: 2, engineType: "Single-cylinder", image: "fordQuadricycle1896.png", description: "The 1896 Ford Quadricycle is a red car with 2 horsepower. As Henry Ford's first automotive creation, this vehicle laid the foundation for the Ford Motor Company's future success and the mass production of automobiles." },
+        { make: "Daimler", model: "Cannstatt", year: 1889, price: 2500, type: "Carriage", color: "Green", country: "Germany", transmission: "Manual", horsepower: 2, engineType: "Inline-2", image: "daimlerCannstatt1889.png", description: "The 1889 Daimler Cannstatt is a green carriage-style automobile with 2 horsepower. It was one of the earliest motorized vehicles produced by Gottlieb Daimler and is regarded as a key step in the evolution of the modern automobile." }, 
+
+
+    { make: "Toyota", model: "Hilux", year: 2015, price: 25000, type: "Pickup", color: "White", country: "Japan", transmission: "Manual", horsepower: 160, acceleration: 9.5, engineType: "Diesel", image: "toyotaHilux2015.png", description: "The 2015 Toyota Hilux is a white pickup truck with 160 horsepower and a diesel engine. Known for its durability and off-road capability, this vehicle offers manual transmission and an acceleration time of 9.5 seconds." },
+     { make: "Ford", model: "Explorer", year: 2015, price: 35000, type: "SUV", color: "Red", country: "USA", transmission: "Automatic", horsepower: 290, acceleration: 7.8, engineType: "V6", image: "fordExplorer2015.png", description: "The 2015 Ford Explorer is a red SUV equipped with a V6 engine and 290 horsepower. With an automatic transmission, it accelerates in 7.8 seconds, offering a perfect blend of power and comfort for family journeys." },
+      { make: "BMW", model: "3 Series", year: 2016, price: 40000, type: "Sedan", color: "Silver", country: "Germany", transmission: "Automatic", horsepower: 320, acceleration: 5.6, engineType: "Inline-6", image: "bmw320162016.png", description: "The 2016 BMW 3 Series is a silver sedan with a powerful 320 horsepower inline-6 engine. Known for its sporty handling and luxury features, this automatic transmission car reaches 0-60 mph in 5.6 seconds." },
+       { make: "Audi", model: "A4", year: 2016, price: 37000, type: "Sedan", color: "Blue", country: "Germany", transmission: "Automatic", horsepower: 190, acceleration: 7.3, engineType: "Inline-4", image: "audiA42016.png", description: "The 2016 Audi A4 is a blue sedan with a 190 horsepower inline-4 engine. Featuring automatic transmission and an acceleration of 7.3 seconds, it provides an elegant and balanced ride for daily commuting and long drives." },
+        { make: "Tesla", model: "Model S", year: 2016, price: 75000, type: "Sedan", color: "Black", country: "USA", transmission: "Automatic", horsepower: 525, acceleration: 2.5, engineType: "Electric", image: "teslaModelS2016.png", description: "The 2016 Tesla Model S is a black sedan with 525 horsepower and an electric engine. Known for its cutting-edge technology, this vehicle boasts an acceleration of just 2.5 seconds, making it one of the fastest electric cars on the market." },
+
+
+    { make: "Toyota", model: "Supra", year: 2024, price: 50000, type: "Sports", color: "Red", country: "Japan", transmission: "Automatic", horsepower: 335, acceleration: 4.1, engineType: "Inline-6", image: "toyotaSupra2024.png", description: "The 2024 Toyota Supra is a striking red sports car with a 335 horsepower inline-6 engine. Offering automatic transmission and impressive acceleration of 4.1 seconds from 0-60 mph, it embodies performance and sleek design in one." },
+     { make: "Ford", model: "F-150", year: 2024, price: 45000, type: "Pickup", color: "Black", country: "USA", transmission: "Automatic", horsepower: 400, acceleration: 6.0, engineType: "V6", image: "fordF1502024.png", description: "The 2024 Ford F-150 is a powerful black pickup truck with a 400 horsepower V6 engine. Known for its durability and towing capacity, this vehicle offers a smooth automatic transmission and an acceleration of 6.0 seconds." },
+      { make: "BMW", model: "M3", year: 2024, price: 70000, type: "Sports Sedan", color: "White", country: "Germany", transmission: "Automatic", horsepower: 473, acceleration: 3.8, engineType: "Inline-6", image: "bmwM32024.png", description: "The 2024 BMW M3 is a dynamic white sports sedan with 473 horsepower and an inline-6 engine. It features automatic transmission and accelerates from 0-60 mph in just 3.8 seconds, offering an exhilarating driving experience." },
+       { make: "Audi", model: "Q7", year: 2024, price: 75000, type: "SUV", color: "Blue", country: "Germany", transmission: "Automatic", horsepower: 335, acceleration: 5.0, engineType: "V6", image: "audiQ72024.png", description: "The 2024 Audi Q7 is a sophisticated blue SUV featuring a 335 horsepower V6 engine. With automatic transmission and an acceleration time of 5.0 seconds, it combines luxury with performance for a premium driving experience." },
+
+    {make: "Rimac", model: "Nevera", year: 2024, price: 2200000, type: "Electric Sports", color: "Blue",  country: "Croatia", transmission: "Automatic", horsepower: 1914, acceleration: 1.85, engineType: "Electric", image: "rimacNevera2024.png", description: "The 2024 Rimac Nevera is a high-performance electric sports car with a staggering 1914 horsepower. Featuring a sleek blue design, it accelerates from 0-60 mph in just 1.85 seconds, making it one of the fastest electric cars on the market. With automatic transmission and a fully electric engine, the Nevera offers unmatched speed and futuristic innovation."},
+    { make: "Benz", model: "Patent-Motorwagen", year: 1885, price: 1000, type: "Carriage", color: "Black", country: "Germany", transmission: "Manual", horsepower: 0.75, acceleration: 45, engineType: "Single-cylinder", image: "benzPatentMotorwagen1885.png", description: "The Benz Patent-Motorwagen, introduced in 1886 by Karl Benz, is often regarded as the first true automobile and a pivotal milestone in the history of transportation. Powered by an internal combustion engine, it marked the dawn of the automotive era, transforming the world in ways that would resonate for centuries to come. This groundbreaking vehicle was born from the visionary mind of Karl Benz, an engineer and inventor whose relentless pursuit of innovation led to the creation of a machine that combined the power of technology with the promise of a new age of personal mobility. The Benz Patent-Motorwagen was a three-wheeled vehicle, propelled by a single-cylinder engine capable of producing just 0.75 horsepower, and it had a top speed of around 16 km/h (10 mph), a far cry from the high-performance cars of today, yet a revolutionary leap at the time. Constructed from high-quality steel and featuring a hand-crafted wooden chassis, the Motorwagen was both a feat of engineering and an expression of aesthetic simplicity. The vehicle's design was practical yet elegant, with its spoked wheels and leather seating that reflected the craftsmanship of the period. It was a machine built not only to showcase the potential of the engine but to demonstrate the ingenuity of its creator. Benz's invention initially faced skepticism and a lack of support, but it gradually proved its worth. The first public demonstration took place in 1886, when Bertha Benz, Karl’s wife, embarked on the world’s first long-distance automobile journey. She drove the Motorwagen from Mannheim to Pforzheim, covering a distance of over 100 kilometers, a journey that showcased the car’s reliability and practicality. This legendary trip not only demonstrated the potential of the automobile but also highlighted the vehicle’s capability to revolutionize travel and reshape society. The Benz Patent-Motorwagen was not just a technological marvel; it represented the spirit of progress, symbolizing human ingenuity and the desire to overcome limitations. It heralded a future where personal freedom and mobility were within reach for the masses, laying the foundation for the global automotive industry that would emerge in the following decades. This creation, though modest by today’s standards, was the spark that ignited a worldwide revolution. Today, the Benz Patent-Motorwagen stands as a tribute to Karl Benz's vision and to the tireless spirit of innovation that continues to propel the automotive world forward."},
 ];
 
 
@@ -463,32 +739,10 @@ const carListings = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Here some of the links to the pictures, but after a while I stopped putting them here, because it took me too long.
 
 
 // pictures:
-
-
-
-
-
-
-
 
 // Toyota Camry 2020:           https://s3.amazonaws.com/di-enrollment-api/toyota/models/2020/camry/colors/celestial_silver_metallic.jpg
 // Honda Civic 2018:            https://images.hgmsites.net/lrg/2018-honda-civic-si-coupe-manual-angular-front-exterior-view_100659534_l.jpg
@@ -624,118 +878,13 @@ const carListings = [
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     const searchForm = document.getElementById("car-search-form");
     const carList = document.querySelector(".car-list");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     displayCars(carListings);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     searchForm.addEventListener("submit", (e) => {
         e.preventDefault();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         const make = document.getElementById("car-make").value.toLowerCase();
         const model = document.getElementById("car-model").value.toLowerCase();
@@ -752,35 +901,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         const filteredCars = carListings.filter(car => {
             const isMakeMatch = make === "" || car.make.toLowerCase().includes(make);
             const isModelMatch = model === "" || car.model.toLowerCase().includes(model);
@@ -794,47 +914,15 @@ document.addEventListener("DOMContentLoaded", () => {
             const isAccelerationMatch = acceleration === Infinity || car.acceleration <= acceleration;
             const isEngineMatch = engine === "" || car.engineType?.toLowerCase() === engine;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             return isMakeMatch && isModelMatch && isYearMatch && isTypeMatch && isPriceMatch &&
                    isColorMatch && isCountryMatch && isTransmissionMatch &&
                    isHorsepowerMatch && isAccelerationMatch && isEngineMatch;
         });
 
-
-
-
         displayCars(filteredCars);
     });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// this is for the filtering of the car
     function displayCars(cars) {
         carList.innerHTML = "";
         if (cars.length === 0) {
@@ -862,12 +950,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-
-
-
-
-
-
     carList.addEventListener("click", (e) => {
         if (e.target.classList.contains("info-button")) {
             const carData = e.target.dataset;
@@ -876,19 +958,31 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-
-
-
-
-
-
-
 });
 
 
+const params = new URLSearchParams(window.location.search);
+const carInfoSection = document.getElementById('car-info');
 
+// this is after you click on Info
+const carDetails = `
+    <h2>${params.get('make')} ${params.get('model')} (${params.get('year')})</h2>
+    <img src=${params.get('image')} alt="image of ${params.get('make')} ${params.get('model')} (${params.get('year')})" width="100%" style="border: 10px solid black; border-radius: 60px; margin: 20px 0px 60px 0px;">
+    <p class="classInformationParagraph"><b>Price:</b> $${params.get('price')}</p>
+    <p class="classInformationParagraph"><b>Type:</b> ${params.get('type')}</p>
+    <p class="classInformationParagraph"><b>Color:</b> ${params.get('color')}</p>
+    <p class="classInformationParagraph"><b>Country:</b> ${params.get('country')}</p>
+    <p class="classInformationParagraph"><b>Transmission:</b> ${params.get('transmission')}</p>
+    <p class="classInformationParagraph"><b>Horsepower:</b> ${params.get('horsepower')} hp</p>
+    <p class="classInformationParagraph"><b>Acceleration:</b> ${params.get('acceleration')} seconds (0-60 mph)</p>
+    <p class="classInformationParagraph"><b>Engine Type:</b> ${params.get('engine')}</p>
+    <p class="classInformationParagraph"><b>Description:</b> <br><br> ${params.get('description')}</p>
+    <div style="display: flex; justify-content: center">
+        <button class="info-button" onclick="window.location.href='buy.html'" style="margin: 10px 20px 40px 20px;">Back</button>
+        <button class="info-button" onclick="window.location.href='buyCar.html'" style="margin: 10px 20px 40px 20px;">Buy</button>
+    </div>
+`;
 
-
-
+carInfoSection.innerHTML = carDetails;
 
 

@@ -22,50 +22,69 @@
         </nav>
     </header>
 
-
+    <!-- here is the formular where you have to enter the information about the car you want to sell -->
     <section class="car-search">
-        <h2>Search for Cars</h2>
-        <form id="car-search-form">
+        <h2>Sell Your Car</h2>
+        <form id="sell-car-form">
             <label for="car-make">Make:</label>
-            <input type="text" id="car-make" name="car-make">
-    
+            <input type="text" id="car-make" name="car-make" required>
+
             <label for="car-model">Model:</label>
-            <input type="text" id="car-model" name="car-model">
-    
+            <input type="text" id="car-model" name="car-model" required>
+
             <label for="car-year">Year:</label>
-            <input type="number" id="car-year" name="car-year">
-    
-            <label for="car-type">Car Type:</label>
-            <select id="car-type" name="car-type">
-                <option value="">Any</option>
-                <option value="SUV">SUV</option>
-                <option value="Convertible">Convertible</option>
-                <option value="Sedan">Sedan</option>
-                <option value="Truck">Truck</option>
-            </select>
-    
-            <label for="car-price-min">Min Price:</label>
-            <input type="number" id="car-price-min" name="car-price-min" placeholder="e.g., 15000">
-    
-            <label for="car-price-max">Max Price:</label>
-            <input type="number" id="car-price-max" name="car-price-max" placeholder="e.g., 30000">
-    
+            <input type="number" id="car-year" name="car-year" required>
+
+            <label for="car-price">Price:</label>
+            <input type="number" id="car-price" name="car-price" placeholder="e.g., 15000" required>
+
             <label for="car-color">Color:</label>
-            <input type="text" id="car-color" name="car-color" placeholder="e.g., red">
-    
-            <button type="submit" style="margin: 20px 0px 40px 0px;">Search</button>
+            <select id="car-color" name="car-color" required>
+                <option value="">Any</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Silver">Silver</option>
+                <option value="Orange">Orange</option>
+                <option value="Green">Green</option>
+                <option value="Grey">Grey</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Brown">Brown</option>
+            </select>
+
+            <label for="car-picture">Upload Picture:</label>
+            <input type="file" id="car-picture" name="car-picture" accept="image/*" required>
+            <span><img id="image-preview" alt="Preview of the uploaded car image"></span>
+
+            <button type="submit" style="margin: 20px 0px 40px 0px;">Submit</button>
         </form>
     </section>
-    
-
 
     <footer>
         <p>&copy; 2024 Buy and Sell Cars. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- in this file I made the script in the html file itself.
+     Here the picture which you add (the picture of your car) will
+     be displayed below the formular -->
+    <script>
+        document.getElementById('car-picture').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            const preview = document.getElementById('image-preview');
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            } else {
+                preview.style.display = 'none';
+                preview.src = '';
+            }
+        });
+    </script>
 </body>
 </html>
-
-
-

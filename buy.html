@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-
+    <!-- here the formular for the filtering and searching for cars -->
     <section class="car-search">
         <h2>Search for Cars</h2>
         <form id="car-search-form">
@@ -35,6 +35,7 @@
             <label for="car-year">Year:</label>
             <input type="number" id="car-year" name="car-year">
     
+            <!-- here a dropdown to select the car type you want -->
             <label for="car-type">Car Type:</label>
             <select id="car-type" name="car-type">
                 <option value="">Any</option>
@@ -50,14 +51,45 @@
                 <option value="Electric Scooter">Electric Scooter</option>
                 <option value="Electric Pickup">Electric Pickup</option>
                 <option value="Electric Minicar">Electric Minicar</option>
+                <option value="Electric Coupe">Electric Coupe</option>
+                <option value="Electric Van">Electric Van</option>
+                <option value="Electric SUV">Electric SUV</option>
+                <option value="Electric Sports">Electric Sports</option>
+                <option value="Electric Hatchback">Electric Hatchback</option>
+                <option value="Electric City Car">Electric City Car</option>
+                <option value="Van">Van</option>
+                <option value="MPV">MPV</option>
+                <option value="Minivan">Minivan</option>
+                <option value="Sports Car">Sports Car</option>
+                <option value="Sports Sedan">Sports Sedan</option>
+                <option value="Sports">Sports</option>
+                <option value="City Car">City Car</option>
+                <option value="Crossover">Crossover</option>
+                <option value="Muscle">Muscle</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Carriage">Carriage</option>
+                <option value="Limousine">Limousine</option>
+                <option value="Off-Road">Off-Road</option>
+                <option value="Pickup Truck">Pickup Truck</option>
+                <option value="Compact">Compact</option>
+                <option value="Full-Size">Full-Size</option>
+                <option value="Roadster">Roadster</option>
+                <option value="Pony Car">Pony Car</option>
+                <option value="Touring">Touring</option>
+                <option value="Classic">Classic</option>
+                <option value="Electric Roadster">Electric Roadster</option>
+                <option value="Electric Muscle">Electric Muscle</option>
+                <option value="Cabover Truck">Cabover Truck</option>
+                <option value="Commercial Van">Commercial Van</option>
             </select>
-    
+                
             <label for="car-price-min">Min Price:</label>
             <input type="number" id="car-price-min" name="car-price-min" placeholder="e.g., 15000">
     
             <label for="car-price-max">Max Price:</label>
             <input type="number" id="car-price-max" name="car-price-max" placeholder="e.g., 30000">
     
+            <!-- here some colors to dermine the color of your car -->
             <label for="car-color">Color:</label>
             <select id="car-color" name="car-color">
                 <option value="">Any</option>
@@ -73,6 +105,10 @@
                 <option value="Brown">Brown</option>
             </select>
     
+            <!-- and you can also select the country from which the car comes from, 
+             I have made a lots of countries, also Arabic Countries, because I am Arabic.
+             I added some countries, who have only one car or two, but I just wanted the
+             countries to be also there. -->
             <label for="car-country">Country of Origin:</label>
             <select id="car-country" name="car-country">
                 <option value="">Any</option>
@@ -96,7 +132,7 @@
                 <option value="China">China</option>
                 <option value="UK">UK</option>
             </select>
-    
+    <!-- There are only three types of transmission -->
             <label for="car-transmission">Transmission:</label>
             <select id="car-transmission" name="car-transmission">
                 <option value="">Any</option>
@@ -110,20 +146,41 @@
     
             <label for="car-acceleration">Max Acceleration (0-60 mph in seconds):</label>
             <input type="number" id="car-acceleration" name="car-acceleration" step="0.1" placeholder="e.g., 6.5">
-    
+    <!-- Here you can select the engine type -->
             <label for="car-engine">Engine Type:</label>
             <select id="car-engine" name="car-engine">
                 <option value="">Any</option>
                 <option value="V6">V6</option>
                 <option value="V8">V8</option>
+                <option value="V10">V10</option>
+                <option value="V12">V12</option>
+                <option value="V12 Twin Turbo">V12 Twin Turbo</option>
+                <option value="V16 Quad-Turbo">V16 Quad-Turbo</option>
+                <option value="Inline-2">Inline-2</option>
                 <option value="Inline-3">Inline-3</option>
                 <option value="Inline-4">Inline-4</option>
+                <option value="Inline-5">Inline-5</option>
+                <option value="Inline-6">Inline-6</option>
+                <option value="Inline-8">Inline-8</option>
                 <option value="Electric">Electric</option>
+                <option value="Hybrid">Hybrid</option>
                 <option value="Flat-4">Flat-4</option>
-                <option value="Flat-6">Flat-6</option>V16 Quad-Turbo
+                <option value="Flat-6">Flat-6</option>
                 <option value="Flat-6 Twin-Turbo">Flat-6 Twin-Turbo</option>
-                <option value="V16 Quad-Turbo">V16 Quad-Turbo</option>
-            </select>
+                <option value="Single-cylinder">Single-cylinder</option>
+                <option value="W16">W16</option>
+                <option value="W12">W12</option>
+                <option value="Turbocharged Inline-4">Turbocharged Inline-4</option>
+                <option value="Electric + Inline-4">Electric + Inline-4</option>
+                <option value="Turbo Diesel I6">Turbo Diesel I6</option>
+                <option value="Rotary">Rotary</option>
+                <option value="Bi-Turbo V6">Bi-Turbo V6</option>
+                <option value="Quad-Turbo V8">Quad-Turbo V8</option>
+                <option value="Fuel Cell Electric">Fuel Cell Electric</option>
+                <option value="Twin-Charged Inline-4">Twin-Charged Inline-4</option>
+                <option value="V4">V4</option>
+                <option value="H16">H16</option>
+            </select>            
     
             <button type="submit">Search</button>
         </form>
@@ -137,7 +194,7 @@
 
     <section class="car-list">
         <h2>Available Cars</h2>
-        <!-- Car listings will be displayed here dynamically -->
+        <!-- the Cars will be displayed here with java script -->
     </section>
 
 

@@ -22,9 +22,10 @@
         </nav>
     </header>
 
+    <!-- here is a formular for entering your informaiton after you read something about the car and want to buy it. -->
     <section>
         <h2>Purchase Your Car</h2>
-        <form id="buy-car-form" method="get" action="buy.html">
+        <form id="buy-car-form" method="get" action="buy.html" onsubmit="bought()">
             <label for="first-name">First Name:</label>
             <input type="text" id="first-name" name="first-name" required>
 
@@ -56,12 +57,6 @@
         <p>&copy; 2024 Buy and Sell Cars. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.getElementById('buy-car-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Your purchase request has been submitted successfully!');
-            // Here you can add code to handle the form submission, e.g., sending data to a server
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

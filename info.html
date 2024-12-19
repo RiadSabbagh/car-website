@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Car Information</h1>
+            <h1>Buy and Sell Cars</h1>
         </div>
         <nav>
             <ul>
@@ -21,34 +21,13 @@
             </ul>
         </nav>
     </header>
-    <section id="car-info" style="background-color: aliceblue;">      
+    <!-- here is the section where the car information will be.
+     The content will be created in js, based on the car you clicked on. -->
+    <section id="car-info" style="background-color: aliceblue;">
     </section>
     <footer>
         <p>&copy; 2024 Buy and Sell Cars. All rights reserved.</p>
     </footer>
-    <script> 
-        const params = new URLSearchParams(window.location.search);
-        const carInfoSection = document.getElementById('car-info');
-
-        const carDetails = `
-            <h2>${params.get('make')} ${params.get('model')} (${params.get('year')})</h2>
-            <img src=${params.get('image')} alt="image of ${params.get('make')} ${params.get('model')} (${params.get('year')})" width="100%" style="border: 10px solid black; border-radius: 60px; margin: 20px 0px 60px 0px;">
-            <p class="classInformationParagraph"><b>Price:</b> $${params.get('price')}</p>
-            <p class="classInformationParagraph"><b>Type:</b> ${params.get('type')}</p>
-            <p class="classInformationParagraph"><b>Color:</b> ${params.get('color')}</p>
-            <p class="classInformationParagraph"><b>Country:</b> ${params.get('country')}</p>
-            <p class="classInformationParagraph"><b>Transmission:</b> ${params.get('transmission')}</p>
-            <p class="classInformationParagraph"><b>Horsepower:</b> ${params.get('horsepower')} hp</p>
-            <p class="classInformationParagraph"><b>Acceleration:</b> ${params.get('acceleration')} seconds (0-60 mph)</p>
-            <p class="classInformationParagraph"><b>Engine Type:</b> ${params.get('engine')}</p>
-            <p class="classInformationParagraph"><b>Description:</b> <br><br> ${params.get('description')}</p>
-            <div style="display: flex; justify-content: center">
-                <button class="info-button" onclick="window.location.href='buy.html'" style="margin: 10px 20px 40px 20px;">Back</button>
-                <button class="info-button" onclick="window.location.href='buyCar.html'" style="margin: 10px 20px 40px 20px;">Buy</button>
-            </div>
-        `;
-
-        carInfoSection.innerHTML = carDetails;
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
